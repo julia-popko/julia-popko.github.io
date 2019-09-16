@@ -3,12 +3,34 @@
 	"file": "style.css",
 	"sources": [
 		"style.scss",
-		"_sass/style.scss"
+		"_sass/style.scss",
+		"_sass/_mixins.scss",
+		"_sass/_colors.scss",
+		"_sass/_fonts.scss",
+		"_sass/_helpers.scss",
+		"_sass/_layout.scss",
+		"_sass/_header.scss",
+		"_sass/_footer.scss",
+		"_sass/_home.scss",
+		"_sass/_projects.scss",
+		"_sass/_about.scss",
+		"_sass/_contact.scss"
 	],
 	"sourcesContent": [
 		"@import \"style\";",
-		""
+		"@charset \"UTF-8\";\n/* SCSS Document */\n\n/*========================================================== Imports ==========================================================*/\n\n@import \"mixins\";\n@import \"colors\";\n@import \"fonts\";\n@import \"helpers\";\n@import \"layout\";\n\n/*========================================================== General ==========================================================*/\n\n*,\n*:before,\n*:after {\n\t@include box-sizing(border-box);\n\toutline: none;\n}\n\nhtml,\nbody {\n\t@extend %paMar;\n}\n\n/*========================================================== Components ==========================================================*/\n\n@import \"header\";\n@import \"footer\";\n\n/*========================================================== Pages ==========================================================*/\n\n@import \"home\";\n@import \"projects\";\n@import \"about\";\n@import \"contact\";\n",
+		"/*========================================================== Mixins ==========================================================*/\n\n@mixin flexbox($align, $justify, $wrap) {\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: flex;\n\n\t-webkit-box-align: $align;\n\t-ms-flex-align: $align;\n\talign-items: $align;\n\n\t-webkit-box-pack: $justify;\n\t-ms-flex-pack: $justify;\n\tjustify-content: $justify;\n\n\t-ms-flex-wrap: $wrap;\n\tflex-wrap: $wrap;\n}\n\n@mixin transition($property, $duration, $function) {\n\t-webkit-transition: $property $duration $function;\n\t-moz-transition: $property $duration $function;\n\t-ms-transition: $property $duration $function;\n\t-o-transition: $property $duration $function;\n\ttransition: $property $duration $function;\n}\n\n@mixin transform($method) {\n\t-moz-transform: $method;\n\t-webkit-transform: $method;\n\t-o-transform: $method;\n\t-ms-transform: $method;\n\ttransform: $method;\n}\n\n@mixin transform-origin($method) {\n\t-moz-transform-origin: $method;\n\t-webkit-transform-origin: $method;\n\t-o-transform-origin: $method;\n\t-ms-transform-origin: $method;\n\ttransform-origin: $method;\n}\n\n@mixin appearance($value) {\n\t-webkit-appearance: $value;\n\t-moz-appearance: $value;\n\tappearance: $value;\n}\n\n@mixin border-radius($value) {\n\t-webkit-border-radius: $value;\n\tborder-radius: $value;\n}\n\n@mixin box-sizing($property) {\n\t-moz-box-sizing: $property;\n\t-webkit-box-sizing: $property;\n\tbox-sizing: $property;\n}\n\n@mixin icon($unicode) {\n\tfont-family: \"FontAwesome\";\n\tcontent: $unicode;\n}\n\n/*========================================================== Constants ==========================================================*/\n\n%paMar{\n     padding: 0;\n     margin: 0;\n }\n \n %ulNone{\n     list-style: none;\n     @extend %paMar;\n }\n \n %flexCenter{\n     @include flexbox(center, center, nowrap)\n }\n \n %bgCenter{\n     background-position: center !important;\n     background-size: cover !important;\n }",
+		"/*=============================================== Colors ===============================================*/\n\n",
+		"/*========================================================== Fonts ==========================================================*/\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n\t@extend %paMar;\n}",
+		"/*============================================================= Helpers =============================================================*/\n\n.text-left {\n\ttext-align: left !important;\n}\n\n.text-center {\n\ttext-align: center !important;\n}\n\n.text-right {\n\ttext-align: right !important;\n}\n\n.clear-float {\n\tfloat: none !important;\n}\n\n.hidden {\n\tdisplay: none !important;\n}\n\n.no-marg {\n     margin: {\n          top: 0 !important;\n          bottom: 0 !important;\n          right: 0 !important;\n          left: 0 !important;\n     }\n}\n\n.no-marg-top {\n\tmargin-top: 0 !important;\n}\n\n.no-marg-bottom {\n\tmargin-bottom: 0 !important;\n}\n\n.no-marg-left {\n\tmargin-left: 0 !important;\n}\n\n.no-marg-right {\n\tmargin-right: 0 !important;\n}\n\n.no-padd {\n     padding: {\n          top: 0 !important;\n          bottom: 0 !important;\n          right: 0 !important;\n          left: 0 !important;\n     }\n}\n\n.no-padd-top {\n\tpadding-top: 0 !important;\n}\n\n.no-padd-bottom {\n\tpadding-bottom: 0 !important;\n}\n\n.no-padd-left {\n\tpadding-left: 0 !important;\n}\n\n.no-padd-right {\n\tpadding-right: 0 !important;\n}\n\n.no-select {\n\t-webkit-user-select: none !important;\n\t-moz-user-select: none !important;\n\t-ms-user-select: none !important;\n\tuser-select: none !important;\n}",
+		"/*========================================================== Layout ==========================================================*/",
+		"/*========================================================== Header ==========================================================*/",
+		"/*========================================================== Footer ==========================================================*/",
+		"/*========================================================== Home ==========================================================*/",
+		"/*========================================================== Projects ==========================================================*/",
+		"/*========================================================== About ==========================================================*/",
+		"/*========================================================== Contact ==========================================================*/"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": "AIEA,AFiEA,EEjEE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,CACF,CAAC,CHYD,IAAI,CACJ,IAAI,AC8CE,CACD,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACZ,AGpEF,AAAA,UAAU,AAAC,CACV,UAAU,CAAE,eAAe,CAC3B,AAED,AAAA,YAAY,AAAC,CACZ,UAAU,CAAE,iBAAiB,CAC7B,AAED,AAAA,WAAW,AAAC,CACX,UAAU,CAAE,gBAAgB,CAC5B,AAED,AAAA,YAAY,AAAC,CACZ,KAAK,CAAE,eAAe,CACtB,AAED,AAAA,OAAO,AAAC,CACP,OAAO,CAAE,eAAe,CACxB,AAED,AAAA,QAAQ,AAAC,CAEC,UAAG,CAAE,YAAY,CACjB,aAAM,CAAE,YAAY,CACpB,YAAK,CAAE,YAAY,CACnB,WAAI,CAAE,YAAY,CAE3B,AAED,AAAA,YAAY,AAAC,CACZ,UAAU,CAAE,YAAY,CACxB,AAED,AAAA,eAAe,AAAC,CACf,aAAa,CAAE,YAAY,CAC3B,AAED,AAAA,aAAa,AAAC,CACb,WAAW,CAAE,YAAY,CACzB,AAED,AAAA,cAAc,AAAC,CACd,YAAY,CAAE,YAAY,CAC1B,AAED,AAAA,QAAQ,AAAC,CAEC,WAAG,CAAE,YAAY,CACjB,cAAM,CAAE,YAAY,CACpB,aAAK,CAAE,YAAY,CACnB,YAAI,CAAE,YAAY,CAE3B,AAED,AAAA,YAAY,AAAC,CACZ,WAAW,CAAE,YAAY,CACzB,AAED,AAAA,eAAe,AAAC,CACf,cAAc,CAAE,YAAY,CAC5B,AAED,AAAA,aAAa,AAAC,CACb,YAAY,CAAE,YAAY,CAC1B,AAED,AAAA,cAAc,AAAC,CACd,aAAa,CAAE,YAAY,CAC3B,AAED,AAAA,UAAU,AAAC,CACV,mBAAmB,CAAE,eAAe,CACpC,gBAAgB,CAAE,eAAe,CACjC,eAAe,CAAE,eAAe,CAChC,WAAW,CAAE,eAAe,CAC5B,AJhED,AAAA,CAAC,CACD,CAAC,AAAA,OAAO,CACR,CAAC,AAAA,MAAM,AAAC,CCwCP,eAAe,CDvCK,UAAU,CCwC9B,kBAAkB,CDxCE,UAAU,CCyC9B,UAAU,CDzCU,UAAU,CAC9B,OAAO,CAAE,IAAI,CACb"
 }

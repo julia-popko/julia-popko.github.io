@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="cover cover-half" style="background: url(/assets/images/{{page.cover}})">
+     <h1>{{page.title}}</h1>
+</div>
+
+<main>
+     <div class="col-1-2">
+          <h3>Experience</h3>
+          <div class="timeline">
+               {% for experience in page.experiences %}
+               <div class="timeline-item">
+                    <p class="position">{{experience.position}}</p>
+                    <p class="company">{{experience.company}}, {{experience.city}} | {{experience.date}}</p>
+                    <p class="description">{{experience.description}}</p>
+                    {% if experience.skills %}
+                    <p class="skills-experience">Skills: {{experience.skills}}</p>
+                    {% endif %}
+               </div>
+               {% endfor %}
+          </div>
+     </div>
+     <div class="col-1-2">
+          <h3>Education</h3>
+          <div class="timeline">
+               {% for education in page.educations %}
+               <div class="timeline-item">
+                    <p class="date">{{education.date}}</p>
+                    <p class="title">{{education.title}} at {{education.school}}, {{education.city}}</p>
+                    <p class="description">{{education.description}}</p>
+               </div>
+               {% endfor %}
+          </div>
+
+          <h3>Skills</h3>
+          <ul class="skills-list">
+               {% for skill in page.skills %}
+               <li>{{skill.title}}</li>
+               {% endfor %}
+          </ul>
+
+          <h3>Languages</h3>
+          <ul class="skills-list">
+               {% for language in page.languages %}
+               <li>{{language.title}}</li>
+               {% endfor %}
+          </ul>
+
+          {% for item in site.data.social %}
+          {% if item.name == "resume" %}
+          <a href="/assets/images/{{ item.link }}" target="_blank" class="link-social" id="link-resume">PDF Versio<span></span></a>
+          {% endif %}
+          {% endfor %}
+     </div>
+</main>

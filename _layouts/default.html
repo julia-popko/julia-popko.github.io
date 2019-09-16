@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>
+			{{page.title}}{% for item in site.data.globals %} | {% if item.title == "site_name" %}{{ item.content }}{% endif %}{% endfor %}
+		</title>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta content="{{page.desc}}" name="description" />
+		<meta property="og:type" content="designer_portfolio" />
+		<meta property="og:title" content="{{ page.title }} | Julia Popko" />
+		<meta property="og:locale" content="en_GB" />
+		{% for item in site.data.globals %}
+		{% if item.title == "author" %}
+		<meta content="{{ item.content }}" name="author" />
+		{% elsif item.title == "site_url" %}
+		<meta property="og:url" content="{{item.content}}/{{ page.url }}" />
+		{% elsif item.title == "og_cover" %}
+		<meta property="og:image" content="/assets/images/{{item.content}}" />
+		{% elsif item.title == "site_name" %}
+		<meta property="og:site_name" content="{{item.content}}" />
+		{% elsif item.title == "favicon" %}
+		<link href="/assets/images/{{item.content}}" rel="shortcut icon" />
+		{% endif %}
+		{% endfor %}
+		<link href="/assets/css/style.css" rel="stylesheet" />
+
+		<!-- Fonts -->
+		<link href="/assets/css/font-awesome-all.min.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Oxygen:300,400,700" rel="stylesheet" />
+
+		<!-- JS -->
+		<script src="/assets/js/typed.min.js"></script>
+		<script src="/assets/js/js-head.js"></script>
+	</head>
+
+	<body>
+		{% include header.html %}
+		{{content}}
+		{% include footer.html %}
+		<script src="/assets/js/script.js"></script>
+	</body>
+</html>

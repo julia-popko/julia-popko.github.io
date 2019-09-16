@@ -1,0 +1,6 @@
+- name: behance
+  link: "#"
+  icon: fab fa-behance
+- name: resume
+  link: "#"
+  icon: far fa-file-alt

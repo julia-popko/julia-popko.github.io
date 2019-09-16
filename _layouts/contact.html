@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="cover cover-half" style="background: url(/assets/images/{{page.cover}})">
+     <h1>{{page.title}}</h1>
+</div>
+
+<main>
+     <div class="col-1-2">
+          {{content}}
+          {% for item in site.data.social %}
+          {% if item.name == "email" %}
+          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-email">Emai<span></span></a>
+          {% endif %}
+          {% endfor %}
+     </div>
+
+     <div class="col-1-2">
+          {% for item in site.data.social %}
+          {% if item.name == "email" %}
+          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-email">Emai<span></span></a>
+          {% endif %}
+          {% if item.name == "linkedin" %}
+          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-linkedin">Linkedi<span></span></a>
+          {% endif %}
+          {% if item.name == "medium" %}
+          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-medium">Mediu<span></span></a>
+          {% endif %}
+          {% if item.name == "behance" %}
+          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-behance">Behance<span></span></a>
+          {% endif %}
+          {% endfor %}
+     </div>
+</main>

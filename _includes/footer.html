@@ -1,0 +1,15 @@
+<footer>
+     <ul class="social">
+          {% for item in site.data.social %}
+               {% if item.link %}
+                    {% if item.name == 'email' %}
+                         <li><a href="{{item.link}}"><i class="{{item.icon}}"></i></a></li>
+                    {% else %}
+                         <li><a href="{{item.link}}" target="_blank"><i class="{{item.icon}}"></i></a></li>
+                    {% endif %}
+               {% endif %}
+          {% endfor %}
+     </ul>
+
+     <p>Designed by Julia, coded by <a href="https://www.julien-sebag.fr" target="_blank">Julien</a></p>
+</footer>

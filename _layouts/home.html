@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="cover cover-full" style="background: url(/assets/images/{{page.cover}})">
+     <div class="container-cover">
+          <h1>Julia Popko</h1>
+          <div class="type-wrap">
+               <div id="typed-strings">
+                    {% for typed in page.typeds %}
+                    <h2>{{ typed.title }}</h2>
+                    {% endfor %}
+               </div>
+               <span id="typed" style="white-space:pre;"></span>
+          </div>
+     </div>
+</div>
+
+<section id="hello">
+     <div class="col-1-2 col-hello">
+          {{content}}
+     </div>
+
+     <div class="col-1-2 col-bg" style="background: url(/assets/images/{{page.cover_hello}})"></div>
+</section>
+
+<section id="projects-list">
+     <ul>
+          {% for project in site.projects %}
+          <li style="background: url(/assets/images/{{project.cover}})">
+               <a href="{{project.url}}">
+                    {{project.title}}
+               </a>
+          </li>
+          {% endfor %}
+     </ul>
+</section>
