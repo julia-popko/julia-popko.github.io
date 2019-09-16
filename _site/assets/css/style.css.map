@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"style.scss",
+		"_sass/style.scss"
+	],
+	"sourcesContent": [
+		"@import \"style\";",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
