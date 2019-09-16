@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<div class="cover cover-full" style="background: url(/assets/images/{{page.cover}})">
+<div class="cover cover-full">
+     <div class="cover-bg" style="background: url(/assets/images/{{page.cover}})"></div>
      <div class="container-cover">
           <h1>{{page.title}}</h1>
           <h2>{{page.school}}</h2>
@@ -21,14 +22,14 @@ layout: default
 <ul class="pic-projects">
      {% for image in page.images %}
      {% if image.link %}
-     <li class="col-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft" style="background-image: url(/assets/images/{{image.path}})">
+     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft" style="background-image: url(/assets/images/{{image.path}})">
           <a href="{{image.link}}" target="_blank">
                <p>{{image.text}}</p>
           </a>
      </li>
 
      {% elsif image.video %}
-     <li class="col-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft" style="background-image: url(/assets/images/{{image.path}})" onclick="openModal(this)">
+     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft" style="background-image: url(/assets/images/{{image.path}})" onclick="openModal(this)">
           <p>{{image.text}}</p>
           <div class="modal modal-{{image.orientation}}">
                <i class="icon icon-cross-solid" onclick="openModal(this)"></i>
@@ -37,7 +38,7 @@ layout: default
      </li>
 
      {% else %}
-     <li class="col-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft" style="background-image: url(/assets/images/{{image.path}})" onclick="openModal(this)">
+     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft" style="background-image: url(/assets/images/{{image.path}})" onclick="openModal(this)">
           <p>{{image.text}}</p>
           <div class="modal modal-{{image.orientation}}">
                <i class="icon icon-cross-solid" onclick="openModal(this)"></i>

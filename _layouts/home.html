@@ -2,16 +2,19 @@
 layout: default
 ---
 
-<div class="cover cover-full" style="background: url(/assets/images/{{page.cover}})">
+<div class="cover cover-full">
+     <div class="cover-bg" style="background: url(/assets/images/{{page.cover}})"></div>
      <div class="container-cover">
-          <h1>Julia Popko</h1>
-          <div class="type-wrap">
-               <div id="typed-strings">
-                    {% for typed in page.typeds %}
-                    <h2>{{ typed.title }}</h2>
-                    {% endfor %}
+          <div class="title">
+               <h1>Julia Popko</h1>
+               <div class="type-wrap">
+                    <div id="typed-strings">
+                         {% for typed in page.typeds %}
+                         <h2>{{ typed.title }}</h2>
+                         {% endfor %}
+                    </div>
+                    <span id="typed" style="white-space:pre;"></span>
                </div>
-               <span id="typed" style="white-space:pre;"></span>
           </div>
      </div>
 </div>

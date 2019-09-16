@@ -7,7 +7,6 @@
 @import "colors";
 @import "fonts";
 @import "helpers";
-@import "layout";
 
 /*========================================================== General ==========================================================*/
 
@@ -21,10 +20,22 @@
 html,
 body {
 	@extend %paMar;
+	position: relative;
+	overflow-x: hidden;
+	width: 100%;
+	line-height: 25px;
+	color: $dark-gray;
+	@extend %oxygen-regular;
+}
+
+img {
+	width: 100%;
+	float: left;
 }
 
 /*========================================================== Components ==========================================================*/
 
+@import "layout";
 @import "header";
 @import "footer";
 

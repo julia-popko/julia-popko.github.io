@@ -1,6 +1,5 @@
 ---
 layout: projects
-draft: true
 title: Test project
 desc: Project page for Fajny CSS
 school: Ironhack
