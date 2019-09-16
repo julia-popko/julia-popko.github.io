@@ -1,10 +1,10 @@
 ---
 layout: projects
-title: Test project
+title: Second project
 desc: Project page for 
 url: /projects/title-project.html
 school: Ironhack
-cover: cover-fajny-css.jpg
+cover: cover-emy.jpg
 next_project: emy-agency
 images:
  - path: components-fajny-css.png

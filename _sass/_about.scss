@@ -1,1 +1,64 @@
 /*========================================================== About ==========================================================*/
+
+.timeline {
+	width: 100%;
+	float: left;
+	padding: 0;
+
+	.timeline-item {
+		width: 100%;
+		float: left;
+		margin-bottom: 20px;
+
+		p {
+			width: 100%;
+			float: left;
+			margin-bottom: 5px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&.position {
+				font-size: 18px;
+				font-weight: 700;
+			}
+
+			&.company {
+				font-size: 12px;
+			}
+
+			&.skills-experience {
+				font-style: italic;
+			}
+		}
+	}
+}
+
+.skills-list {
+	@extend %ulNone;
+	margin-bottom: 20px;
+	width: 100%;
+	float: left;
+
+	li {
+		float: left;
+		width: 50%;
+
+		&:nth-child(odd) {
+			padding-right: 2%;
+
+			@media only screen and (max-width: 600px) {
+				padding-right: 0;
+			}
+		}
+
+		&:nth-child(even) {
+			padding-left: 2%;
+
+			@media only screen and (max-width: 600px) {
+				padding-left: 0;
+			}
+		}
+	}
+}

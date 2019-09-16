@@ -15,9 +15,9 @@ layout: default
           <div class="timeline">
                {% for experience in page.experiences %}
                <div class="timeline-item">
-                    <p class="position">{{experience.position}}</p>
+                    <p class="position">{{experience.title}}</p>
                     <p class="company">{{experience.company}}, {{experience.city}} | {{experience.date}}</p>
-                    <p class="description">{{experience.description}}</p>
+                    <p class="description">{{experience.job_description}}</p>
                     {% if experience.skills %}
                     <p class="skills-experience">Skills: {{experience.skills}}</p>
                     {% endif %}
@@ -30,8 +30,8 @@ layout: default
           <div class="timeline">
                {% for education in page.educations %}
                <div class="timeline-item">
-                    <p class="date">{{education.date}}</p>
-                    <p class="title">{{education.title}} at {{education.school}}, {{education.city}}</p>
+                    <p class="position">{{education.date}}</p>
+                    <p class="title">{{education.title}}{% if education.school %} at {{education.school}}{% endif %}{% if education.city %}, {{education.city}}{% endif %}</p>
                     <p class="description">{{education.description}}</p>
                </div>
                {% endfor %}

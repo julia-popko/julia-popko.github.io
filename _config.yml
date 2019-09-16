@@ -1,6 +1,9 @@
 collections:
   projects:
     output: true
+    order:
+      - test-project.md
+      - second-project.md
     
 sass:
     style: compressed

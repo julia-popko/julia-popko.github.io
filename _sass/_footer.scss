@@ -9,6 +9,7 @@ footer {
      padding: 10px 5%;
      @include flexbox(center, space-between, nowrap);
      color: $white;
+     font-weight: 300;
 
      .social {
           @extend %ulNone;
@@ -19,6 +20,10 @@ footer {
 
                &:last-child {
                     margin-right: 0;
+               }
+
+               a {
+                    font-weight: normal;
                }
           }
      }

@@ -14,25 +14,28 @@ layout: default
           {{content}}
           {% for item in site.data.social %}
           {% if item.name == "email" %}
-          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-email">Emai<span></span></a>
+          <a href="mailto:{{item.link}}" target="_blank" class="link-social social-contact" id="link-email">Emai<span></span></a>
           {% endif %}
           {% endfor %}
      </div>
 
      <div class="col-1-2">
-          {% for item in site.data.social %}
-          {% if item.name == "email" %}
-          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-email">Emai<span></span></a>
-          {% endif %}
-          {% if item.name == "linkedin" %}
-          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-linkedin">Linkedi<span></span></a>
-          {% endif %}
-          {% if item.name == "medium" %}
-          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-medium">Mediu<span></span></a>
-          {% endif %}
-          {% if item.name == "behance" %}
-          <a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-behance">Behance<span></span></a>
-          {% endif %}
-          {% endfor %}
+          <h3>Find me on the web</h3>
+          <ul class="list-social">
+               {% for item in site.data.social %}
+               {% if item.name == "email" %}
+               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-email">Emai<span></span></a></li>
+               {% endif %}
+               {% if item.name == "linkedin" %}
+               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-linkedin">Linkedi<span></span></a></li>
+               {% endif %}
+               {% if item.name == "medium" %}
+               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-medium">Mediu<span></span></a></li>
+               {% endif %}
+               {% if item.name == "behance" %}
+               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-behance">Behanc<span></span></a></li>
+               {% endif %}
+               {% endfor %}
+          </ul>
      </div>
 </main>

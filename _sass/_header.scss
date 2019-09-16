@@ -8,7 +8,7 @@ nav {
 	left: 0;
 	z-index: 100;
 	@include flexbox(center, flex-end, nowrap);
-	padding: 10px 5%;
+	padding: 20px 5%;
 
 	ul {
 		@extend %ulNone;
@@ -25,14 +25,14 @@ nav {
 			}
 
 			a {
-				color: $dark-gray;
+				color: $primary;
                     text-decoration: none;
                     position: relative;
                     
 				span {
                          z-index: 50;
                          width: 0;
-                         background: $dark-gray;
+                         background: $primary;
                          float: left;
                          position: absolute;
                          bottom: -5px;
@@ -49,16 +49,6 @@ nav {
                               right: 0;
                          }
                     }
-                    
-                    // &:hover {
-                    //      cursor: pointer;
-                    //      color: red;
-
-                    //      &:before,
-				//      &:after {
-                    //           width: 50%;
-                    //      }
-                    // }
 			}
 		}
 	}
