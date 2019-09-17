@@ -29,7 +29,8 @@ layout: default
 
 <section id="projects-list">
      <ul>
-          {% for project in site.projects %}
+          {% assign projects = site.projects | sort: "order" %}
+          {% for project in projects %}
           <li style="background: url(/assets/images/{{project.cover}})">
                <a href="{{project.url}}">
                     {{project.title}}
