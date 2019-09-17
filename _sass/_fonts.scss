@@ -36,6 +36,8 @@ h5,
 h6,
 p {
 	@extend %paMar;
+	width: 100%;
+	float: left;
 }
 
 h1 {

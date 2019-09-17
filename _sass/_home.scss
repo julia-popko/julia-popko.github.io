@@ -22,7 +22,6 @@
      
      ul {
           position: relative;
-          z-index: 2;
           @extend %ulNone;
           
           li {

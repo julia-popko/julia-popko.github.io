@@ -28,9 +28,17 @@ body {
 	@extend %oxygen-regular;
 }
 
-img {
+// img {
+// 	width: 100%;
+// 	float: left;
+// }
+
+hr {
 	width: 100%;
 	float: left;
+	border: none {
+		bottom: 1px solid $primary;
+	};
 }
 
 /*========================================================== Components ==========================================================*/

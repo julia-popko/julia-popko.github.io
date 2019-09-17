@@ -6,9 +6,9 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 100;
 	@include flexbox(center, flex-end, nowrap);
-	padding: 20px 5%;
+     padding: 20px 5%;
+     z-index: 2;
 
 	ul {
 		@extend %ulNone;
@@ -30,7 +30,6 @@ nav {
                     position: relative;
                     
 				span {
-                         z-index: 50;
                          width: 0;
                          background: $primary;
                          float: left;
