@@ -7,3 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		loopCount: Infinity
 	});
 });
+
+//Scroll Reveal
+
+
+ScrollReveal({ reset: true });

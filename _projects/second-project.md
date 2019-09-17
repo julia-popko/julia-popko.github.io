@@ -18,4 +18,5 @@ images:
    video: 
 ---
 
+{:.reveal}
 Content

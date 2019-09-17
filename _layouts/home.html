@@ -20,18 +20,18 @@ layout: default
 </div>
 
 <section id="hello">
-     <div class="col-1-2 col-hello">
+     <div class="col-1-2 col-hello reveal">
           {{content}}
      </div>
 
-     <div class="col-1-2 col-bg" style="background: url(/assets/images/{{page.cover_hello}})"></div>
+     <div class="col-1-2 col-bg reveal" style="background: url(/assets/images/{{page.cover_hello}})"></div>
 </section>
 
 <section id="projects-list">
      <ul>
           {% assign projects = site.projects | sort: "order" %}
           {% for project in projects %}
-          <li style="background: url(/assets/images/{{project.cover}})">
+          <li style="background: url(/assets/images/{{project.cover}})" class="reveal">
                <a href="{{project.url}}">
                     {{project.title}}
                </a>

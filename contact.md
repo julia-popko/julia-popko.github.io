@@ -6,4 +6,5 @@ url: /contact.html
 cover: cover-home.svg
 ---
 
+{:.reveal}
 Text contact

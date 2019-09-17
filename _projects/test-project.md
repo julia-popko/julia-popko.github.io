@@ -90,30 +90,47 @@ images:
    video: 
 ---
 
-Durant le Bootcamp IronHack, j’ai eu à réaliser des travaux pour différents projets.
+{:.reveal}
+Small intro.
 
+{:.reveal}
 ### Sub Project
 
+{:.reveal}
 #### Context
 
+{:.reveal}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit tellus. Morbi faucibus odio sed enim dictum, id venenatis magna molestie. Ut diam ante, ultricies eget quam ac, tristique tincidunt arcu. Etiam pulvinar leo vitae ante rhoncus, at tempus tortor vehicula. Nulla molestie nec turpis nec vulputate. Suspendisse tortor elit, eleifend vitae massa id.
 
+{:.reveal}
 #### Challenge
 
+{:.reveal}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit tellus. Morbi faucibus odio sed enim dictum, id venenatis magna molestie. Ut diam ante, ultricies eget quam ac, tristique tincidunt arcu. Etiam pulvinar leo vitae ante rhoncus, at tempus tortor vehicula. Nulla molestie nec turpis nec vulputate. Suspendisse tortor elit, eleifend vitae massa id.
 
+{:.reveal}
 #### Solution
+
+{:.reveal}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit tellus. Morbi faucibus odio sed enim dictum, id venenatis magna molestie. Ut diam ante, ultricies eget quam ac, tristique tincidunt arcu. Etiam pulvinar leo vitae ante rhoncus, at tempus tortor vehicula. Nulla molestie nec turpis nec vulputate. Suspendisse tortor elit, eleifend vitae massa id.
 
+{:.reveal}
 #### Production
 
-* UX : Lorem, ipsum, dolor, sit, amet, consectetur
-* UI : Lorem, ipsum, dolor, sit, amet, consectetur
+* {:.reveal} UX : Lorem, ipsum, dolor, sit, amet, consectetur
+* {:.reveal} UI : Lorem, ipsum, dolor, sit, amet, consectetur
 
+{:.reveal}
 #### Functional skills
+
+{:.reveal}
 Lorem, ipsum, dolor, sit, amet, consectetur
 
+{:.reveal}
 #### Technical skills
+
+{:.reveal}
 Lorem, ipsum, dolor, sit, amet, consectetur
 
+{:.reveal}
 [See full project on Behance](#){:target="_blank"}

@@ -6,8 +6,8 @@ layout: default
      <div class="cover-bg" style="background: url(/assets/images/{{page.cover}})"></div>
      <div class="container-cover">
           <div class="title">
-               <h1>{{page.title}}</h1>
-               <h2>{{page.school}}</h2>
+               <h1 class="reveal">{{page.title}}</h1>
+               <h2 class="reveal">{{page.school}}</h2>
           </div>
      </div>
 </div>
@@ -15,14 +15,14 @@ layout: default
 <main>
      {{content}}
 
-     <hr>
-     <p class="text-click">Click on images to view.</p>
+     <hr class="reveal">
+     <p class="text-click reveal">Click on images to view.</p>
 </main>
 
 <ul class="pic-projects">
      {% for image in page.images %}
      {% if image.link %}
-     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft"
+     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %}"
           style="background-image: url(/assets/images/{{image.path}})">
           <a href="{{image.link}}" target="_blank">
                <p>{{image.text}}</p>
@@ -30,7 +30,7 @@ layout: default
      </li>
 
      {% elsif image.video %}
-     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft"
+     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %}"
           style="background-image: url(/assets/images/{{image.path}})" onclick="openModal(this)">
           <p>{{image.text}}</p>
           <div class="modal modal-{{image.orientation}}">
@@ -40,7 +40,7 @@ layout: default
      </li>
 
      {% else %}
-     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %} revealLeft"
+     <li class="col-1-{{image.col}}{% if image.mockup == true %} bg-mockup{% endif %}"
           style="background-image: url(/assets/images/{{image.path}})" onclick="openModal(this)">
           <p>{{image.text}}</p>
           <div class="modal modal-{{image.orientation}}">
@@ -52,4 +52,4 @@ layout: default
      {% endfor %}
 </ul>
 
-<a href="/projects/{{page.next_project}}.html" class="next">Next Project</a>
+<a href="/projects/{{page.next_project}}.html" class="next reveal">Next Project</a>

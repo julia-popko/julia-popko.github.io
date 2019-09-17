@@ -5,7 +5,7 @@ layout: default
 <div class="cover cover-half">
      <div class="cover-bg" style="background: url(/assets/images/{{page.cover}})"></div>
      <div class="container-cover">
-          <h1>{{page.title}}</h1>
+          <h1 class="reveal">{{page.title}}</h1>
      </div>
 </div>
 
@@ -14,7 +14,7 @@ layout: default
           {{content}}
           {% for item in site.data.social %}
           {% if item.name == "email" %}
-          <a href="mailto:{{item.link}}" target="_blank" class="link-social social-contact" id="link-email">Emai<span></span></a>
+          <a href="mailto:{{item.link}}" target="_blank" class="link-social social-contact reveal" id="link-email">Emai<span></span></a>
           {% endif %}
           {% endfor %}
      </div>
@@ -24,16 +24,16 @@ layout: default
           <ul class="list-social">
                {% for item in site.data.social %}
                {% if item.name == "email" %}
-               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-email">Emai<span></span></a></li>
+               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social reveal" id="link-email">Emai<span></span></a></li>
                {% endif %}
                {% if item.name == "linkedin" %}
-               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-linkedin">Linkedi<span></span></a></li>
+               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social reveal" id="link-linkedin">Linkedi<span></span></a></li>
                {% endif %}
                {% if item.name == "medium" %}
-               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-medium">Mediu<span></span></a></li>
+               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social reveal" id="link-medium">Mediu<span></span></a></li>
                {% endif %}
                {% if item.name == "behance" %}
-               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social" id="link-behance">Behanc<span></span></a></li>
+               <li><a href="mailto:{{item.link}}" target="_blank" class="link-social reveal" id="link-behance">Behanc<span></span></a></li>
                {% endif %}
                {% endfor %}
           </ul>

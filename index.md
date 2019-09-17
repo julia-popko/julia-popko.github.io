@@ -10,4 +10,5 @@ typeds:
 cover_hello: cover1.png
 ---
 
+{:.reveal}
 Text Hello!
