@@ -4,3 +4,7 @@ collections:
     
 sass:
     style: compressed
+
+jekyll_admin:
+  hidden_links:
+    - posts
