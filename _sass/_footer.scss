@@ -10,9 +10,18 @@ footer {
      color: $white;
      font-weight: 300;
 
+     @media only screen and (max-width: 600px) {
+          flex-wrap: wrap;
+     }
+
      .social {
           @extend %ulNone;
           @include flexbox(center, flex-start, nowrap);
+
+          @media only screen and (max-width: 600px) {
+               width: 100%;
+               justify-content: center;
+          }
 
           li {
                margin-right: 20px;
@@ -29,6 +38,11 @@ footer {
 
      p {
           width: auto;
+
+          @media only screen and (max-width: 600px) {
+               width: 100%;
+               text-align: center;
+          }
      }
 
      a {
