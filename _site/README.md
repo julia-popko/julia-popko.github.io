@@ -36,12 +36,6 @@ sudo gem install -n /usr/local/bin/ jekyll
 
 Jekyll is installed!
 
-
-
-
-
-
-
 ## Install Jekyll in your project
 
 Create a new folder. Open it in terminal and run `bundle init`. Then open the Gemfile created and write `gem "jekyll"`. Create your first page. All set!
@@ -162,3 +156,7 @@ Open `/_data/nav.yml` and write:
 - title: Title displaying in the menu
   link: /path/to/page.html
 ```
+
+## Upload the changes
+
+Build the project for production (with `jekyll build` if you didn't serve it before). Then open Github Desktop, type the description of your changes in the field "Summary", 
