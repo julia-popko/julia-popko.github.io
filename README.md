@@ -159,4 +159,6 @@ Open `/_data/nav.yml` and write:
 
 ## Upload the changes
 
-Build the project for production (with `jekyll build` if you didn't serve it before). Then open Github Desktop, type the description of your changes in the field "Summary", 
+Build the project for production (with `jekyll build` if you didn't serve it before). Then open Github Desktop, type the description of your changes in the field "Summary" (on the left), click on "Commit to master", and then click on "Push origin" on the top bar.
+
+Done!
