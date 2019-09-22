@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-cover: cover-home.svg
+cover: 
 desc:
 url: /
 typeds:

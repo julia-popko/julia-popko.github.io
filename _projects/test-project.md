@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Test project
-order: 1
+order: 3
 desc: Project page for 
 url: /projects/title-project.html
 school: Ironhack

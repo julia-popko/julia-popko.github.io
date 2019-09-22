@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>
-			Home | Julia Popko
+			Project 1 | Julia Popko
 		</title>
 		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<meta content="" name="description" />
+		<meta content="Bla bla" name="description" />
 		<meta property="og:type" content="designer_portfolio" />
-		<meta property="og:title" content="Home | Julia Popko" />
+		<meta property="og:title" content="Project 1 | Julia Popko" />
 		<meta property="og:locale" content="en_GB" />
 		
 		
@@ -28,7 +28,7 @@
 		<script src="/assets/js/scrollreveal.min.js"></script>
 	</head>
 
-	<body >
+	<body id="projects">
 		<nav>
      <ul>
           
@@ -41,57 +41,39 @@
      </ul>
 </nav>
 		<div class="cover cover-full">
-     <div class="cover-bg" style="background: url(/assets/images/)"></div>
+     <div class="cover-bg" style="background: url(/assets/images/cover-fajny-css.jpg)"></div>
      <div class="container-cover">
           <div class="title">
-               <h1>Julia Popko</h1>
-               <div class="type-wrap">
-                    <div id="typed-strings">
-                         
-                         <h2>UX / UI</h2>
-                         
-                         <h2>Designer</h2>
-                         
-                    </div>
-                    <span id="typed" style="white-space:pre;"></span>
-               </div>
+               <h1 class="reveal">Project 1</h1>
+               <h2 class="reveal">Personal project</h2>
           </div>
      </div>
 </div>
 
-<section id="hello">
-     <div class="col-1-2 col-hello reveal">
-          <p class="reveal">Text Hello!</p>
+<main>
+     <h4 id="title">Title</h4>
 
-     </div>
 
-     <div class="col-1-2 col-bg reveal" style="background: url(/assets/images/cover1.png)"></div>
-</section>
+     <hr class="reveal">
+     <p class="text-click reveal">Click on images to view.</p>
+</main>
 
-<section id="projects-list">
-     <ul>
-          
-          
-          <li style="background: url(/assets/images/cover-fajny-css.jpg)" class="reveal">
-               <a href="/projects/project1.html">
-                    Project 1
-               </a>
-          </li>
-          
-          <li style="background: url(/assets/images/cover-emy.jpg)" class="reveal">
-               <a href="/projects/second-project.html">
-                    Second project
-               </a>
-          </li>
-          
-          <li style="background: url(/assets/images/cover-fajny-css.jpg)" class="reveal">
-               <a href="/projects/test-project.html">
-                    Test project
-               </a>
-          </li>
-          
-     </ul>
-</section>
+<ul class="pic-projects">
+     
+     
+     <li class="col-1-2"
+          style="background-image: url(/assets/images/affiche1.png)" onclick="openModal(this)">
+          <p>Omelette du fromage</p>
+          <div class="modal modal-portrait">
+               <i class="fas fa-times" onclick="openModal(this)"></i>
+               <img src="/assets/images/affiche1.png" alt="Omelette du fromage">
+          </div>
+     </li>
+     
+     
+</ul>
+
+<a href="/projects/second-project.html" class="next reveal">Next Project</a>
 		<footer>
      <ul class="social">
           
