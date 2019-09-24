@@ -1,10 +1,16 @@
+title: Julia Popko
+email: 
+description: 
+baseurl: "/"
+url: "https://julia-popko.github.io"
+github_username: 
+
+markdown: kramdown
+
 collections:
   projects:
     output: true
-    
+
 sass:
     style: compressed
-
-jekyll_admin:
-  hidden_links:
-    - posts
+    sass_dir: _sass
