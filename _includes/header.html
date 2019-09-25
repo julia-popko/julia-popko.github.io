@@ -1,7 +1,11 @@
-<nav>
-     <ul>
-          {% for item in site.data.navigation %}
-          <li><a href="{{item.link}}">{{item.title}}<span></span></a></li>
-          {% endfor %}
-     </ul>
-</nav>
+<header>
+     <img src="/assets/images/logo-jp.svg" alt="">
+
+     <nav>
+          <ul>
+               {% for item in site.data.nav %}
+               <li><a href="{{item.link}}">{{item.title}}</a></li>
+               {% endfor %}
+          </ul>
+     </nav>
+</header>

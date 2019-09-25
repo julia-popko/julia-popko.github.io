@@ -1,4 +1,8 @@
-.jekyll-cache/
+_site/
 .sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 .DS_Store
-assets/.DS_Store
+static_mockups/node_modules/
+static_mockups/package-lock.json
+static_mockups/.sass-cache/

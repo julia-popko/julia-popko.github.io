@@ -1,82 +1,34 @@
-/*========================================================== Imports ==========================================================*/
+/*=============================================== Fonts ===============================================*/
 
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Oxygen:300,400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700&display=swap');
 
-/*========================================================== Mixins ==========================================================*/
-
-%archivo {
-	font-family: "Archivo Black", sans-serif;
+%montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
-%oxygen-light {
-	font-family: "Oxygen", sans-serif;
-	font-weight: 300;
-	letter-spacing: 0.5px;
+%montserrat-italic {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
-%oxygen-regular {
-	font-family: "Oxygen", sans-serif;
-	font-weight: 400;
-	letter-spacing: 0.5px;
+%montserrat-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
-%oxygen-bold {
-	font-family: "Oxygen", sans-serif;
-	font-weight: 700;
-	letter-spacing: 0.5px;
+%montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
-/*========================================================== Fonts ==========================================================*/
+/*=============================================== Text styles ===============================================*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	@extend %paMar;
-	width: 100%;
-	float: left;
-}
-
-h1 {
-	@extend %archivo;
-	font-size: 60px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 20px;
-	
-	@media only screen and (max-width: 600px) {
-		line-height: normal;
-	}
-}
-
-h2,
-.type-wrap {
-	margin: 0;
-	line-height: normal !important;
-	font-family: "Archivo Black", sans-serif;
-	font-size: 40px;
-	float: left;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	width: 100%;
-	text-align: center;
-}
-
-.type-wrap {
-	letter-spacing: normal;
-}
-
-h3 {
-	letter-spacing: 5px;
-	text-transform: uppercase;
-	font-size: 25px;
-	margin-bottom: 1em;
-	width: 100%;
-	float: left;
-}
+h1, h2, h3, h4, h5, h6, p{
+     @extend %paMar;
+ }
+ 
+ h1 {
+     
+ }

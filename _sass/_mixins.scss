@@ -1,4 +1,4 @@
-/*========================================================== Mixins ==========================================================*/
+/*=============================================== Mixins ===============================================*/
 
 @mixin flexbox($align, $justify, $wrap) {
 	display: -webkit-box;
@@ -17,14 +17,6 @@
 	flex-wrap: $wrap;
 }
 
-@mixin transition($property, $duration, $function) {
-	-webkit-transition: $property $duration $function;
-	-moz-transition: $property $duration $function;
-	-ms-transition: $property $duration $function;
-	-o-transition: $property $duration $function;
-	transition: $property $duration $function;
-}
-
 @mixin transform($method) {
 	-moz-transform: $method;
 	-webkit-transform: $method;
@@ -33,53 +25,70 @@
 	transform: $method;
 }
 
-@mixin transform-origin($method) {
-	-moz-transform-origin: $method;
-	-webkit-transform-origin: $method;
-	-o-transform-origin: $method;
-	-ms-transform-origin: $method;
-	transform-origin: $method;
+@mixin transition($property, $duration, $function) {
+	-webkit-transition: $property $duration $function;
+	-moz-transition: $property $duration $function;
+	-ms-transition: $property $duration $function;
+	-o-transition: $property $duration $function;
+	transition: $property $duration $function;
 }
 
-@mixin appearance($value) {
-	-webkit-appearance: $value;
-	-moz-appearance: $value;
-	appearance: $value;
+/*
+=============
+Use the icons one only if you use Font Awesome in your project
+=============
+*/
+
+// @mixin icon($unicode) {
+// 	font-family: "FontAwesome";
+// 	content: $unicode;
+// }
+
+/*====================================== Animation mixins ======================================*/
+
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@-ms-keyframes #{$animation-name} {
+		@content;
+	}
+	@-o-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
 }
 
-@mixin border-radius($value) {
-	-webkit-border-radius: $value;
-	border-radius: $value;
+@mixin animation($keyframe) {
+	-webkit-animation: #{$keyframe};
+	-moz-animation: #{$keyframe};
+	-ms-animation: #{$keyframe};
+	-o-animation: #{$keyframe};
+	animation: #{$keyframe};
 }
 
-@mixin box-sizing($property) {
-	-moz-box-sizing: $property;
-	-webkit-box-sizing: $property;
-	box-sizing: $property;
-}
-
-@mixin icon($unicode) {
-	font-family: "FontAwesome";
-	content: $unicode;
-}
-
-/*========================================================== Constants ==========================================================*/
+/*=============================================== Constants ===============================================*/
 
 %paMar{
-     padding: 0;
-     margin: 0;
- }
- 
- %ulNone{
-     list-style: none;
-     @extend %paMar;
- }
- 
- %flexCenter{
-     @include flexbox(center, center, nowrap)
- }
- 
- %bgCenter{
-     background-position: center !important;
-     background-size: cover !important;
- }
+    padding: 0;
+    margin: 0;
+}
+
+%ulNone{
+    list-style: none;
+    @extend %paMar;
+}
+
+%flexCenter{
+    @include flexbox(center, center, nowrap);
+}
+
+%bgCenter{
+    background-position: center !important;
+    background-size: cover !important;
+}

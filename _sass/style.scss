@@ -1,55 +1,33 @@
 @charset "UTF-8";
 /* SCSS Document */
 
-/*========================================================== Imports ==========================================================*/
+/*=============================================== Imports ===============================================*/
 
 @import "mixins";
 @import "colors";
 @import "fonts";
-@import "helpers";
+@import "layout";
 
-/*========================================================== General ==========================================================*/
+/*=============================================== General ===============================================*/
 
 *,
 *:before,
 *:after {
-	@include box-sizing(border-box);
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	outline: none;
 }
 
 html,
 body {
 	@extend %paMar;
-	position: relative;
-	overflow-x: hidden;
-	width: 100%;
-	line-height: 25px;
-	color: $primary;
-	@extend %oxygen-regular;
+	@extend %montserrat;
 }
 
-// img {
-// 	width: 100%;
-// 	float: left;
-// }
+/*=============================================== Components ===============================================*/
 
-hr {
-	width: 100%;
-	float: left;
-	border: none {
-		bottom: 1px solid $primary;
-	};
-}
-
-/*========================================================== Components ==========================================================*/
-
-@import "layout";
-@import "header";
+@import "navigation";
 @import "footer";
 
-/*========================================================== Pages ==========================================================*/
-
-@import "home";
-@import "projects";
-@import "about";
-@import "contact";
+/*=============================================== Pages ===============================================*/
