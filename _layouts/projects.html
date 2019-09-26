@@ -17,7 +17,7 @@ layout: default
 <div class="introduction">
 	<div class="container">
 		<h3>Introduction</h3>
-		{{ page.introduction }}
+		{{ page.introduction | markdownify }}
 	</div>
 </div>
 
@@ -25,7 +25,7 @@ layout: default
 	<div class="container">
 		<h3>Challenge</h3>
 		<div class="challenge-container">
-			{{ page.challenge }}
+			{{ page.challenge | markdownify }}
 		</div>
 	</div>
 </div>
@@ -66,7 +66,7 @@ layout: default
 		<h3>Design Process</h3>
 		<div class="row">
 			<div class="col-8-12">
-				{{ page.text_process }}
+				{{ page.text_process | markdownify }}
 			</div>
 
 			<div class="col-4-12">
@@ -77,23 +77,23 @@ layout: default
 </div>
 
 <div class="styles-tile">
-    <div class="container">
-        <h3>Styles Tile</h3>
-        <img src="{{page.img_styles}}" alt="{{page.alt_img_styles}}">
-    </div>
+	<div class="container">
+		<h3>Styles Tile</h3>
+		<img src="{{ page.img_styles }}" alt="{{ page.alt_img_styles }}" />
+	</div>
 </div>
 
 {% if page.screen_desktops %}
 <div class="screens-desktop">
 	<div class="container">
-        <h3>Desktop screens</h3>
-        <ul class="list-screens">
-            {% for screen_desktop in page.screen_desktops %}
-            <li style="background: url({{screen_desktop.image}})"></li>
-            {% endfor %}
-        </ul>
+		<h3>Desktop screens</h3>
+		<ul class="list-screens">
+			{% for screen_desktop in page.screen_desktops %}
+			<li style="background: url({{screen_desktop.image}})"></li>
+			{% endfor %}
+		</ul>
 
-        {% if link_proto_desktop %}<a href="{{page.link_proto_desktop}}" class="link_proto" target="_blank">See the prototype</a>{% endif %}
+		{% if link_proto_desktop %}<a href="{{ page.link_proto_desktop }}" class="link_proto" target="_blank">See the prototype</a>{% endif %}
 	</div>
 </div>
 {% endif %}
@@ -105,7 +105,7 @@ layout: default
             {% for screen_mobile in page.screen_mobiles %}
             <li style="background: url({{screen_mobile.image}})"></li>
             {% endfor %}
-            {% if link_proto_mobile %}<a href="{{page.link_proto_mobile}}" class="link_proto" target="_blank"{% if screen_desktops == "" or screen_desktops == nil %} style="color: #FFF"{% endif %}>See the prototype</a>{% endif %}
+            {% if link_proto_mobile %}<a href="{{ page.link_proto_mobile }}" class="link_proto" target="_blank"{% if screen_desktops == "" or screen_desktops == nil %} style="color: #FFF"{% endif %}>See the prototype</a>{% endif %}
         </ul>
     </div>
 </div>
@@ -113,11 +113,11 @@ layout: default
 <div class="overview"{% if screen_desktops == "" or screen_desktops == nil %} style="background: #000; color: #FFF"{% endif %}>
     <div class="container">
         <h3>Overview</h3>
-        {{page.content_overview}}
+        {{ page.content_overview | markdownify }}
     </div>
 </div>
 
-<a href="{{page.next_project}}" class="btn-next">
+<a href="{{ page.next_project }}.html" class="btn-next">
     <p>Next project</p>
     <img src="/assets/images/logo.svg" alt="">
 </a>
