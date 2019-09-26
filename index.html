@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Home
 desc:
 logo:
@@ -8,16 +8,3 @@ typeds:
 - title: UX/UI Designer
 - title: Donuts Lover
 ---
-
-<div class="title">
-     <img src="{{page.logo}}" alt="{{page.logo_alt}}">
-     <h1>{{site.title}}</h1>
-     <div class="type-wrap">
-          <div id="typed-strings">
-               {% for typed in page.typeds %}
-               <h2>{{ typed.title }}</h2>
-               {% endfor %}
-          </div>
-          <span id="typed" style="white-space:pre;"></span>
-     </div>
-</div>

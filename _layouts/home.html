@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="cover-home">
+	<div class="title">
+		<img src="/assets/images/logo.svg" alt="{{ page.logo_alt }}" />
+		<h1>{{ site.title }}</h1>
+		<div class="type-wrap">
+			<div id="typed-strings">
+				{% for typed in page.typeds %}
+				<h2>{{ typed.title }}</h2>
+				{% endfor %}
+			</div>
+			<span id="typed" style="white-space:pre;"></span>
+		</div>
+    </div>
+    
+    <p class="intro">{{page.intro}}</p>
+    <img src="/assets/images/logo.svg" alt="" class="arrow-logo">
+</div>
+
+<ul class="list-projects">
+    {% for project in site.projects %}
+    <li style="background: url({{project.cover}})">
+        <a href="{{project.url}}">
+            <div class="purple-bg"></div>
+            <p>{{project.title}}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>

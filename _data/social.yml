@@ -1,0 +1,12 @@
+- name: behance
+  link: "#"
+  icon: fab fa-behance
+- name: linkedin
+  link: "#"
+  icon: fab fa-linkedin-in
+- name: medium
+  link: "#"
+  icon: fab fa-medium-m
+- name: email
+  link: mailto:juliettapop@gmail.com
+  icon: fas fa-envelope

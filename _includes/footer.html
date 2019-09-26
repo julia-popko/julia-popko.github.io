@@ -1,0 +1,11 @@
+<footer>
+    <ul>
+        {% for item in site.data.social %}
+        <li>
+            <a href="{{item.link}}" {% if item.name != 'email' %}target="_blank"{% endif %}>
+                <i class="{{item.icon}}"></i>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</footer>
