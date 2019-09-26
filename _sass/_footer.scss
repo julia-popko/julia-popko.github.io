@@ -1,0 +1,35 @@
+/*=============================================== Footer ===============================================*/
+
+footer {
+    width: 100%;
+    float: left;
+    font-size: $font-footer;
+    padding: 0 {
+        top: 50px;
+        bottom: 50px;
+    };
+
+    ul {
+        width: 100%;
+        float: left;
+        @extend %ulNone;
+        @extend %flexCenter;
+
+        li {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: $black;
+                @include transition(all, .2s, ease);
+
+                &:hover {
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
