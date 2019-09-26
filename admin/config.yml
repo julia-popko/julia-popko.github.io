@@ -10,7 +10,7 @@ public_folder: "static/uploads"
 
 collections:
   - label: "Pages"
-    name: "pages"
+    name: "page"
     files:
       - label: "Home"
         name: "index"
