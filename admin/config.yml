@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "static/uploads"
+
+public_folder: "static/uploads"
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "index"
+        file: "/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Typed"
+            name: "typeds"
+            widget: "list"
+            fields:
+              - { label: "Typed title", name: "title", widget: "string" }
+          - { label: "Meta description", name: "desc", widget: "string" }
+      - label: "About"
+        name: "about"
+        file: "/about.md"
+        fields: 
+          - { label: "Layout", name: "layout", widget: "hidden", default: "about" }
+          - { label: "Title", name: "title", widget: "string" }
+		
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+        preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "projects" }
+      - { label: "Title", name: "title", widget: "string" }

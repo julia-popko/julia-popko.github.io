@@ -23,7 +23,8 @@ layout: default
 </div>
 
 <ul class="list-projects">
-    {% for project in site.projects %}
+    {% assign projects = site.projects | sort: "order" %}
+    {% for project in projects %}
     <li style="background: url({{project.cover}})">
         <a href="{{project.url}}">
             <div class="purple-bg"></div>

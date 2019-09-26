@@ -2,6 +2,7 @@
 layout: projects
 title: Project 2
 desc: Meta desc
+order: 2
 cover: /assets/images/cover-project-2.jpg
 typeds:
  - title: Website design
