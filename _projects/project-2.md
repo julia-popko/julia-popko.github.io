@@ -27,16 +27,14 @@ img_process: /assets/images/website-fajny-css.png
 alt_img_process: Alt process
 img_styles: /assets/images/styles.png
 alt_img_styles: Styles
-screen_desktops:
- - image: /assets/images/website-fajny-css.png
- - image: /assets/images/website-fajny-css.png
- - image: /assets/images/website-fajny-css.png
-link_proto_desktop: "#"
+background_mobile: white
 screen_mobiles: 
  - image: /assets/images/website-fajny-css.png
  - image: /assets/images/website-fajny-css.png
  - image: /assets/images/website-fajny-css.png
 link_proto_mobile: "#"
+background_overview: "#000"
+color_overview: "#FFF"
 content_overview: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
 mollitia animi, id est laborum et dolorum fuga. 
 

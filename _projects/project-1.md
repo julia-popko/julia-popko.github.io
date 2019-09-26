@@ -32,6 +32,7 @@ screen_desktops:
  - image: /assets/images/screen-macbook.png
  - image: /assets/images/screen-macbook.png
 link_proto_desktop: "#"
+background_mobile: black
 screen_mobiles: 
  - image: /assets/images/screen-iphone.png
  - image: /assets/images/screen-iphone.png

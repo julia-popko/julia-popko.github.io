@@ -142,10 +142,12 @@
           ul {
                @extend %ulNone;
                @include flexbox(center, center, nowrap);
-               margin-bottom: 20px;
+               margin-bottom: 25px;
+               width: 100%;
+               float: left;
 
                li {
-                    width: 25vw;
+                    width: 30vw;
                     height: 20vw;
                     float: left;
                     background-position: center !important;
@@ -180,10 +182,11 @@
                @include flexbox(center, center, nowrap);
                width: 100%;
                margin-bottom: 20px;
+               float: left;
 
                li {
-                    width: 25vw;
-                    height: 20vw;
+                    width: 30vw;
+                    height: 25vw;
                     float: left;
                     background-position: center !important;
                     background-size: contain !important;
@@ -229,7 +232,7 @@
           float: left;
           text-align: center;
           @include flexbox(center, center, nowrap);
-          
+
           margin: {
                top: 50px;
                bottom: 50px

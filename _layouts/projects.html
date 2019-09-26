@@ -100,20 +100,25 @@ layout: default
 </div>
 {% endif %}
 
-<div class="screens-mobile"{% if screen_desktops == "" or screen_desktops == nil %} style="background: #000; color: #FFF"{% endif %}>
-    <div class="container">
-        <h3>Mobile screens</h3>
-        <ul class="list-screens">
-            {% for screen_mobile in page.screen_mobiles %}
-            <li style="background: url({{screen_mobile.image}})"></li>
-            {% endfor %}
-	   </ul>
-	   
-	   {% if link_proto_mobile != "" or link_proto_mobile != nil %}<a href="{{ page.link_proto_mobile }}" class="link-proto" target="_blank"{% if screen_desktops == "" or screen_desktops == nil %} style="color: #FFF"{% endif %}>See the prototype<span {% if screen_desktops == "" or screen_desktops == nil %} style="background: #FFF"{% endif %}></span></a>{% endif %}
-    </div>
+<div class="screens-mobile" {% if page.background_mobile == "white" %}style="background: #FFF; color: #000;" {% else %}style="background: #000; color: #FFF;" {% endif %}>
+	<div class="container">
+		<h3>Mobile screens</h3>
+		<ul class="list-screens">
+			{% for screen_mobile in page.screen_mobiles %}
+			<li style="background: url({{screen_mobile.image}})"></li>
+			{% endfor %}
+		</ul>
+
+		{% if link_proto_mobile != "" or link_proto_mobile != nil %}
+		<a href="{{ page.link_proto_mobile }}" class="link-proto" target="_blank" {% if page.background_mobile == "white" %}style="color: #000;" {% else %}style="color: #FFF;" {% endif %}>
+			See the prototype
+			<span {% if page.background_mobile == "white" %}style="background: #000;" {% else %}style="background: #FFF;" {% endif %}></span>
+		</a>
+		{% endif %}
+	</div>
 </div>
 
-<div class="overview"{% if screen_desktops == "" or screen_desktops == nil %} style="background: #FFF; color: #000"{% endif %}>
+<div class="overview" {% if page.background_mobile == "white" %}style="background: #000; color: #FFF;" {% else %}style="background: #FFF; color: #000;" {% endif %}>
     <div class="container">
         <h3>Overview</h3>
         {{ page.content_overview | markdownify }}
