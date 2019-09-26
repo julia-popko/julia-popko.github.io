@@ -3,7 +3,4 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .DS_Store
-static_mockups/node_modules/
-static_mockups/package-lock.json
-static_mockups/.sass-cache/
 Gemfile.lock
