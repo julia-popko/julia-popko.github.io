@@ -18,15 +18,27 @@
           <!-- CSS -->
           <link rel="stylesheet" href="/assets/css/style.css">
           <link rel="stylesheet" href="/assets/css/font-awesome-all.min.css">
-          
+
           <!-- JS -->
           <script src="/assets/js/typed.min.js"></script>
-		<script src="/assets/js/js-head.js"></script>
+          <script src="/assets/js/js-head.js"></script>
      </head>
 
-     <body {% if page.title =="About" %}id="about"{% elsif page.layout == "projects" %}id="projects"{% endif %}>
-         {% include header.html %}
-         {{content}}
-         {% include footer.html %}
+     <body {% if page.title =="About" %}id="about" {% elsif page.layout == "projects" %}id="projects" {% endif %}>
+          {% include header.html %}
+          {{content}}
+          {% include footer.html %}
+
+          <script>
+               if (window.netlifyIdentity) {
+                    window.netlifyIdentity.on("init", user => {
+                         if (!user) {
+                              window.netlifyIdentity.on("login", () => {
+                                   document.location.href = "/admin/";
+                              });
+                         }
+                    });
+               }
+          </script>
      </body>
 </html>
