@@ -32,13 +32,13 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Text introduction", name: "text_about", widget: "markdown" }
           - { label: "Picture", name: "picture", widget: "image" }
-          - { label: "Alt text picture", name: "alt_picture", widget: "markdown" }
+          - { label: "Alt text picture", name: "alt_picture", widget: "string" }
           - label: "Experience"
             name: "experiences"
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Company", name: "company", widget: "string" }
+              - { label: "Company", name: "company", widget: "string", required: false }
               - { label: "City", name: "city", widget: "string" }
               - { label: "Date", name: "date", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
