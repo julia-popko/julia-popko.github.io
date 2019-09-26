@@ -2,15 +2,17 @@
 layout: default
 ---
 
-<div class="project-cover">
-	<h1>{{ page.title }}</h1>
-	<div class="type-wrap">
-		<div id="typed-strings">
-			{% for typed in page.typeds %}
-			<h2>{{ typed.title }}</h2>
-			{% endfor %}
+<div class="cover-project">
+	<div class="container-cover">
+		<h1>{{ page.title }}</h1>
+		<div class="type-wrap">
+			<div id="typed-strings">
+				{% for typed in page.typeds %}
+				<h2>{{ typed.title }}</h2>
+				{% endfor %}
+			</div>
+			<span id="typed" style="white-space:pre;"></span>
 		</div>
-		<span id="typed" style="white-space:pre;"></span>
 	</div>
 </div>
 
@@ -34,7 +36,7 @@ layout: default
 	<div class="container">
 		<h3>Persona</h3>
 		<div class="row">
-			{% for personas in page.persona %}
+			{% for persona in page.personas %}
 			<div class="col-2-12">
 				<div class="pic-persona" style="background: url({{persona.picture}})"></div>
 			</div>
@@ -93,28 +95,32 @@ layout: default
 			{% endfor %}
 		</ul>
 
-		{% if link_proto_desktop %}<a href="{{ page.link_proto_desktop }}" class="link_proto" target="_blank">See the prototype</a>{% endif %}
+		{% if link_proto_desktop != "" or link_proto_desktop != nil %}<a href="{{ page.link_proto_desktop }}" class="link-proto" target="_blank">See the prototype<span style="background: #000"></span></a>{% endif %}
 	</div>
 </div>
 {% endif %}
 
-<div class="screens_mobile"{% if screen_desktops == "" or screen_desktops == nil %} style="background: #FFF; color: #000"{% endif %}>
+<div class="screens-mobile"{% if screen_desktops == "" or screen_desktops == nil %} style="background: #000; color: #FFF"{% endif %}>
     <div class="container">
         <h3>Mobile screens</h3>
         <ul class="list-screens">
             {% for screen_mobile in page.screen_mobiles %}
             <li style="background: url({{screen_mobile.image}})"></li>
             {% endfor %}
-            {% if link_proto_mobile %}<a href="{{ page.link_proto_mobile }}" class="link_proto" target="_blank"{% if screen_desktops == "" or screen_desktops == nil %} style="color: #FFF"{% endif %}>See the prototype</a>{% endif %}
-        </ul>
+	   </ul>
+	   
+	   {% if link_proto_mobile != "" or link_proto_mobile != nil %}<a href="{{ page.link_proto_mobile }}" class="link-proto" target="_blank"{% if screen_desktops == "" or screen_desktops == nil %} style="color: #FFF"{% endif %}>See the prototype<span {% if screen_desktops == "" or screen_desktops == nil %} style="background: #FFF"{% endif %}></span></a>{% endif %}
     </div>
 </div>
 
-<div class="overview"{% if screen_desktops == "" or screen_desktops == nil %} style="background: #000; color: #FFF"{% endif %}>
+<div class="overview"{% if screen_desktops == "" or screen_desktops == nil %} style="background: #FFF; color: #000"{% endif %}>
     <div class="container">
         <h3>Overview</h3>
         {{ page.content_overview | markdownify }}
     </div>
 </div>
 
-<a href="{{ page.next_project }}.html" class="btn-next">Next project</a>
+<div class="button-next-project">
+	<a href="{{ page.next_project }}.html">Next project<span></span></a>
+	<img src="/assets/images/logo.svg" alt="Logo Julia Popko">
+</div>

@@ -28,14 +28,14 @@ alt_img_process: Alt process
 img_styles: /assets/images/styles.png
 alt_img_styles: Styles
 screen_desktops:
- - image: /assets/images/website-fajny-css.png
- - image: /assets/images/website-fajny-css.png
- - image: /assets/images/website-fajny-css.png
+ - image: /assets/images/screen-macbook.png
+ - image: /assets/images/screen-macbook.png
+ - image: /assets/images/screen-macbook.png
 link_proto_desktop: "#"
 screen_mobiles: 
- - image: /assets/images/website-fajny-css.png
- - image: /assets/images/website-fajny-css.png
- - image: /assets/images/website-fajny-css.png
+ - image: /assets/images/screen-iphone.png
+ - image: /assets/images/screen-iphone.png
+ - image: /assets/images/screen-iphone.png
 link_proto_mobile: "#"
 content_overview: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
 mollitia animi, id est laborum et dolorum fuga. 

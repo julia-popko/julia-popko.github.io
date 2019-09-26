@@ -24,7 +24,7 @@
 		<script src="/assets/js/js-head.js"></script>
      </head>
 
-     <body {% if page.title =="About" %}id="about"{% endif %}>
+     <body {% if page.title =="About" %}id="about"{% elsif page.layout == "projects" %}id="projects"{% endif %}>
          {% include header.html %}
          {{content}}
          {% include footer.html %}
