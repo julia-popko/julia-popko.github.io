@@ -24,9 +24,26 @@
 			h1 {
 				width: 100%;
 				float: left;
-				margin-bottom: 20px;
+				margin-bottom: 50px;
 			}
-		}
+          }
+          
+          @media only screen and (max-width: 600px) {
+               .picture {
+                    width: 100%;
+                    margin-right: 0;
+                    @include flexbox(center, center, nowrap);
+
+                    img {
+                         width: 30%;
+                         margin-bottom: 50px;
+                    }
+               }
+
+               .title {
+                    width: 100%;
+               }
+          } 
 	}
 
 	.list-education,
@@ -72,6 +89,10 @@
      .list-languages, .list-skills {
           margin-bottom: 200px;
 
+          @media only screen and (max-width: 600px) {
+               margin-bottom: 15px;
+          }
+
           li {
                width: 100%;
                float: left;
@@ -88,6 +109,24 @@
 
           &:nth-child(even){
                padding-left: 5%;
+          }
+     }
+
+     @media only screen and (max-width: 600px) {
+          .list-skills {
+               margin-bottom: 200px;
+
+               li {
+                    width: 100%;
+
+                    &:nth-child(odd) {
+                         padding-right: 0;
+                    }
+          
+                    &:nth-child(even){
+                         padding-left: 0;
+                    }
+               }
           }
      }
 
