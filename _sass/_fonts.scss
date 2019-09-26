@@ -25,6 +25,7 @@
 
 $font-titles-big: 50px;
 $font-titles: 24px;
+$font-titles-small: 21px;
 $font-body: 18px;
 $font-list-projects: 48px;
 $font-footer: 32px;
@@ -89,4 +90,9 @@ p {
 .list-education .title, .list-education .school, .list-skills, .list-languages, .list-experience .description {
 	@extend %montserrat;
 	font-size: $font-body;
+}
+
+.list-experience .title {
+	@extend %montserrat-medium;
+	font-size: $font-titles-small;		
 }

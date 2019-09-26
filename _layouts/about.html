@@ -4,7 +4,7 @@ layout: default
 
 <main>
 	<div class="cover-about">
-		<div class="picture-julia">
+		<div class="picture">
 			<img src="{{page.picture}}" alt="{{page.alt_picture}}" />
 		</div>
 
@@ -57,8 +57,8 @@ layout: default
                 {% for experience in page.experiences %}
                 <li>
                     <p class="title">{{experience.title}}</p>
-                    <p class="subtitle">{% if company %}{{experience.company}}, {% endif %}{{experience.city}} | {{experience.date}}</p>
-                    <p class="description">{{experience.description}}</p>
+				<p class="subtitle">{% if experience.company %}{{experience.company}}, {% endif %}{{experience.city}} | {{experience.date}}</p>
+				<p class="description">{{experience.description}}</p>
                     <p class="skills">Skills: {{experience.skills}}</p>
                 </li>
                 {% endfor %}

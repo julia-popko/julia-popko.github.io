@@ -4,7 +4,11 @@
      width: 100%;
      min-height: 100vh;
      float: left;
-     padding: 5vh 5%;
+     padding: 5%;
+     padding: {
+          top: 5vh;
+          bottom: 0;
+     }
      @include flexbox(center, center, wrap);
 
      .title {
@@ -34,7 +38,7 @@
           img {
                height: 30px;
                @include transform(rotate(180deg));
-               margin-top: 20px;
+               margin-top: 35px;
           }
      }
 }
