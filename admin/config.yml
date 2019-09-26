@@ -14,13 +14,15 @@ collections:
         name: "index"
         file: "/index.md"
         fields:
-          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "home" }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Alt text Logo", name: "logo_alt", widget: "string" }
           - label: "Typed"
             name: "typeds"
             widget: "list"
             fields:
               - { label: "Typed title", name: "title", widget: "string" }
+          - { label: "Text introduction", name: "intro", widget: "markdown" }
           - { label: "Meta description", name: "desc", widget: "string" }
       - label: "About"
         name: "about"
@@ -28,6 +30,42 @@ collections:
         fields: 
           - { label: "Layout", name: "layout", widget: "hidden", default: "about" }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text introduction", name: "text_about", widget: "markdown" }
+          - { label: "Picture", name: "picture", widget: "image" }
+          - { label: "Alt text picture", name: "alt_picture", widget: "markdown" }
+          - label: "Experience"
+            name: "experiences"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Skills", name: "skills", widget: "text" }
+          - label: "Education"
+            name: "educations"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "School", name: "school", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Level", name: "level", widget: "string" }
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+          - { label: "CV", name: "cv_link", widget: "file" }
+          - { label: "Meta description", name: "desc", widget: "string" }
+          
 		
   - name: "projects"
     label: "Projects"
