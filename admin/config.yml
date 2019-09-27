@@ -118,7 +118,7 @@ collections:
         fields:
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Alt Image", name: "alt_image", widget: "string" }
-      - { label: "Link to prototype desktop", name: "link_proto_desktop", widget: "string" }
+      - { label: "Link to prototype desktop", name: "link_proto_desktop", widget: "string", required: false }
       
       - label: "Background Mobile Section"
         name: "background_mobile"
