@@ -12,7 +12,7 @@ collections:
     files:
       - label: "Home"
         name: "index"
-        file: "index.md"
+        file: "/index.md"
         fields:
           - { label: "Layout", name: "layout", widget: "hidden", default: "home" }
           - { label: "Title", name: "title", widget: "string" }
