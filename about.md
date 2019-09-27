@@ -51,6 +51,8 @@ skills:
   - name: Marvel
   - name: Sketch
   - name: Figma
+  - name: InDesign
+  - name: Principle
 cv_link: /static/uploads/cv_popko_julia.pdf
 desc: Meta desc
 ---
