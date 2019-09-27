@@ -44,6 +44,8 @@ languages:
     name: Polish
   - level: fluent
     name: English
+  - level: Intermediate
+    name: French
 skills:
   - name: Invision
   - name: Marvel
