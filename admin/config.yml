@@ -107,6 +107,7 @@ collections:
       - label: "Screens Desktop"
         name: "screen_desktops"
         widget: "list"
+        required: false
         fields:
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Alt Image", name: "alt_image", widget: "string" }
