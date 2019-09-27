@@ -97,6 +97,7 @@ collections:
       
       - label: "Persona"
         name: "persona"
+        widget: "object"
         fields:
           - { label: "Picture Persona", name: "picture_persona", widget: "image" }
           - { label: "Name Persona", name: "name_persona", widget: "string" }
