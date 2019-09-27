@@ -66,7 +66,7 @@ collections:
           - { label: "CV", name: "cv_link", widget: "file" }
           - { label: "Meta description", name: "desc", widget: "string" }
           
-		
+
   - name: "projects"
     label: "Projects"
     folder: "_projects/"
@@ -77,3 +77,51 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "projects" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Meta description", name: "desc", widget: "string" }
+      - { label: "Order on Homepage", name: "order", widget: "number" }
+      - { label: "Cover for Homepage", name: "cover", widget: "image" }
+      - label: "Typed"
+        name: "typeds"
+        widget: "list"
+        fields:
+          - { label: "Typed title", name: "title", widget: "string" }
+      - { label: "Text Introduction", name: "introduction", widget: "markdown" }
+      - { label: "Text Challenge", name: "challenge", widget: "markdown" }
+      - label: "Persona"
+        name: "personas"
+        widget: "object"
+        fields: 
+          - { label: "Picture", name: "picture", widget: "image" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Age", name: "age", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Quotation", name: "quotation", widget: "text" }
+          - { label: "Motivations", name: "motivations", widget: "text" }
+          - { label: "Frustrations", name: "frustrations", widget: "text" }
+          - { label: "Goals", name: "goals", widget: "text" }
+          - { label: "Environment", name: "environment", widget: "text" }
+      - { label: "Text Process", name: "text_process", widget: "markdown" }
+      - { label: "Image Process", name: "img_process", widget: "image" }
+      - { label: "Alt Image Process", name: "alt_img_process", widget: "string" }
+      - { label: "Image Styles", name: "img_styles", widget: "image" }
+      - label: "Screens Desktop"
+        name: "screen_desktops"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Alt Image", name: "alt_image", widget: "string" }
+      - { label: "Link to prototype desktop", name: "link_proto_desktop", widget: "string" }
+      - label: "Background Mobile Section"
+        name: "background_mobile"
+        widget: "select"
+        options: ["black", "white"]
+        default: black
+      - label: "Screens Mobile"
+        name: "screen_mobiles"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Alt Image", name: "alt_image", widget: "string" }
+      - { label: "Link to prototype mobile", name: "link_proto_mobile", widget: "string" }
+      - { label: "Text Overview", name: "content_overview", widget: "markdown" }
+      - { label: "Next project", name: "next_project", widget: "string" }
