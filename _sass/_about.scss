@@ -44,7 +44,23 @@
                     width: 100%;
                }
           } 
-	}
+     }
+
+     .col-paddding-left {
+          padding-right: 5%;
+
+          @media only screen and (max-width: 600px) {
+               padding-right: 0;
+          }
+     }
+
+     .col-paddding-right {
+          padding-left: 5%;
+
+          @media only screen and (max-width: 600px) {
+               padding-left: 0;
+          }
+     }
 
 	.list-education,
 	.list-languages,
