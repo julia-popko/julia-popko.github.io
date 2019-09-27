@@ -22,6 +22,7 @@
           <!-- JS -->
           <script src="/assets/js/typed.min.js"></script>
           <script src="/assets/js/js-head.js"></script>
+          <script src="/assets/js/scrollreveal.min.js"></script>
      </head>
 
      <body >
@@ -38,8 +39,8 @@
 </header>
           <div class="cover-home">
 	<div class="title">
-		<img src="/assets/images/logo.svg" alt="" />
-		<h1>Julia Popko</h1>
+		<img src="/assets/images/logo.svg" alt="" class="reveal" />
+		<h1 class="reveal">Julia Popko</h1>
 		<div class="type-wrap">
 			<div id="typed-strings">
 				
@@ -48,28 +49,30 @@
 				<h2>Donuts Lover</h2>
 				
 			</div>
-			<span id="typed" style="white-space:pre;"></span>
+			<span id="typed" style="white-space:pre;" class="reveal"></span>
 		</div>
     </div>
     
     <div class="intro">
-        <p>Hi, I’m Julia and I’m a passionate UX/UI Designer based in Berlin. Here you can check my projects:</p>
+        <p class="reveal">Hi, I’m Julia and I’m a passionate UX/UI Designer based in Berlin.</p>
 
-        <img src="/assets/images/logo.svg" alt="Arrow down" class="arrow-logo">
+<p class="reveal">Here you can check my projects:</p>
+
+        <img src="/assets/images/logo.svg" alt="Arrow down" class="arrow-logo reveal">
     </div>
 </div>
 
 <ul class="list-projects">
     
     
-    <li style="background: url(/assets/images/cover-project-1.jpg)">
+    <li style="background: url(/assets/images/cover-project-1.jpg)" class="reveal">
         <a href="/projects/project-1.html">
             <div class="purple-bg"></div>
             <p>Project 1</p>
         </a>
     </li>
     
-    <li style="background: url(/assets/images/cover-project-2.jpg)">
+    <li style="background: url(/assets/images/cover-project-2.jpg)" class="reveal">
         <a href="/projects/project-2.html">
             <div class="purple-bg"></div>
             <p>Project 2</p>
@@ -107,6 +110,7 @@
     </ul>
 </footer>
 
+          <script src="/assets/js/script.js"></script>
           <script>
                if (window.netlifyIdentity) {
                     window.netlifyIdentity.on("init", user => {

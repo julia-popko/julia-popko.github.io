@@ -30,14 +30,20 @@ img_styles: /assets/images/styles.png
 alt_img_styles: Styles
 screen_desktops:
  - image: /assets/images/screen-macbook.png
+   alt_image: Alt
  - image: /assets/images/screen-macbook.png
+   alt_image: Alt
  - image: /assets/images/screen-macbook.png
+   alt_image: Alt
 link_proto_desktop: "#"
 background_mobile: black
 screen_mobiles: 
  - image: /assets/images/screen-iphone.png
+   alt_image: Alt
  - image: /assets/images/screen-iphone.png
+   alt_image: Alt
  - image: /assets/images/screen-iphone.png
+   alt_image: Alt
 link_proto_mobile: "#"
 content_overview: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
 mollitia animi, id est laborum et dolorum fuga. 

@@ -26,140 +26,155 @@
 		}
 	}
 
-	.container {
+	section {
 		@include flexbox(center, center, wrap);
+		min-height: 50vh;
+		width: 100%;
+		float: left;
+		text-align: center;
+
+		img {
+			width: 100%;
+		}
+
+		.container {
+			min-height: auto !important;
+
+			h3 {
+				width: 100%;
+				float: left;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+		}
 
 		p {
 			line-height: 25px;
+			text-align: left;
 		}
-	}
 
-	.introduction {
-		background: $black;
-		width: 100%;
-		float: left;
-		color: $white;
+		&.bg-white {
+			background: $white;
+			color: $black;
 
-		h3 {
-			margin-bottom: 20px;
+			.link-proto {
+				color: $black;
+
+				span {
+					background: $black;
+				}
+			}
 		}
-	}
 
-	.challenge {
-		text-align: center;
+		&.bg-black {
+			background: $black;
+			color: $white;
 
-		h3 {
-			width: 100%;
-			float: left;
-			margin-bottom: 20px;
+			.link-proto {
+				color: $white;
+			}
+		}
+
+		.link-proto {
+			text-decoration: none;
+			position: relative;
+
+			span {
+				position: absolute;
+				width: 0;
+				float: left;
+				height: 2px;
+				background: $black;
+				bottom: -2px;
+				left: 50%;
+				right: 50%;
+				@include transition(all, 0.2s, ease);
+			}
+
+			&:hover span {
+				left: 0;
+				right: 0;
+				width: 100%;
+			}
 		}
 
 		.challenge-container {
 			border: 1px solid $black;
 			padding: 10px;
 			width: 50%;
+			float: left;
+			clear: both;
+			margin: {
+				left: 25%;
+				right: 25%;
+			}
 
 			@media only screen and (max-width: 600px) {
 				width: 100%;
+				margin: {
+					left: 0;
+					right: 0;
+				}
+			}
+
+			p {
+				text-align: center !important;
 			}
 		}
-	}
 
-	.persona {
-		background: $black;
-		color: $white;
-
-		h3 {
-			width: 100%;
-			float: left;
-			margin-bottom: 30px;
-			text-align: center;
-		}
-
-		.pic-persona {
-			width: 100%;
-			float: left;
-			height: 250px;
-			@extend %bgCenter;
-		}
-
-		ul {
-			@extend %ulNone;
-
-			li {
+		&.persona {
+			.pic-persona {
 				width: 100%;
 				float: left;
-				margin-bottom: 10px;
+				height: 250px;
+				@extend %bgCenter;
+			}
 
-				&:last-child {
-					margin-bottom: 0;
-				}
+			ul {
+				@extend %ulNone;
+				text-align: left;
 
-				&.quote {
-					@extend %montserrat-italic;
+				li {
+					width: 100%;
+					float: left;
+					margin-bottom: 10px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					&.quote {
+						@extend %montserrat-italic;
+					}
 				}
 			}
-		}
-
-		@media only screen and (max-width: 600px) {
-			.row .col-5-12 {
-				margin-bottom: 10px;
-
-				&:last-child {
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
-
-	.process {
-		h3 {
-			width: 100%;
-			float: left;
-			margin-bottom: 30px;
-			text-align: center;
-		}
-
-		.row {
-			@include flexbox(center, center, nowrap);
 
 			@media only screen and (max-width: 600px) {
-				flex-wrap: wrap;
+				.row .col-5-12 {
+					margin-bottom: 10px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 
-		img {
-			width: 100%;
+		&.process {
+			.row {
+				@include flexbox(center, center, nowrap);
+
+				@media only screen and (max-width: 600px) {
+					flex-wrap: wrap;
+				}
+			}
 		}
 	}
 
-	.styles-tile {
-		background: $black;
-		color: $white;
-
-		h3 {
-			width: 100%;
-			float: left;
-			margin-bottom: 30px;
-			text-align: center;
-		}
-
-		img {
-			width: 100%;
-		}
-	}
-
-	.screens-desktop {
-		h3 {
-			width: 100%;
-			float: left;
-			margin-bottom: 30px;
-			text-align: center;
-		}
-
+	.projects-container {
 		ul {
 			@extend %ulNone;
-			@include flexbox(center, center, nowrap);
+			@include flexbox(center, space-around, nowrap);
 			margin-bottom: 25px;
 			width: 100%;
 			float: left;
@@ -169,113 +184,25 @@
 			}
 
 			li {
-				width: 30vw;
-				height: 20vw;
-				float: left;
-				background-position: center !important;
-				background-size: contain !important;
-				background-repeat: no-repeat !important;
-				margin-right: 50px;
+				width: 20%;
 
 				@media only screen and (max-width: 600px) {
 					width: 100%;
-					margin-right: 0;
-					margin-bottom: 10px;
-					height: 70vw;
-				}
+					margin-bottom: 20px;
 
-				&:last-child {
-					margin-right: 0;
+					&:last-child {
+						margin-bottom: 0;
+					}
 				}
 			}
 		}
 
-		.link-proto {
-			color: $black;
-		}
-	}
-
-	.screens-mobile {
-		background: $black;
-		color: $white;
-
-		h3 {
-			width: 100%;
-			float: left;
-			margin-bottom: 30px;
-			text-align: center;
-		}
-
-		ul {
-			@extend %ulNone;
-			@include flexbox(center, center, nowrap);
-			width: 100%;
-			margin-bottom: 20px;
-			float: left;
+		&.screens-desktop ul li {
+			width: 30%;
 
 			@media only screen and (max-width: 600px) {
-				flex-wrap: wrap;
+				width: 100%;
 			}
-
-			li {
-				width: 30vw;
-				height: 25vw;
-				float: left;
-				background-position: center !important;
-				background-size: contain !important;
-				background-repeat: no-repeat !important;
-				margin-right: 50px;
-
-				&:last-child {
-					margin-right: 0;
-				}
-
-				@media only screen and (max-width: 600px) {
-					width: 100%;
-					margin-right: 0;
-					margin-bottom: 10px;
-					height: 80vw;
-				}
-			}
-		}
-
-		.link-proto {
-			color: $black;
-		}
-	}
-
-	.link-proto {
-		text-decoration: none;
-		position: relative;
-
-		span {
-			position: absolute;
-			width: 0;
-			float: left;
-			height: 2px;
-			background: $black;
-			bottom: -2px;
-			left: 50%;
-			right: 50%;
-			@include transition(all, .2s, ease);
-		}
-
-		&:hover span {
-			left: 0;
-			right: 0;
-			width: 100%;
-		}
-	}
-
-	.overview {
-		width: 100%;
-		float: left;
-
-		h3 {
-			width: 100%;
-			float: left;
-			margin-bottom: 30px;
-			text-align: center;
 		}
 	}
 
@@ -305,7 +232,7 @@
 				bottom: -2px;
 				left: 50%;
 				right: 50%;
-				@include transition(all, .2s, ease);
+				@include transition(all, 0.2s, ease);
 			}
 
 			&:hover span {

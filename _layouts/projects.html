@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="cover-project">
+<div class="cover-project reveal">
 	<div class="container-cover">
-		<h1>{{ page.title }}</h1>
-		<div class="type-wrap">
+		<h1 class="reveal">{{ page.title }}</h1>
+		<div class="type-wrap reveal">
 			<div id="typed-strings">
 				{% for typed in page.typeds %}
 				<h2>{{ typed.title }}</h2>
@@ -16,116 +16,116 @@ layout: default
 	</div>
 </div>
 
-<div class="introduction">
+<section class="introduction bg-black reveal">
 	<div class="container">
-		<h3>Introduction</h3>
+		<h3 class="reveal">Introduction</h3>
 		{{ page.introduction | markdownify }}
 	</div>
-</div>
+</section>
 
-<div class="challenge">
+<section class="challenge bg-white reveal">
 	<div class="container">
-		<h3>Challenge</h3>
+		<h3 class="reveal">Challenge</h3>
 		<div class="challenge-container">
 			{{ page.challenge | markdownify }}
 		</div>
 	</div>
-</div>
+</section>
 
-<div class="persona">
+<section class="persona bg-black reveal">
 	<div class="container">
-		<h3>Persona</h3>
+		<h3 class="reveal">Persona</h3>
 		<div class="row">
 			{% for persona in page.personas %}
 			<div class="col-2-12">
-				<div class="pic-persona" style="background: url({{persona.picture}})"></div>
+				<div class="pic-persona reveal" style="background: url({{persona.picture}})"></div>
 			</div>
 
 			<div class="col-5-12">
 				<ul>
-					<li>{{ persona.name }}</li>
-					<li>{{ persona.age }}</li>
-					<li>{{ persona.title }}</li>
-					<li class="quote">{{ persona.quotation }}</li>
+					<li class="reveal">{{ persona.name }}</li>
+					<li class="reveal">{{ persona.age }}</li>
+					<li class="reveal">{{ persona.title }}</li>
+					<li class="quote reveal">{{ persona.quotation }}</li>
 				</ul>
 			</div>
 
 			<div class="col-5-12">
 				<ul>
-					<li>{{ persona.motivations }}</li>
-					<li>{{ persona.frustrations }}</li>
-					<li>{{ persona.goals }}</li>
-					<li>{{ persona.environment }}</li>
+					<li class="reveal">{{ persona.motivations }}</li>
+					<li class="reveal">{{ persona.frustrations }}</li>
+					<li class="reveal">{{ persona.goals }}</li>
+					<li class="reveal">{{ persona.environment }}</li>
 				</ul>
 			</div>
 			{% endfor %}
 		</div>
 	</div>
-</div>
+</section>
 
-<div class="process">
+<section class="process bg-white reveal">
 	<div class="container">
-		<h3>Design Process</h3>
+		<h3 class="reveal">Design Process</h3>
 		<div class="row">
 			<div class="col-8-12">
 				{{ page.text_process | markdownify }}
 			</div>
 
 			<div class="col-4-12">
-				<img src="{{ page.img_process }}" alt="{{ page.alt_img_process }}" />
+				<img src="{{ page.img_process }}" alt="{{ page.alt_img_process }}" class="reveal" />
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
-<div class="styles-tile">
+<section class="styles-tile bg-black reveal">
 	<div class="container">
-		<h3>Styles Tile</h3>
-		<img src="{{ page.img_styles }}" alt="{{ page.alt_img_styles }}" />
+		<h3 class="reveal">Styles Tile</h3>
+		<img src="{{ page.img_styles }}" alt="{{ page.alt_img_styles }}" class="reveal" />
 	</div>
-</div>
+</section>
 
 {% if page.screen_desktops %}
-<div class="screens-desktop">
+<section class="screens-desktop projects-container bg-white reveal">
 	<div class="container">
-		<h3>Desktop screens</h3>
+		<h3 class="reveal">Desktop screens</h3>
 		<ul class="list-screens">
 			{% for screen_desktop in page.screen_desktops %}
-			<li style="background: url({{screen_desktop.image}})"></li>
+			<li class="reveal"><img src="{{screen_desktop.image}}" alt="{{screen_desktop.image_alt}}"></li>
 			{% endfor %}
 		</ul>
 
-		{% if link_proto_desktop != "" or link_proto_desktop != nil %}<a href="{{ page.link_proto_desktop }}" class="link-proto" target="_blank">See the prototype<span style="background: #000"></span></a>{% endif %}
+		{% if link_proto_desktop != "" or link_proto_desktop != nil %}<a href="{{ page.link_proto_desktop }}" class="link-proto reveal" target="_blank">See the prototype<span style="background: #000"></span></a>{% endif %}
 	</div>
-</div>
+</section>
 {% endif %}
 
-<div class="screens-mobile" {% if page.background_mobile == "white" %}style="background: #FFF; color: #000;" {% else %}style="background: #000; color: #FFF;" {% endif %}>
+<section class="screens-mobile projects-container bg-black reveal" {% if page.background_mobile == "white" %}style="background: #FFF; color: #000;" {% else %}style="background: #000; color: #FFF;" {% endif %}>
 	<div class="container">
-		<h3>Mobile screens</h3>
+		<h3 class="reveal">Mobile screens</h3>
 		<ul class="list-screens">
 			{% for screen_mobile in page.screen_mobiles %}
-			<li style="background: url({{screen_mobile.image}})"></li>
+			<li class="reveal"><img src="{{screen_mobile.image}}" alt="{{screen_mobile.image_alt}}"></li>
 			{% endfor %}
 		</ul>
 
 		{% if link_proto_mobile != "" or link_proto_mobile != nil %}
-		<a href="{{ page.link_proto_mobile }}" class="link-proto" target="_blank" {% if page.background_mobile == "white" %}style="color: #000;" {% else %}style="color: #FFF;" {% endif %}>
+		<a href="{{ page.link_proto_mobile }}" class="link-proto reveal" target="_blank" {% if page.background_mobile == "white" %}style="color: #000;" {% else %}style="color: #FFF;" {% endif %}>
 			See the prototype
 			<span {% if page.background_mobile == "white" %}style="background: #000;" {% else %}style="background: #FFF;" {% endif %}></span>
 		</a>
 		{% endif %}
 	</div>
-</div>
+</section>
 
-<div class="overview" {% if page.background_mobile == "white" %}style="background: #000; color: #FFF;" {% else %}style="background: #FFF; color: #000;" {% endif %}>
+<section class="overview bg-white reveal" {% if page.background_mobile == "white" %}style="background: #000; color: #FFF;" {% else %}style="background: #FFF; color: #000;" {% endif %}>
     <div class="container">
-        <h3>Overview</h3>
+        <h3 class="reveal">Overview</h3>
         {{ page.content_overview | markdownify }}
     </div>
-</div>
+</section>
 
-<div class="button-next-project">
+<div class="button-next-project reveal">
 	<a href="{{ page.next_project }}.html">Next project<span></span></a>
 	<img src="/assets/images/logo.svg" alt="Logo Julia Popko">
 </div>

@@ -30,9 +30,12 @@ img_styles: /assets/images/styles.png
 alt_img_styles: Styles
 background_mobile: white
 screen_mobiles: 
- - image: /assets/images/website-fajny-css.png
- - image: /assets/images/website-fajny-css.png
- - image: /assets/images/website-fajny-css.png
+ - image: /assets/images/screen-macbook.png
+   alt_image: Alt
+ - image: /assets/images/screen-macbook.png
+   alt_image: Alt
+ - image: /assets/images/screen-macbook.png
+   alt_image: Alt
 link_proto_mobile: "#"
 background_overview: "#000"
 color_overview: "#FFF"
