@@ -31,16 +31,16 @@ challenge: >-
 
   Design a responsive online platform for a magazine, newspaper or blog directed
   to meet the needs and goals of the presented User Persona.
-
-age_persona: '26'
-environment_persona: Would be better with a cute doggo
-frustrations_persona: He's way too perfect for her
-goals_persona: Being on his level of perfection
-motivations_persona: Having the perfect bf
-name_persona: Julia Popko
-picture_persona: /static/uploads/pic-persona.jpg
-quotation_persona: I love my boyfriend so much he's the best
-title_persona: UX / UI Designer
+persona:
+  age_persona: Age
+  environment_persona: Environment
+  frustrations_persona: Frustrations
+  goals_persona: Goals
+  motivations_persona: Motivations
+  name_persona: Name
+  picture_persona: /static/uploads/pic-persona.jpg
+  quotation_persona: Quote
+  title_persona: Title
 text_process: >-
   {:.reveal}
 
