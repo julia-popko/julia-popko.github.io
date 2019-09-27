@@ -36,29 +36,45 @@ layout: default
 	<div class="container">
 		<h3 class="reveal">Persona</h3>
 		<div class="row">
-			{% for persona in page.personas %}
 			<div class="col-2-12">
-				<div class="pic-persona reveal" style="background: url({{persona.picture}})"></div>
+				<div class="pic-persona reveal" style="background: url({{page.picture_persona}})"></div>
 			</div>
 
-			<div class="col-5-12">
+			<div class="col-2-12">
 				<ul>
-					<li class="reveal">{{ persona.name }}</li>
-					<li class="reveal">{{ persona.age }}</li>
-					<li class="reveal">{{ persona.title }}</li>
-					<li class="quote reveal">{{ persona.quotation }}</li>
+					<li class="reveal">Name:</li>
+					<li class="reveal">Age:</li>
+					<li class="reveal">Title:</li>
+					<li class="reveal">Quotation</li>
 				</ul>
 			</div>
 
-			<div class="col-5-12">
+			<div class="col-3-12">
 				<ul>
-					<li class="reveal">{{ persona.motivations }}</li>
-					<li class="reveal">{{ persona.frustrations }}</li>
-					<li class="reveal">{{ persona.goals }}</li>
-					<li class="reveal">{{ persona.environment }}</li>
+					<li class="reveal">{{ page.name_persona }}</li>
+					<li class="reveal">{{ page.age_persona }}</li>
+					<li class="reveal">{{ page.title_persona }}</li>
+					<li class="quote reveal">{{ page.quotation_persona }}</li>
 				</ul>
 			</div>
-			{% endfor %}
+
+			<div class="col-2-12">
+				<ul>
+					<li class="reveal">Motivations:</li>
+					<li class="reveal">Frustrations:</li>
+					<li class="reveal">Goals:</li>
+					<li class="reveal">Environment:</li>
+				</ul>
+			</div>
+
+			<div class="col-3-12">
+				<ul>
+					<li class="reveal">{{ page.motivations_persona }}</li>
+					<li class="reveal">{{ page.frustrations_persona }}</li>
+					<li class="reveal">{{ page.goals_persona }}</li>
+					<li class="reveal">{{ page.environment_persona }}</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
