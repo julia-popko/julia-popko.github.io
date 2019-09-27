@@ -95,20 +95,15 @@ collections:
       
       - { label: "Text Challenge", name: "challenge", widget: "markdown" }
       
-      - label: "Persona"
-        name: "persona"
-        widget: "list"
-        allow_add: false
-        fields:
-          - { label: "Picture Persona", name: "picture_persona", widget: "image" }
-          - { label: "Name Persona", name: "name_persona", widget: "string" }
-          - { label: "Age Persona", name: "age_persona", widget: "string" }
-          - { label: "Title Persona", name: "title_persona", widget: "string" }
-          - { label: "Quotation Persona", name: "quotation_persona", widget: "string" }
-          - { label: "Environment Persona", name: "environment_persona", widget: "string" }
-          - { label: "Frustrations Persona", name: "frustrations_persona", widget: "string" }
-          - { label: "Goals Persona", name: "goals_persona", widget: "string" }
-          - { label: "Motivations Persona", name: "motivations_persona", widget: "string" }
+      - { label: "Picture Persona", name: "picture_persona", widget: "image" }
+      - { label: "Name Persona", name: "name_persona", widget: "string" }
+      - { label: "Age Persona", name: "age_persona", widget: "string" }
+      - { label: "Title Persona", name: "title_persona", widget: "string" }
+      - { label: "Quotation Persona", name: "quotation_persona", widget: "string" }
+      - { label: "Environment Persona", name: "environment_persona", widget: "string" }
+      - { label: "Frustrations Persona", name: "frustrations_persona", widget: "string" }
+      - { label: "Goals Persona", name: "goals_persona", widget: "string" }
+      - { label: "Motivations Persona", name: "motivations_persona", widget: "string" }
       
       - { label: "Text Process", name: "text_process", widget: "markdown" }
       - { label: "Image Process", name: "img_process", widget: "image" }
