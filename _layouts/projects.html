@@ -4,8 +4,8 @@ layout: default
 
 <div class="cover-project reveal">
 	<div class="container-cover">
-		<h1 class="reveal">{{ page.title }}</h1>
-		<div class="type-wrap reveal">
+		<h1>{{ page.title }}</h1>
+		<div class="type-wrap">
 			<div id="typed-strings">
 				{% for typed in page.typeds %}
 				<h2>{{ typed.title }}</h2>
@@ -18,7 +18,7 @@ layout: default
 
 <section class="introduction bg-black reveal">
 	<div class="container">
-		<h3 class="reveal">Introduction</h3>
+		<h3>Introduction</h3>
 		{{ page.introduction | markdownify }}
 	</div>
 </section>

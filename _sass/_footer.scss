@@ -32,4 +32,26 @@ footer {
             }
         }
     }
+
+    p {
+        width: 100%;
+        float: left;
+        font-size: 14px;
+        text-align: center;
+        padding: {
+            right: 5%;
+            left: 5%;
+            top: 20px;
+        }
+
+        a {
+            color: $black;
+            @extend %montserrat-medium;
+            text-decoration: none;
+
+            &:hover {
+                color: $gray;
+            }
+        }
+    }
 }
