@@ -25,7 +25,7 @@ layout: default
 <ul class="list-projects">
     {% assign projects = site.projects | sort: "order" %}
     {% for project in projects %}
-    <li style="background: url({{project.cover}})" class="reveal">
+    <li style="background: url(/assets/images/{{project.cover}})" class="reveal">
         <a href="{{project.url}}">
             <div class="purple-bg"></div>
             <p>{{project.title}}</p>

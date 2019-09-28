@@ -37,7 +37,7 @@ layout: default
 		<h3 class="reveal">Persona</h3>
 		<div class="row">
 			<div class="col-2-12">
-				<div class="pic-persona reveal" style="background: url({{page.picture_persona}})"></div>
+				<div class="pic-persona reveal" style="background: url(/assets/images/{{page.picture_persona}})"></div>
 			</div>
 
 			<div class="col-1-12">
@@ -88,7 +88,7 @@ layout: default
 			</div>
 
 			<div class="col-4-12">
-				<img src="{{ page.img_process }}" alt="{{ page.alt_img_process }}" class="reveal" />
+				<img src="/assets/images/{{ page.img_process }}" alt="{{ page.alt_img_process }}" class="reveal" />
 			</div>
 		</div>
 	</div>
@@ -97,7 +97,7 @@ layout: default
 <section class="styles-tile bg-black reveal">
 	<div class="container">
 		<h3 class="reveal">Styles Tile</h3>
-		<img src="{{ page.img_styles }}" alt="{{ page.alt_img_styles }}" class="reveal" />
+		<img src="/assets/images/{{ page.img_styles }}" alt="{{ page.alt_img_styles }}" class="reveal" />
 	</div>
 </section>
 
@@ -107,7 +107,7 @@ layout: default
 		<h3 class="reveal">Desktop screens</h3>
 		<ul class="list-screens">
 			{% for screen_desktop in page.screen_desktops %}
-			<li class="reveal"><img src="{{screen_desktop.image}}" alt="{{screen_desktop.image_alt}}"></li>
+			<li class="reveal"><img src="/assets/images/{{screen_desktop.image}}" alt="{{screen_desktop.image_alt}}"></li>
 			{% endfor %}
 		</ul>
 
@@ -121,7 +121,7 @@ layout: default
 		<h3 class="reveal">Mobile screens</h3>
 		<ul class="list-screens">
 			{% for screen_mobile in page.screen_mobiles %}
-			<li class="reveal"><img src="{{screen_mobile.image}}" alt="{{screen_mobile.image_alt}}"></li>
+			<li class="reveal"><img src="/assets/images/{{screen_mobile.image}}" alt="{{screen_mobile.image_alt}}"></li>
 			{% endfor %}
 		</ul>
 

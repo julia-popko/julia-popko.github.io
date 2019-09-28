@@ -3,7 +3,7 @@ layout: projects
 title: Project 1
 desc: Meta desc
 order: 1
-cover: /assets/images/cover-project-1.jpg
+cover: cover-project-1.jpg
 typeds:
   - title: Website design
   - title: 'Ironhack, Berlin'
@@ -29,7 +29,7 @@ challenge: >-
 
   Design a responsive online platform for a magazine, newspaper or blog directed
   to meet the needs and goals of the presented User Persona.
-picture_persona: /static/uploads/pic-persona.jpg
+picture_persona: pic-persona.jpg
 name_persona: Name
 age_persona: Age
 title_persona: Title
@@ -48,25 +48,25 @@ text_process: >-
   quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
   soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
   placeat facere possimus
-img_process: /assets/images/website-fajny-css.png
+img_process: website-fajny-css.png
 alt_img_process: Alt process
-img_styles: /assets/images/styles.png
+img_styles: styles.png
 screen_desktops:
   - alt_image: Alt
-    image: /assets/images/screen-macbook.png
+    image: screen-macbook.png
   - alt_image: Alt
-    image: /assets/images/screen-macbook.png
+    image: screen-macbook.png
   - alt_image: Alt
-    image: /assets/images/screen-macbook.png
+    image: screen-macbook.png
 link_proto_desktop: '#'
 background_mobile: black
 screen_mobiles:
   - alt_image: Alt
-    image: /assets/images/screen-iphone.png
+    image: screen-iphone.png
   - alt_image: Alt
-    image: /assets/images/screen-iphone.png
+    image: screen-iphone.png
   - alt_image: Alt
-    image: /assets/images/screen-iphone.png
+    image: screen-iphone.png
 link_proto_mobile: '#'
 content_overview: >-
   {:.reveal}
