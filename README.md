@@ -78,6 +78,10 @@ next_project: name_of_page (without .md)
 For help writing the `.md` file go here: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 To add a class to the generated element add `{:.class}` before the line. To add it in a `li` add this at the beginning of the line `* {:.revealLeft} `
 
+#### Video link
+
+Open your video in YouTube, click on `Share` then `Embed`, and copy the part in the src. Eg: `https://www.youtube.com/embed/CsGauHXioos`
+
 ### Add experience
 
 To add an experience open the file `/about.md` and write in the list `experiences`:
