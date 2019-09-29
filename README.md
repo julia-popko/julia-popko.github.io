@@ -16,6 +16,10 @@ Open the folder in the terminal and type `jekyll build`
 
 Open the folder in the terminal and type `jekyll serve`. This automatically build the site and creates a host at the address [http://localhost:4000/](http://localhost:4000/)
 
+## Upload project
+
+Open Github Desktop, on the left bar type the summary of your changes (eg: Added project name), then click on `Commit to master`, 
+
 ## Add modifications to content
 
 ### Add project
