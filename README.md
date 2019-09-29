@@ -18,7 +18,7 @@ Open the folder in the terminal and type `jekyll serve`. This automatically buil
 
 ## Upload project
 
-Open Github Desktop, on the left bar type the summary of your changes (eg: Added project name), then click on `Commit to master`, 
+Open Github Desktop, on the left bar type the summary of your changes (eg: Added project name), then click on `Commit to master`, and on the top bar click on `Push origin`. Done!
 
 ## Add modifications to content
 
