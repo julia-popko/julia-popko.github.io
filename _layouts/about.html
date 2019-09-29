@@ -15,7 +15,7 @@ layout: default
 	</div>
 
 	<div class="row">
-		<div class="col-6-12 col-padding-left">
+		<div class="col-6-12 col-padding-left col-desktop">
 			<h3 class="reveal">Education</h3>
 			<ul class="list-education">
 				{% for education in page.educations %}
@@ -36,33 +36,72 @@ layout: default
 						<li class="reveal">{{ language.name }}: {{ language.level }}</li>
 						{% endfor %}
 					</ul>
-                </div>
-                
-                <div class="col-6-12">
-                    <h3 class="reveal">Skills</h3>
-                    <ul class="list-skills">
-                        {% for skill in page.skills %}
-                        <li class="reveal">{{skill.name}}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            
-            <a href="/assets/images/{{page.cv_link}}" class="cv_link reveal" target="_blank">PDF Version<span></span></a>
-        </div>
-        
-        <div class="col-6-12 col-padding-right">
-            <h3 class="reveal">Experience</h3>
-            <ul class="list-experience">
-                {% for experience in page.experiences %}
-                <li>
-                    <p class="title reveal">{{experience.title}}</p>
-					<p class="subtitle reveal">{% if experience.company %}{{experience.company}}, {% endif %}{{experience.city}} | {{experience.date}}</p>
+				</div>
+
+				<div class="col-6-12">
+					<h3 class="reveal">Skills</h3>
+					<ul class="list-skills">
+						{% for skill in page.skills %}
+						<li class="reveal">{{skill.name}}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+			<a href="/assets/images/{{page.cv_link}}" class="cv_link reveal" target="_blank">PDF
+				Version<span></span></a>
+		</div>
+
+		<div class="col-6-12 col-padding-right">
+			<h3 class="reveal">Experience</h3>
+			<ul class="list-experience">
+				{% for experience in page.experiences %}
+				<li>
+					<p class="title reveal">{{experience.title}}</p>
+					<p class="subtitle reveal">{% if experience.company %}{{experience.company}},
+						{% endif %}{{experience.city}} | {{experience.date}}</p>
 					<p class="description reveal">{{experience.description}}</p>
-                    <p class="skills reveal">Skills: {{experience.skills}}</p>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+					<p class="skills reveal">Skills: {{experience.skills}}</p>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="col-6-12 col-padding-left col-mobile">
+			<h3 class="reveal">Education</h3>
+			<ul class="list-education">
+				{% for education in page.educations %}
+				<li>
+					<p class="date reveal">{{ education.date }}</p>
+					<p class="title reveal">{{ education.title }}</p>
+					<p class="school reveal">{{ education.school }}, {{ education.city }}</p>
+					<p class="description reveal">{{ education.description }}</p>
+				</li>
+				{% endfor %}
+			</ul>
+
+			<div class="row">
+				<div class="col-6-12">
+					<h3 class="reveal">Languages</h3>
+					<ul class="list-languages">
+						{% for language in page.languages %}
+						<li class="reveal">{{ language.name }}: {{ language.level }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+
+				<div class="col-6-12">
+					<h3 class="reveal">Skills</h3>
+					<ul class="list-skills">
+						{% for skill in page.skills %}
+						<li class="reveal">{{skill.name}}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+			<a href="/assets/images/{{page.cv_link}}" class="cv_link reveal" target="_blank">PDF
+				Version<span></span></a>
+		</div>
 	</div>
 </main>

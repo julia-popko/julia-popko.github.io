@@ -25,7 +25,11 @@
 				width: 100%;
 				float: left;
 				margin-bottom: 50px;
-			}
+               }
+               
+               p {
+                    font-size: $font-intro;
+               }
           }
           
           @media only screen and (max-width: 600px) {
@@ -44,22 +48,6 @@
                     width: 100%;
                }
           } 
-     }
-
-     .col-paddding-left {
-          padding-right: 5%;
-
-          @media only screen and (max-width: 600px) {
-               padding-right: 0;
-          }
-     }
-
-     .col-paddding-right {
-          padding-left: 5%;
-
-          @media only screen and (max-width: 600px) {
-               padding-left: 0;
-          }
      }
 
 	.list-education,
@@ -171,5 +159,36 @@
                right: 0;
                width: 100%;
            }
+     }
+
+     .col-mobile {
+          display: none;
+     }
+
+     @media only screen and (max-width: 600px) {
+          .col-desktop {
+               display: none;
+          }
+
+          .col-mobile {
+               display: inherit;
+          }
+     }
+
+     .col-padding-left {
+          padding-right: 5%;
+
+          @media only screen and (max-width: 600px) {
+               padding-right: 0;
+          }
+     }
+
+     .col-padding-right {
+          padding-left: 5%;
+          margin-right: 0 !important;
+
+          @media only screen and (max-width: 600px) {
+               padding-left: 0;
+          }
      }
 }

@@ -40,6 +40,10 @@
                @include transform(rotate(180deg));
                margin-top: 35px;
           }
+
+          p {
+               font-size: $font-intro;
+          }
      }
 }
 

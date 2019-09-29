@@ -58,7 +58,7 @@ screen_desktops:
     image: screen-macbook.png
   - alt_image: Alt
     image: screen-macbook.png
-link_proto_desktop: '#'
+link_proto_desktop: https://www.youtube.com/embed/CsGauHXioos
 background_mobile: black
 screen_mobiles:
   - alt_image: Alt
@@ -67,7 +67,7 @@ screen_mobiles:
     image: screen-iphone.png
   - alt_image: Alt
     image: screen-iphone.png
-link_proto_mobile: '#'
+link_proto_mobile: https://www.youtube.com/embed/CsGauHXioos
 content_overview: >-
   {:.reveal}
 

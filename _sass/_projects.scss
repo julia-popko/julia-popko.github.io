@@ -76,25 +76,66 @@
 		}
 
 		.link-proto {
-			text-decoration: none;
-			position: relative;
+			width: 100%;
+			float: left;
+			@include flexbox(center, center, nowrap);
 
-			span {
-				position: absolute;
-				width: 0;
-				float: left;
-				height: 2px;
-				background: $black;
-				bottom: -2px;
-				left: 50%;
-				right: 50%;
-				@include transition(all, 0.2s, ease);
+			p {
+				width: auto;
+				float: none;
+				position: relative;
+				font-size: 16px;
+				cursor: pointer;
+
+				span {
+					position: absolute;
+					width: 0;
+					float: left;
+					height: 2px;
+					background: $black;
+					bottom: -2px;
+					left: 50%;
+					right: 50%;
+					@include transition(all, 0.2s, ease);
+				}
+	
+				&:hover span {
+					left: 0;
+					right: 0;
+					width: 100%;
+				}
 			}
 
-			&:hover span {
+			.modal {
+				position: fixed;
+				top: -100%;
 				left: 0;
-				right: 0;
+				z-index: 999;
+				background: rgba($color: $black, $alpha: 0.8);
 				width: 100%;
+				height: 100vh;
+				@include transition(all, .5s, ease);
+				@extend %flexCenter;
+
+				i {
+					position: absolute;
+					right: 5%;
+					top: 32px;
+					font-size: $font-body;
+					color: $white;
+					cursor: pointer;
+				}
+
+				iframe {
+					width: 90%;
+					height: 90vh;
+				}
+			}
+
+			&.modal-open {
+				.modal {
+					top: 0;
+				}
 			}
 		}
 
