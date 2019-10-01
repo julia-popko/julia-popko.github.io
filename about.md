@@ -83,7 +83,7 @@ skills:
   - name: Figma
   - name: Principal
   - name: InDesign
-cv_link: resume-juliensebag.pdf
+cv_link: file:///Users/julia/Google%20Drive/Documents/Julia-Popko-CV.pdf
 desc: Meta desc
 ---
 
