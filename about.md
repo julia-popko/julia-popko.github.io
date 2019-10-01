@@ -30,8 +30,8 @@ experiences:
     company: Primary School no. 146, Warsaw
     date: October 2015 - June 2016
     description: Providing educational support for English language primary school
-    students grades 4-6, designing lesson plans focused in level-appropriate
-    material, providing effective parent communication
+      students grades 4-6, designing lesson plans focused in level-appropriate
+      material, providing effective parent communication
     title: Foreign Language Teaching Intern
     skills: >-
       Teaching a foreign language, creative thinking, analytical skills
