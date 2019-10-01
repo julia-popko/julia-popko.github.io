@@ -35,10 +35,18 @@ educations:
     school: Ironhack
     title: UX / UI Design Bootcamp
   - city: Hamburg University
-    date: 2017-2019
+    date: 2018 - 2019
     description: Student exchange
     school: American Studies
     title: Master’s Studies
+  - city: Warsaw University
+    date: 2017 - 2019
+    school: American Studies
+    title: Master's Studies
+  - city : Warsaw University
+    date: 2013 - 2017
+    school: Teaching Foreign Languages: English and French
+
 languages:
   - level: native
     name: Polish
