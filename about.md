@@ -26,6 +26,10 @@ experiences:
     skills: >-
       Teaching a foreign language, goal oriented teaching methodology lateral
       thinking, mentoring
+  - city: Warsaw
+    date:
+    description:
+    title: Foreign Language Teaching Intern
 educations:
   - city: Berlin
     date: August - October 2019
@@ -45,7 +49,7 @@ educations:
     title: Master's Studies
   - city : Warsaw University
     date: 2013 - 2017
-    school: Teaching Foreign Languages: English and French
+    school: Teaching Foreign Languages - English and French
 
 languages:
   - level: native
