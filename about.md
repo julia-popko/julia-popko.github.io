@@ -42,6 +42,7 @@ experiences:
       maintaining databases such as mailing, lists, contact lists and client 
       information,organising business travels and performing work related errands 
       as requested
+    title: Internship Trainee
     skills: >-
       Microsof Office, InDesign, time managment, analytical skills, time management, 
       teamwork
