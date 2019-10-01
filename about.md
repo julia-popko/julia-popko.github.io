@@ -44,7 +44,7 @@ languages:
     name: Polish
   - level: fluent
     name: English
-  - level: Intermediate
+  - level: intermediate
     name: French
 skills:
   - name: InVision
