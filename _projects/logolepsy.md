@@ -1,11 +1,12 @@
 ---
 layout: projects
-title: Project 3
+title: Logolepsy
 desc: Meta desc
 order: 3
 cover: name_of_asset.jpg
 typeds:
-  - title: Content of each typed phrases
+   - title: Web Magazine
+   - title: 'Ironhack, Berlin'
 introduction: >-
   {:.reveal}
 

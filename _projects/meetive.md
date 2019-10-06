@@ -1,11 +1,11 @@
 ---
 layout: projects
-title: Project 1
+title: Meetive
 desc: Meta desc
 order: 1
 cover: cover-project-1.jpg
 typeds:
-  - title: Website design
+  - title: Mobile App
   - title: 'Ironhack, Berlin'
 introduction: >-
   {:.reveal}

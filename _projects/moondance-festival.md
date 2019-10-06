@@ -1,11 +1,11 @@
 ---
 layout: projects
-title: Project 2
+title: Moondance Jammin Festival
 desc: Meta desc
 order: 2
-cover: cover-project-2.jpg
+cover: moondance-style-tile.png
 typeds:
-  - title: Website design
+  - title: Curated Event Microsite
   - title: 'Ironhack, Berlin'
 introduction: >-
   The rise of the digital press has seen a tremendous peak over the last years.
