@@ -1,5 +1,8 @@
 ---
 title: Home
+desc: >-
+  Portfolio of Julia Popko, UX / UI Designer and Donut Lover based in Berlin,
+  Germany
 logo_alt: Logo Julia Popko
 typeds:
   - title: UX / UI Designer
@@ -10,8 +13,5 @@ intro: |-
 
   {:.reveal}
   Here you can check my projects:
-desc: >-
-  Portfolio of Julia Popko, UX / UI Designer and Donut Lover based in Berlin,
-  Germany
 ---
 
