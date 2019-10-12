@@ -53,28 +53,6 @@
 			text-align: left;
 		}
 
-		&.bg-white {
-			background: $white;
-			color: $black;
-
-			.link-proto {
-				color: $black;
-
-				span {
-					background: $black;
-				}
-			}
-		}
-
-		&.bg-black {
-			background: $black;
-			color: $white;
-
-			.link-proto {
-				color: $white;
-			}
-		}
-
 		.link-proto {
 			width: 100%;
 			float: left;
@@ -92,13 +70,12 @@
 					width: 0;
 					float: left;
 					height: 2px;
-					background: $black;
 					bottom: -2px;
 					left: 50%;
 					right: 50%;
 					@include transition(all, 0.2s, ease);
 				}
-	
+
 				&:hover span {
 					left: 0;
 					right: 0;
@@ -163,51 +140,11 @@
 			}
 		}
 
-		&.persona {
-			.pic-persona {
-				width: 100%;
-				float: left;
-				height: 250px;
-				@extend %bgCenter;
-			}
-
-			ul {
-				@extend %ulNone;
-				text-align: left;
-
-				li {
-					width: 100%;
-					float: left;
-					margin-bottom: 10px;
-
-					&:last-child {
-						margin-bottom: 0;
-					}
-
-					&.quote {
-						@extend %montserrat-italic;
-					}
-				}
-			}
+		.row {
+			@include flexbox(center, center, nowrap);
 
 			@media only screen and (max-width: 600px) {
-				.row .col-5-12 {
-					margin-bottom: 10px;
-
-					&:last-child {
-						margin-bottom: 0;
-					}
-				}
-			}
-		}
-
-		&.process {
-			.row {
-				@include flexbox(center, center, nowrap);
-
-				@media only screen and (max-width: 600px) {
-					flex-wrap: wrap;
-				}
+				flex-wrap: wrap;
 			}
 		}
 	}
@@ -235,14 +172,6 @@
 						margin-bottom: 0;
 					}
 				}
-			}
-		}
-
-		&.screens-desktop ul li {
-			width: 30%;
-
-			@media only screen and (max-width: 600px) {
-				width: 100%;
 			}
 		}
 	}

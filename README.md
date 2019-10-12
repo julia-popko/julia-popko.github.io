@@ -28,53 +28,51 @@ To add a project add a file in `/_projects/` with `name-of-file.md`. In the fron
 ```
 ---
 layout: projects
-title: Name of project
+title: Title
 desc: Meta desc
-order: n (number in the homepage list)
-cover: name_of_asset.jpg
+order: n (order on homepage)
+cover: name_of_image.png
 typeds:
-  - title: Content of each typed phrases
-introduction: >-
-  {:.reveal}
-
-  Content
-
-challenge: >-
-  {:.reveal}
-
-  Content
-picture_persona: name_of_picture.jpg
-name_persona: Name
-age_persona: Age
-title_persona: Title
-quotation_persona: Quote
-environment_persona: Environment
-frustrations_persona: Frustration
-goals_persona: Goals
-motivations_persona: Motivations
-text_process: >-
-  {:.reveal}
-
-  Content
-img_process: name_of_picture.jpg
-alt_img_process: Alt text image
-img_styles: name_of_picture.jpg
+  - Content of typed
 screen_desktops:
-  - alt_image: Alt text
-    image: name_of_picture.jpg
-link_proto_desktop: http://wwww.link.com/
-background_mobile: black OR white
+  - image: name_of_image.png
+    alt_image: Alt Text for image
 screen_mobiles:
-  - alt_image: Alt text
-    image: name_of_picture.jpg
-link_proto_mobile: http://wwww.link.com/
-content_overview: >-
-  {:.reveal}
+  - image: name_of_image.png
+    alt_image: Alt Text for image
 
-  Content
-next_project: name_of_page (without .md)
+next_project: name_of_page (without.md)
 ---
 ```
+
+After the front matter you can include every sections of the page. To do so type:
+```
+{%
+     include section-projects.html
+     background="color" (check in the page _sass/_colors.scss the names of colors)
+     title="Title of the section"
+     border=true|false (if you're in the Challenge section type true, else type false)
+     2_col=true|false (if you're in the Design Process section type true, else type false)
+     style=true|false (if you're in the Style Tile section type true, else type false)
+     img="name_of_image.png"
+     alt_img="Alt text for image"
+     content="Text of the section in markdown"
+%}
+```
+
+To include the sections showing mockups type:
+
+```
+{%
+     include section-mockups.html
+     title="Title of section"
+     background="color"
+     proto_desktop=true|false (if you're showing desktop prototypes type true, else type false)
+     proto=true|false (if you want to show a video type true, else type false)
+     link_proto="http://www.link-to-embed-youtube.com"
+%}
+```
+
 For help writing the `.md` file go here: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 To add a class to the generated element add `{:.class}` before the line. To add it in a `li` add this at the beginning of the line `* {:.revealLeft} `
 

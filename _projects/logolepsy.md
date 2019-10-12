@@ -5,8 +5,8 @@ desc: Meta desc
 order: 3
 cover: name_of_asset.jpg
 typeds:
-   - title: Web Magazine
-   - title: 'Ironhack, Berlin'
+   - Web Magazine
+   - Ironhack, Berlin
 introduction: >-
   {:.reveal}
 

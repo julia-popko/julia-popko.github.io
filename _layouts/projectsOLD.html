@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+<div class="cover-project reveal">
+	<div class="container-cover">
+		<h1>{{ page.title }}</h1>
+		<div class="type-wrap">
+			<div id="typed-strings">
+				{% for typed in page.typeds %}
+				<h2>{{ typed.title }}</h2>
+				{% endfor %}
+			</div>
+			<span id="typed" style="white-space:pre;"></span>
+		</div>
+	</div>
+</div>
+
+<section class="introduction bg-black reveal">
+	<div class="container">
+		<h3>Introduction</h3>
+		{{ page.introduction | markdownify }}
+	</div>
+</section>
+
+<section class="challenge bg-white reveal">
+	<div class="container">
+		<h3>Challenge</h3>
+		<div class="challenge-container">
+			{{ page.challenge | markdownify }}
+		</div>
+	</div>
+</section>
+
+<section class="process bg-white reveal">
+	<div class="container">
+		<h3>Design Process</h3>
+		<div class="row">
+			<div class="col-8-12">
+				{{ page.text_process | markdownify }}
+			</div>
+
+			<div class="col-4-12">
+				<img src="/assets/images/{{ page.img_process }}" alt="{{ page.alt_img_process }}" />
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="styles-tile bg-black reveal">
+	<div class="container">
+		<h3>Style Tile</h3>
+		<img src="/assets/images/{{ page.img_styles }}" alt="{{ page.alt_img_styles }}" />
+	</div>
+</section>
+
+{% if page.screen_desktops %}
+<section class="screens-desktop projects-container bg-white reveal">
+	<div class="container">
+		<h3>Desktop screens</h3>
+		<ul class="list-screens">
+			{% for screen_desktop in page.screen_desktops %}
+			<li><img src="/assets/images/{{screen_desktop.image}}" alt="{{screen_desktop.image_alt}}"></li>
+			{% endfor %}
+		</ul>
+
+		{% if link_proto_desktop != "" or link_proto_desktop != nil %}
+		<div class="link-proto">
+			<p onclick="openModal(this)">
+				See the prototype
+				<span style="background: #000"></span>
+			</p>
+
+			<div class="modal" onclick="openModal(this)">
+				<i class="fas fa-times"></i>
+				<iframe src="{{page.link_proto_desktop}}" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</section>
+{% endif %}
+
+<section class="screens-mobile projects-container bg-black reveal" {% if page.background_mobile == "white" %}style="background: #FFF; color: #000;" {% else %}style="background: #000; color: #FFF;" {% endif %}>
+	<div class="container">
+		<h3>Mobile screens</h3>
+		<ul class="list-screens">
+			{% for screen_mobile in page.screen_mobiles %}
+			<li><img src="/assets/images/{{screen_mobile.image}}" alt="{{screen_mobile.image_alt}}"></li>
+			{% endfor %}
+		</ul>
+
+		{% if link_proto_mobile != "" or link_proto_mobile != nil %}
+		<div class="link-proto">
+			<p {% if page.background_mobile == "white" %}style="color: #000;" {% else %}style="color: #FFF;" {% endif %} onclick="openModal(this)">
+				See the prototype
+				<span {% if page.background_mobile == "white" %}style="background: #000;" {% else %}style="background: #FFF;" {% endif %}></span>
+			</p>
+
+			<div class="modal" onclick="openModal(this)">
+				<i class="fas fa-times"></i>
+				<iframe src="{{page.link_proto_mobile}}" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</section>
+
+<section class="overview bg-white reveal" {% if page.background_mobile == "white" %}style="background: #000; color: #FFF;" {% else %}style="background: #FFF; color: #000;" {% endif %}>
+    <div class="container">
+        <h3>Overview</h3>
+        {{ page.content_overview | markdownify }}
+    </div>
+</section>
+
+<div class="button-next-project reveal">
+	<a href="{{ page.next_project }}.html">Next project<span></span></a>
+	<img src="/assets/images/logo.svg" alt="Logo Julia Popko">
+</div>
