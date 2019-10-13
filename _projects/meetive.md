@@ -27,7 +27,7 @@ next_project: moondance-festival
 
 {%
      include section-projects.html
-     background="black"
+     background="dark-blue"
      title="Introduction"
      border=false
      2_col=false
@@ -51,12 +51,12 @@ next_project: moondance-festival
 
 {%
      include section-projects.html
-     background="black"
+     background="white"
      title="Design Process"
      border=false
      2_col=true
      style=false
-     img="meetive-persona.png"
+     img="meetive-profile.png"
      alt_img="Meetive app"
      content="Based on my research and competitors' analysis, I designed the project from the scratch to the hi-fidelity prototype. During the process, I tested my product to priorityze features to fill the Persona's needs, such a possiblity of adding a list of favorites places and a system of categories that will help to create a poll based on suggested places. I focused on finding a simple solution with a friendly, not overwhelmed with content interface."
 %}
@@ -76,7 +76,7 @@ next_project: moondance-festival
 {%
      include section-mockups.html
      title="Mobile screens"
-     background="black"
+     background="white"
      proto_desktop=false
      proto=true
      link_proto="https://www.youtube.com/watch?v=Y77WiNTPDj0"
@@ -84,7 +84,7 @@ next_project: moondance-festival
 
 {%
      include section-projects.html
-     background="white"
+     background="dark-blue"
      title="Overview"
      border=false
      2_col=false

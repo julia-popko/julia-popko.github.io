@@ -3,7 +3,7 @@ layout: projects
 title: Logolepsy
 desc: Meta desc
 order: 3
-cover: name_of_asset.jpg
+cover: logolepsy-cover-photo.png
 typeds:
    - Web Magazine
    - Ironhack, Berlin
