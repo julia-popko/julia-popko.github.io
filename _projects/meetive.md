@@ -34,7 +34,7 @@ next_project: moondance-festival
      style=false
      img=""
      alt_img=""
-     content="The inspiration for this project came from people around me. A lot of them experienced major difficulties while trying to organize a group meeting. I got curious about this topic and conducted some UX research to find out more about their painpoint. The biggest problem during organizing a group event turned out to be deciding and agreeing on specific meeting venue that would suit all the participants and their needs."
+     content="The inspiration for this project came from people around me. A lot of them experienced major difficulties while trying to organize a group meeting. I got curious about this topic and conducted some UX research to find out more about the painpoints. Apparently, the biggest problem during organizing a group event turned out to be deciding and agreeing on q specific meeting venue that would suit all the participants and their needs."
 %}
 
 {%
@@ -58,7 +58,7 @@ next_project: moondance-festival
      style=false
      img="meetive-profile.png"
      alt_img="Meetive app"
-     content="Based on my research and competitors' analysis, I designed the project from the scratch to the hi-fidelity prototype. During the process, I tested my product to priorityze features to fill the Persona's needs, such a possiblity of adding a list of favorites places and a system of categories that will help to create a poll based on suggested places. I focused on finding a simple solution with a friendly, not overwhelmed with content interface."
+     content="Based on my research and competitors' analysis, I designed the project from the scratch to the hi-fidelity prototype. During the process, I tested my product to prioritize the features to fill the Persona's needs, such a possiblity of adding a list of favorites places and a system of categories that will help to create a poll based on the suggested places. I focused on finding a simple solution with a friendly, not overwhelmed with the content interface."
 %}
 
 {%
@@ -91,7 +91,7 @@ next_project: moondance-festival
      style=false
      img=""
      alt_img=""
-     content="My final product helps the user to organise meeting in four simple steps and to decide easily about the meeting venue thanks to the integrated system of categories and suggested places in the form of poll.
+     content="My final product helps the user to organise meeting in four simple steps and to decide easily about the meeting venue thanks to the integrated system of categories and suggested places in the form of the poll. After voting, the meeting venue is set automatically and visible for all the guests.
 
-Tools: UX Research, Wireframing, Usability Testing, Prototyping Sketch, InVision, Principle"
+Tools: UX Research, Lean Canvas, Wireframing, Usability Testing, Prototyping on Sketch, InVision and Principle"
 %}
