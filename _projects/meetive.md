@@ -31,6 +31,7 @@ next_project: moondance-festival
      title="Introduction"
      border=false
      2_col=false
+     mockup_mobile=false
      style=false
      img=""
      alt_img=""
@@ -43,6 +44,7 @@ next_project: moondance-festival
      title="Challenge"
      border=true
      2_col=false
+     mockup_mobile=false
      style=false
      img=""
      alt_img=""
@@ -55,6 +57,7 @@ next_project: moondance-festival
      title="Design Process"
      border=false
      2_col=true
+     mockup_mobile=true
      style=false
      img="meetive-profile.png"
      alt_img="Meetive app"
@@ -65,8 +68,9 @@ next_project: moondance-festival
      include section-projects.html
      background="white"
      title="Style tile"
-     border="false"
-     2_col="false"
+     border=false
+     2_col=false
+     mockup_mobile=false
      style=true
      img="meetive-style-tile.png"
      alt_img="Styles Meetive"
@@ -88,6 +92,7 @@ next_project: moondance-festival
      title="Overview"
      border=false
      2_col=false
+     mockup_mobile=false
      style=false
      img=""
      alt_img=""
