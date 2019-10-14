@@ -2,7 +2,7 @@
 layout: about
 title: About
 text_about: >-
-  I am a passionate junior UI/UX Designer with a background in foreign
+  I am a passionate UI/UX Designer with a background in foreign
   languages, currently looking for new opportunities in the beautiful city of
   Berlin. During past years I studied at Warsaw and Hamburg University, then I
   moved to the the capital of Germany to learn design at Ironhack full-time design
