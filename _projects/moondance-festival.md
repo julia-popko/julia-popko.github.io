@@ -23,7 +23,6 @@ next_project: logolepsy
      title="Introduction"
      border=false
      2_col=false
-     mockup_mobile=false
      style=false
      img=""
      alt_img=""
@@ -36,7 +35,6 @@ next_project: logolepsy
      title="Challenge"
      border=true
      2_col=false
-     mockup_mobile=false
      style=false
      img=""
      alt_img=""
@@ -49,7 +47,6 @@ next_project: logolepsy
      title="Design Process"
      border=false
      2_col=true
-     mockup_mobile=false
      style=false
      img="screen-macbook.png"
      alt_img="Process"
@@ -60,9 +57,8 @@ next_project: logolepsy
      include section-projects.html
      background="white"
      title="Style tile"
-     border=false
-     2_col=false
-     mockup_mobile=false
+     border="false"
+     2_col="false"
      style=true
      img="moondance-style-tile.png"
      alt_img="Styles Moondance"
@@ -84,7 +80,6 @@ next_project: logolepsy
      title="Overview"
      border=false
      2_col=false
-     mockup_mobile=false
      style=false
      img=""
      alt_img=""

@@ -147,15 +147,6 @@
 				flex-wrap: wrap;
 			}
 		}
-
-		.col-mobile {
-			@include flexbox(center, center, nowrap);
-
-			img {
-				width: auto;
-				height: 500px;
-			}
-		}
 	}
 
 	.projects-container {

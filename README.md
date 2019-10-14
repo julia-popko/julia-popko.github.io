@@ -53,7 +53,6 @@ After the front matter you can include every sections of the page. To do so type
      title="Title of the section"
      border=true|false (if you're in the Challenge section type true, else type false)
      2_col=true|false (if you're in the Design Process section type true, else type false)
-     mockup_mobile=true|false (if the mockup of the Design Process is a mobile one type true, else false)
      style=true|false (if you're in the Style Tile section type true, else type false)
      img="name_of_image.png"
      alt_img="Alt text for image"
