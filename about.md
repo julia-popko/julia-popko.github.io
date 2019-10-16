@@ -2,11 +2,7 @@
 layout: about
 title: About
 text_about: >-
-  I am a passionate junior UI/UX Designer with a background in foreign
-  languages, currently looking for new opportunities in the beautiful city of
-  Berlin. During past years I studied at Warsaw and Hamburg University, then I
-  moved to the the capital of Germany to learn design at Ironhack full-time design
-  bootcamp. Here you can find my resume.
+  I am a passionate UI/UX Designer passionated about detail-oriented and user-centered design, with special interest in visual design. I have a background in foreign languages -  during past years I studied at Warsaw and Hamburg University - foreign languages and studing abroad helped me to be become a multi-tasker and to easily communicate with people from different environments. Then, I moved to the the capital of Germany to fullfil my dream about working with people and for people - to become a UX/UI designer. I learned design at Ironhack full-time design bootcamp. I'm currently looking for new job opportunities in the beautiful city of Berlin. Here you can find my resume.
 picture: picture_julia_popko_triangle.png
 alt_picture: Julia Popko's picture
 experiences:
