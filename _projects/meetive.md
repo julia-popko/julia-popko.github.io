@@ -50,7 +50,18 @@ next_project: moondance-festival
      alt_img=""
      content="Design a responsive mobile application that help the user to plan and organize a meeting for a selected group of people."
 %}
-
+{%
+     include section-projects.html
+     background="white"
+     title=""
+     border=false
+     2_col=false
+     mockup_mobile=false
+     style=true
+     img="meetive-5-advantages2.png"
+     alt_img=""
+     content=""
+%}
 {%
      include section-projects.html
      background="white"
