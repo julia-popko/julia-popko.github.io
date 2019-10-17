@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="cover-project reveal">
+<div class="cover-project">
 	<div class="container-cover">
 		<h1>{{ page.title }}</h1>
 		<div class="type-wrap">
@@ -16,14 +16,14 @@ layout: default
 	</div>
 </div>
 
-<section class="introduction bg-black reveal">
+<section class="introduction bg-black">
 	<div class="container">
 		<h3>Introduction</h3>
 		{{ page.introduction | markdownify }}
 	</div>
 </section>
 
-<section class="challenge bg-white reveal">
+<section class="challenge bg-white">
 	<div class="container">
 		<h3>Challenge</h3>
 		<div class="challenge-container">
@@ -32,7 +32,7 @@ layout: default
 	</div>
 </section>
 
-<section class="process bg-white reveal">
+<section class="process bg-white">
 	<div class="container">
 		<h3>Design Process</h3>
 		<div class="row">
@@ -47,7 +47,7 @@ layout: default
 	</div>
 </section>
 
-<section class="styles-tile bg-black reveal">
+<section class="styles-tile bg-black">
 	<div class="container">
 		<h3>Style Tile</h3>
 		<img src="/assets/images/{{ page.img_styles }}" alt="{{ page.alt_img_styles }}" />
@@ -55,7 +55,7 @@ layout: default
 </section>
 
 {% if page.screen_desktops %}
-<section class="screens-desktop projects-container bg-white reveal">
+<section class="screens-desktop projects-container bg-white">
 	<div class="container">
 		<h3>Desktop screens</h3>
 		<ul class="list-screens">
@@ -81,7 +81,7 @@ layout: default
 </section>
 {% endif %}
 
-<section class="screens-mobile projects-container bg-black reveal" {% if page.background_mobile == "white" %}style="background: #FFF; color: #000;" {% else %}style="background: #000; color: #FFF;" {% endif %}>
+<section class="screens-mobile projects-container bg-black" {% if page.background_mobile == "white" %}style="background: #FFF; color: #000;" {% else %}style="background: #000; color: #FFF;" {% endif %}>
 	<div class="container">
 		<h3>Mobile screens</h3>
 		<ul class="list-screens">
@@ -106,14 +106,14 @@ layout: default
 	</div>
 </section>
 
-<section class="overview bg-white reveal" {% if page.background_mobile == "white" %}style="background: #000; color: #FFF;" {% else %}style="background: #FFF; color: #000;" {% endif %}>
+<section class="overview bg-white" {% if page.background_mobile == "white" %}style="background: #000; color: #FFF;" {% else %}style="background: #FFF; color: #000;" {% endif %}>
     <div class="container">
         <h3>Overview</h3>
         {{ page.content_overview | markdownify }}
     </div>
 </section>
 
-<div class="button-next-project reveal">
+<div class="button-next-project">
 	<a href="{{ page.next_project }}.html">Next project<span></span></a>
 	<img src="/assets/images/logo.svg" alt="Logo Julia Popko">
 </div>

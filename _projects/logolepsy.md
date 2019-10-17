@@ -8,13 +8,9 @@ typeds:
    - Web Magazine
    - Ironhack, Berlin
 introduction: >-
-  {:.reveal}
-
   Content
 
 challenge: >-
-  {:.reveal}
-
   Content
 picture_persona: name_of_picture.jpg
 name_persona: Name
@@ -26,8 +22,6 @@ frustrations_persona: Frustration
 goals_persona: Goals
 motivations_persona: Motivations
 text_process: >-
-  {:.reveal}
-
   Content
 img_process: name_of_picture.jpg
 alt_img_process: Alt text image
@@ -42,8 +36,6 @@ screen_mobiles:
     image: name_of_picture.jpg
 link_proto_mobile: http://wwww.link.com/
 content_overview: >-
-  {:.reveal}
-
   Content
 next_project: name_of_page (without .md)
 ---
