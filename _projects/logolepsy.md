@@ -39,3 +39,15 @@ content_overview: >-
   Content
 next_project: name_of_page (without .md)
 ---
+{%
+     include section-projects.html
+     background="white"
+     title="Style tile"
+     border=false
+     2_col=false
+     mockup_mobile=false
+     style=true
+     img="logolepsy_style_tile.png"
+     alt_img="Styles Meetive"
+     content=""
+%}
