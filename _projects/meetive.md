@@ -87,7 +87,7 @@ next_project: moondance-festival
      background="white"
      proto_desktop=false
      proto=true
-     link_proto="https://www.youtube.com/watch?v=Y77WiNTPDj0"
+     link_proto="https://www.youtube.com/embed/Y77WiNTPDj0"
 %}
 
 {%
