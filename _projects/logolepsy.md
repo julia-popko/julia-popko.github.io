@@ -9,7 +9,6 @@ typeds:
    - Ironhack, Berlin
 introduction: >-
   Content
-
 challenge: >-
   Content
 picture_persona: name_of_picture.jpg
@@ -27,14 +26,13 @@ img_process: name_of_picture.jpg
 alt_img_process: Alt text image
 img_styles: name_of_picture.jpg
 screen_desktops:
-  - alt_image: Alt text
-    image: name_of_picture.jpg
-link_proto_desktop: http://wwww.link.com/
-background_mobile: black OR white
-screen_mobiles:
-  - alt_image: Alt text
-    image: name_of_picture.jpg
-link_proto_mobile: http://wwww.link.com/
+  - alt_image: Alt
+    image: logolepsy-desktop-1.png
+  - alt_image: Alt
+    image: logolepsy-desktop-2.png
+  - alt_image: Alt
+    image: logolepsy-desktop-3.png
+link_proto_desktop: http://wwww.youtube.com/
 content_overview: >-
   Content
 next_project: name_of_page (without .md)
@@ -50,4 +48,12 @@ next_project: name_of_page (without .md)
      img="logolepsy_style_tile.png"
      alt_img="Styles Meetive"
      content=""
+%}
+{%
+     include section-mockups.html
+     title="Desktop Screens"
+     background="white"
+     proto_desktop=true
+     proto=false
+     link_proto="http://www.link-to-embed-youtube.com"
 %}
