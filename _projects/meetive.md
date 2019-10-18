@@ -7,13 +7,6 @@ cover: meetive1.png
 typeds:
   - Mobile App
   - Ironhack, Berlin
-screen_desktops:
-  - alt_image: Alt
-    image: screen-macbook.png
-  - alt_image: Alt
-    image: screen-macbook.png
-  - alt_image: Alt
-    image: screen-macbook.png
 screen_mobiles:
   - alt_image: Alt
     image: meetive-mobile-screen-1.png

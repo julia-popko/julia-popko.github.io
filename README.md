@@ -74,6 +74,8 @@ To include the sections showing mockups type:
 %}
 ```
 
+If this is not working, include `section-mockups-desktop.html` or `section-mockups-mobile.html`, and delete the line `proto_desktop`
+
 For help writing the `.md` file go here: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 To add a class to the generated element add `{:.class}` before the line. To add it in a `li` add this at the beginning of the line `* {:.class-name} `
 

@@ -2,15 +2,9 @@
 	<div class="container">
 		<h3>{{ include.title }}</h3>
 		<ul class="list-screens">
-			{% if proto_desktop == true %}
-				{% for screen_desktop in page.screen_desktops %}
-					<li><img src="/assets/images/{{ screen_desktop.image }}" alt="{{ screen_desktop.image_alt }}" /></li>
-				{% endfor %}
-			{% else %}
-				{% for screen_mobile in page.screen_mobiles %}
-					<li><img src="/assets/images/{{ screen_mobile.image }}" alt="{{ screen_mobile.image_alt }}" /></li>
-				{% endfor %}
-			{% endif %}
+            {% for screen_desktop in page.screen_desktops %}
+                <li><img src="/assets/images/{{ screen_desktop.image }}" alt="{{ screen_desktop.image_alt }}" /></li>
+            {% endfor %}
 		</ul>
 
 		{% if include.proto == true %}

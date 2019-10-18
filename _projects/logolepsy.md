@@ -26,12 +26,13 @@ img_process: name_of_picture.jpg
 alt_img_process: Alt text image
 img_styles: name_of_picture.jpg
 screen_desktops:
-  - alt_image: Alt
-    image: logolepsy-desktop-1.png
-  - alt_image: Alt
-    image: logolepsy-desktop-2.png
-  - alt_image: Alt
-    image: logolepsy-desktop-3.png
+screen_desktops:
+  - image: logolepsy-desktop-1.png
+    alt_image: Alt Text for image
+  - image: logolepsy-desktop-2.png
+    alt_image: Alt Text for image
+  - image: logolepsy-desktop-3.png
+    alt_image: Alt Text for image
 link_proto_desktop: http://wwww.youtube.com/
 content_overview: >-
   Content
@@ -49,11 +50,12 @@ next_project: name_of_page (without .md)
      alt_img="Styles Meetive"
      content=""
 %}
+
 {%
-     include section-mockups.html
+     include section-mockups-desktop.html
      title="Desktop Screens"
      background="white"
      proto_desktop=true
      proto=false
-     link_proto="http://www.link-to-embed-youtube.com"
+     link_proto="#"
 %}
