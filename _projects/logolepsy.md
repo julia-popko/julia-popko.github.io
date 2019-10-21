@@ -65,14 +65,14 @@ next_project: name_of_page (without .md)
 {%
      include section-projects.html
      background="white"
-     title="Design Process"
+     title="UX Research"
      border=false
      2_col=true
      mockup_mobile=true
      style=false
      img=""
      alt_img="Meetive app"
-     content="To fill the Persona's needs, the magazine's website includes three main categories in the top menu. The project's aim was to hightlight the articles and photos, so the design should be simple."
+     content="During the research part of this case study, I investigated the habits of digital magazine users. It turned out that the people who read the digital press, spend on the websites not more than 30 minutes per day. Then, the design should be tailored for the user to only browse headlines to find the most appealing and interesting for him or her information. Therefore, the page navigation has to be clear and the categories have to be easily accessible. Also, the survey and interviews I conducted shown that my target group is moslty interested in culture, fashion and literature."
 %}
 {%
      include section-projects.html
