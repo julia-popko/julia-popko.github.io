@@ -1,7 +1,7 @@
 <section class="projects-container bg-{{ include.background }}">
 	<div class="container">
 		<h3>{{ include.title }}</h3>
-		<ul class="list-screens">
+		<ul class="list-screens screens-mobile">
             {% for screen_mobile in page.screen_mobiles %}
                 <li><img src="/assets/images/{{ screen_mobile.image }}" alt="{{ screen_mobile.image_alt }}" /></li>
             {% endfor %}

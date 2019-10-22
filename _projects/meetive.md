@@ -82,7 +82,7 @@ next_project: moondance-festival
 %}
 
 {%
-     include section-mockups.html
+     include section-mockups-mobile.html
      title="Mobile screens"
      background="white"
      proto_desktop=false
