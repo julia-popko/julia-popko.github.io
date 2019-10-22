@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Moondance Jammin Festival
+title: Blancc Festival (Coming soon)
 desc: Meta desc
 order: 2
 cover: moondance-cover.png
