@@ -1,14 +1,14 @@
 - name: behance
-  link: "#"
+  link: "https://www.behance.net/juliapopko"
   icon: fab fa-behance
 - name: dribble
-  link: "#"
+  link: "https://dribbble.com/julpop"
   icon: fab fa-dribbble"
 - name: linkedin
-  link: "#"
+  link: "www.linkedin.com/in/julia-popko"
   icon: fab fa-linkedin-in
 - name: medium
-  link: "#"
+  link: "https://medium.com/@juliettapop"
   icon: fab fa-medium-m
 - name: email
   link: mailto:juliettapop@gmail.com
