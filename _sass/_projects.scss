@@ -182,6 +182,17 @@
 					}
 				}
 			}
+
+			&.screens-mobile {
+				li {
+					width: auto;
+
+					img {
+						width: auto;
+						max-height: 500px;
+					}
+				}
+			}
 		}
 	}
 
