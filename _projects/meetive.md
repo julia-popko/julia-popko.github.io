@@ -28,24 +28,35 @@ next_project: moondance-festival
      style=false
      img=""
      alt_img=""
-     content="The inspiration for this project came from people around me. A lot of them experienced major difficulties while trying to organize a group meeting. I got curious about this topic and conducted some UX research to find out more about the painpoints. Apparently, the biggest problem during organizing a group event turned out to be deciding and agreeing on q specific meeting venue that would suit all the participants and their needs."
+     content="The inspiration for this project came from people around me. A lot of them experienced major difficulties while trying to organize a group meeting. I got curious about this topic and conducted a major UX research to find out more about the problems. My challenge is this project was designing a responsive mobile application that help the user to plan and organize a meeting for a selected group of people."
 %}
-
 {%
      include section-projects.html
      background="white"
-     title="Challenge"
-     border=true
+     title="UX Research"
+     border=false
      2_col=false
      mockup_mobile=false
      style=false
      img=""
      alt_img=""
-     content="Design a responsive mobile application that help the user to plan and organize a meeting for a selected group of people."
+     content="Research showed that the biggest problem during organizing a group event is deciding and agreeing on a specific meeting venue that would suit all the participants and their needs. I conducted several interviews, in which people were complaining that the main reasons to not come for the meeting is the place - usually they don't like it or it's too far from the place where they live."
 %}
 {%
      include section-projects.html
      background="white"
+     title="Logo & Brand Attributes"
+     border=false
+     2_col=true
+     mockup_mobile=false
+     style=false
+     img="meetive-logo.png"
+     alt_img=""
+     content="The goal was to create a brand that is functional and conncects people but in the informal way."
+%}
+{%
+     include section-projects.html
+     background="dark-blue"
      title=""
      border=false
      2_col=false

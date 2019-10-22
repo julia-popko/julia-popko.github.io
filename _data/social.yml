@@ -1,6 +1,9 @@
 - name: behance
   link: "#"
   icon: fab fa-behance
+- name: dribble
+  link: "#"
+  icon: fab fa-dribbble"
 - name: linkedin
   link: "#"
   icon: fab fa-linkedin-in
