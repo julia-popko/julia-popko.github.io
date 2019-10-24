@@ -52,7 +52,7 @@ next_project: moondance-festival
      style=false
      img="meetive-logo.png"
      alt_img=""
-     content="The goal was to create a brand that is functional and connects people but in the informal way. The descriptive name, \"Meetive,\" is a variation of the the verb \"meet\" and indicates that the service focuses on the theme of meetings."
+     content="The goal was to create a brand that is functional and connects people but in the informal way. The descriptive name, \"Meetive,\" is a variation of the the verb \"meet\" and indicates that the service focuses on the theme of geeting people together."
 %}
 {%
      include section-projects.html

@@ -103,7 +103,7 @@ next_project: name_of_page (without .md)
      link_proto="https://www.youtube.com/embed/E8c_E36t2nc"
 %}
 {%
-     include section-mockups.html
+     include section-mockups-mobile.html
      title="Mobile screens"
      background="white"
      proto_desktop=false
