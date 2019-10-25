@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Blancc Festival (Coming soon)
+title: Moondance Jammin Festival
 desc: Meta desc
 order: 2
 cover: moondance-cover.png
@@ -27,20 +27,7 @@ next_project: logolepsy
      style=false
      img=""
      alt_img=""
-     content="The rise of the digital press has seen a tremendous peak over the last years. The audience is increasing as Millennials grow older, demanding all sorts of content. The best magazines and newspapers had already launched their digital version in early 2000, but it has been only in the last 5 years that the digital experience started to take its own shape. With numbers increasing, publishers are prompted to deliver quality content along with a great digital product for readers to experience a different but still unique act of opening up a magazine and dive into it."
-%}
-
-{%
-     include section-projects.html
-     background="white"
-     title="Challenge"
-     border=true
-     2_col=false
-     mockup_mobile=false
-     style=false
-     img=""
-     alt_img=""
-     content="Design a responsive online platform for a magazine, newspaper or blog directed to meet the needs and goals of the presented User Persona."
+     content="Online ommunication is a key factor of success. The strategy has to be aligned and deliver a cohesive message and experience. Nowadays an event’s digital presence is as important as the event itself — it represents the more lasting testimonial of what happened during those days. My challenge was to redesign a website for a festival a local country festival in Walker, Minnesota."
 %}
 
 {%
@@ -53,7 +40,7 @@ next_project: logolepsy
      style=false
      img="screen-macbook.png"
      alt_img="Process"
-     content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus"
+     content="During the UX research I found out that the current website of the festival was lacking a clear information architecture, which made it very hard for the users to navigate. The user's primary goal is to buy a festival ticket.  During the design process and testing, the User Flow has been improved due to reducing the amount of steps and content on the webiste."
 %}
 
 {%
