@@ -1,9 +1,9 @@
 ---
 layout: projects
-title: Moondance Jammin Festival
+title: Blancc Festival
 desc: Meta desc
 order: 2
-cover: moondance-cover.png
+cover: blancc-cover.png
 typeds:
   - Curated Event Microsite
   - Ironhack, Berlin
