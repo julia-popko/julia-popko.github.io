@@ -3,7 +3,7 @@ layout: projects
 title: Blancc Festival
 desc: Meta desc
 order: 2
-cover: cover-project-3.jpg
+cover: blancc-cover.png
 typeds:
   - Curated Event Microsite
   - Ironhack, Berlin

@@ -22,15 +22,23 @@ layout: default
     </div>
 </div>
 
-<div class="container">
+<ul class="list-projects">
     {% assign projects = site.projects | sort: "order" %}
     {% for project in projects %}
-    <div class="project-list">
-        <a href="{{ project.url }}">
-            <div class="cover-project-home" style="background: url(/assets/images/{{project.cover}});"></div>
+    {% if project.link_medium == true %}
+    <li style="background: url(/assets/images/{{project.cover}})">
+        <a href="{{project.link}}" target="_blank">
             <div class="purple-bg"></div>
-            <p>{{ project.title }}</p>
+            <p>{{project.title}}</p>
         </a>
-    </div>
+    </li>
+    {% else %}
+    <li style="background: url(/assets/images/{{project.cover}})">
+        <a href="{{project.url}}">
+            <div class="purple-bg"></div>
+            <p>{{project.title}}</p>
+        </a>
+    </li>
+    {% endif %}
     {% endfor %}
-</div>
+</ul>
