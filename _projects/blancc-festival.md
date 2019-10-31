@@ -3,7 +3,7 @@ layout: projects
 title: Blancc Festival
 desc: Meta desc
 order: 2
-cover: cover-project-3.jpg
+cover: blancc-cover.png
 typeds:
   - Curated Event Microsite
   - Ironhack, Berlin
@@ -27,7 +27,7 @@ next_project: logolepsy
      style=false
      img=""
      alt_img=""
-     content="Online ommunication is a key factor of success. The strategy has to be aligned and deliver a cohesive message and experience. Nowadays an event’s digital presence is as important as the event itself — it represents the more lasting testimonial of what happened during those days. My challenge was to redesign a website for a festival a local country festival in Walker, Minnesota."
+     content="Online ommunication is a key factor of success. The strategy has to be aligned and deliver a cohesive message and experience. Nowadays an event’s digital presence is as important as the event itself — it represents the more lasting testimonial of what happened during those days. My challenge for this project was to design a website for a music festival."
 %}
 
 {%
@@ -40,7 +40,7 @@ next_project: logolepsy
      style=false
      img="screen-macbook.png"
      alt_img="Process"
-     content="During the UX research I found out that the current website of the festival was lacking a clear information architecture, which made it very hard for the users to navigate. The user's primary goal is to buy a festival ticket.  During the design process and testing, the User Flow has been improved due to reducing the amount of steps and content on the webiste."
+     content="During the UX research I found out that many festival websites are lacking a clear information architecture and they are flooded with content, which made it very hard for the users to navigate. Usually, the user visits the pages to check the line up and infromation about the events. The primary goal is usually buying a festival ticket. During the design process and testing, the User Flow has been limited to a few easy steps that helps the user to achieve his goal."
 %}
 
 {%
@@ -51,8 +51,8 @@ next_project: logolepsy
      2_col=false
      mockup_mobile=false
      style=true
-     img="moondance-style-tile.png"
-     alt_img="Styles Moondance"
+     img="blancc-style-tile.png"
+     alt_img="Styles Blancc"
      content=""
 %}
 
