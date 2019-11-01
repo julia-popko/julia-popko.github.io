@@ -7,13 +7,13 @@ cover: blancc-cover.png
 typeds:
   - Curated Event Microsite
   - Ironhack, Berlin
-screen_mobiles:
-  - alt_image: Alt
-    image: screen-iphone.png
-  - alt_image: Alt
-    image: screen-iphone.png
-  - alt_image: Alt
-    image: screen-iphone.png  
+screen_desktops:
+  - image: blancc-desktop-1.png
+    alt_image: Alt Text for image
+  - image: blancc-desktop-2.png
+    alt_image: Alt Text for image
+  - image: blancc-desktop-3.png
+    alt_image: Alt Text for image
 next_project: logolepsy
 ---
 
@@ -57,10 +57,10 @@ next_project: logolepsy
 %}
 
 {%
-     include section-mockups.html
-     title="Mobile screens"
-     background="black"
-     proto_desktop=false
+     include section-mockups-desktop.html
+     title="Desktop Screens"
+     background="white"
+     proto_desktop=true
      proto=true
      link_proto="https://www.youtube.com/watch?v=Y77WiNTPDj0"
 %}

@@ -26,7 +26,6 @@ img_process: name_of_picture.jpg
 alt_img_process: Alt text image
 img_styles: name_of_picture.jpg
 screen_desktops:
-screen_desktops:
   - image: logolepsy-desktop-1.png
     alt_image: Alt Text for image
   - image: logolepsy-desktop-2.png
@@ -93,7 +92,6 @@ next_project: name_of_page (without .md)
      alt_img="Styles Meetive"
      content=""
 %}
-
 {%
      include section-mockups-desktop.html
      title="Desktop Screens"
