@@ -33,13 +33,13 @@ next_project: logolepsy
 
 {%
      include section-projects.html
-     background="black"
-     title="Design Process"
+     background="white"
+     title="UX Research"
      border=false
      2_col=true
      mockup_mobile=false
      style=false
-     img="screen-macbook.png"
+     img="blancc-desktop-tickets.png"
      alt_img="Process"
      content="During the UX research I found out that many music festival websites are lacking a clear information architecture and they are flooded with content, which made it very hard for the users to navigate. Usually, the user visits the pages to check the line up and infromation about the events. The primary goal is usually buying a festival ticket. During the design process and testing, the User Flow has been limited to a few easy steps that helps the user to achieve his goal."
 %}
@@ -65,7 +65,14 @@ next_project: logolepsy
      proto=true
      link_proto="https://www.youtube.com/embed/m8-6G-Ff15I"
 %}
-
+{%
+     include section-mockups-mobile.html
+     title="Mobile screens"
+     background="white"
+     proto_desktop=false
+     proto=true
+     link_proto=""
+%}
 {%
      include section-projects.html
      background="white"
