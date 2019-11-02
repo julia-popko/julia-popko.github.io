@@ -14,6 +14,7 @@ screen_desktops:
     alt_image: Alt Text for image
   - image: blancc-desktop-3.png
     alt_image: Alt Text for image
+link_proto_desktop: https://www.youtube.com/embed/m8-6G-Ff15I
 next_project: logolepsy
 ---
 
@@ -62,7 +63,7 @@ next_project: logolepsy
      background="white"
      proto_desktop=true
      proto=true
-     link_proto="https://www.youtube.com/watch?v=Y77WiNTPDj0"
+     link_proto="https://www.youtube.com/embed/m8-6G-Ff15I"
 %}
 
 {%
