@@ -28,7 +28,7 @@ next_project: moondance-festival
      style=false
      img=""
      alt_img=""
-     content="The inspiration for this project came from people around me. A lot of them experienced major difficulties while trying to organize a group meeting. I got curious about this topic and conducted a major UX research to find out more about the problems. My challenge is this project was designing a responsive mobile application that help the user to plan and organize a meeting for a selected group of people."
+     content="The inspiration for this project came from people around me. A lot of them experienced major difficulties while trying to organize a group meeting. I got curious about this topic and conducted a major UX research to find out more about the problems. My challenge for this project was designing a responsive mobile application that help the user to plan and organize a meeting for a selected group of people."
 %}
 {%
      include section-projects.html
@@ -40,7 +40,7 @@ next_project: moondance-festival
      style=false
      img=""
      alt_img=""
-     content="Research showed that the biggest problem during organizing a group event is deciding and agreeing on a specific meeting venue that would suit all the participants and their needs. I conducted several interviews, in which people were complaining that the main reasons to not come for the meeting is the place - usually they don't like it or it's too far from the place where they live."
+     content="Research showed that the biggest problem during organizing a group event is deciding and agreeing on a specific meeting venue that would suit all the participants and their needs. I conducted several interviews, in which people were complaining that the main reason of not coming for the meeting is the place - usually they don't like it or it's too far from the place where they live."
 %}
 {%
      include section-projects.html
@@ -52,7 +52,7 @@ next_project: moondance-festival
      style=false
      img="meetive-logo.png"
      alt_img=""
-     content="The goal was to create a brand that is functional and connects people but in the informal way. The descriptive name, \"Meetive,\" is a variation of the the verb \"meet\" and indicates that the service focuses on the theme of geeting people together."
+     content="The goal was to create a brand that is functional and connects people but in the informal way. The descriptive name, \"Meetive,\" is a variation of the the verb \"meet\" and indicates that the service focuses on the theme of gathering people together."
 %}
 {%
      include section-projects.html
@@ -76,7 +76,7 @@ next_project: moondance-festival
      style=false
      img="meetive-profile.png"
      alt_img="Meetive app"
-     content="Based on my research and competitors' analysis, I designed the project from the scratch to the hi-fidelity prototype. During the process, I tested my product to prioritize the features to fill the Persona's needs, such a possiblity of adding a list of favorites places and a system of categories that will help to create a poll based on the suggested places. I focused on finding a simple solution with a friendly, not overwhelmed with the content interface."
+     content="Based on my research and competitors' analysis, I designed the project from the scratch to the hi-fidelity prototype. During the process, I tested my product to prioritize the features to fill the Persona's needs, such a possiblity of adding a list of favorites places and a system of categories that will help to create a poll based on the suggested places. I focused on finding a simple solution with a friendly, not overwhelmed with the content interface with some playful elements."
 %}
 
 {%
@@ -111,7 +111,11 @@ next_project: moondance-festival
      style=false
      img=""
      alt_img=""
-     content="My final product helps the user to organise meeting in four simple steps and to decide easily about the meeting venue thanks to the integrated system of categories and suggested places in the form of the poll. After voting, the meeting venue is set automatically and visible for all the guests.
+     content="My final product helps the user to organise meeting in four simple steps and to decide easily about the meeting venue thanks to the integrated system of categories and suggested places in the form of the poll. After voting, the meeting venue is set automatically and visible for all the guests. The final product also includes playful elements, such as the animation with the baloons.
 
-Tools: UX Research, Lean Canvas, Wireframing, Usability Testing, Prototyping on Sketch, InVision and Principle"
+UX Tools: UX Research, Interviews, Survey, Competitors' Analysis, Persona, Site Map, Information Architecture, User Flow, Lean Canvas, Wireframing, Usability Testing
+
+UI Tools: Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, Usability Testing, Desirability Testing
+
+Softwares: Sketch, Adobe Illustrator, Marvel, Principle"
 %}

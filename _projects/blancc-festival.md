@@ -15,12 +15,20 @@ screen_desktops:
   - image: blancc-desktop-3.png
     alt_image: Alt Text for image
 link_proto_desktop: https://www.youtube.com/embed/m8-6G-Ff15I
+screen_mobiles:
+  - alt_image: Alt
+    image: blancc-mobile-1.png
+  - alt_image: Alt
+    image: blancc-mobile-2.png
+  - alt_image: Alt
+    image: blancc-mobile-3.png
+
 next_project: logolepsy
 ---
 
 {%
      include section-projects.html
-     background="black"
+     background="dark-gray"
      title="Introduction"
      border=false
      2_col=false
@@ -28,9 +36,8 @@ next_project: logolepsy
      style=false
      img=""
      alt_img=""
-     content="Online ommunication is a key factor of success. The strategy has to be aligned and deliver a cohesive message and experience. Nowadays an event’s digital presence is as important as the event itself — it represents the more lasting testimonial of what happened during those days. My challenge for this project was to design a website for a music festival."
+     content="Success of an event or a festival depends on two main factors: planning and promotion. The most effective way of connecting participants with their favorite festivals and artists is through a website. Nowadays an event’s digital presence is as important as the event itself — people can feel the vibe of it before it happens, learn what they will experience, and, most imporantingly, buy a ticket. For this project, I designed a responisive website for a pop music festival."
 %}
-
 {%
      include section-projects.html
      background="white"
@@ -41,9 +48,8 @@ next_project: logolepsy
      style=false
      img="blancc-desktop-tickets.png"
      alt_img="Process"
-     content="During the UX research I found out that many music festival websites are lacking a clear information architecture and they are flooded with content, which made it very hard for the users to navigate. Usually, the user visits the pages to check the line up and infromation about the events. The primary goal is usually buying a festival ticket. During the design process and testing, the User Flow has been limited to a few easy steps that helps the user to achieve his goal."
+     content="During the UX research I found out that many music festival websites are lacking a clear information architecture and they are flooded with content and not consistent, which made it very hard for the users to navigate. Usually, the user visits the website of an event to check the line up and infromation about it. The primary goal is usually buying a festival ticket. During the design process and testing, the User Flow has been limited to a few easy steps that helps the user to achieve his goal."
 %}
-
 {%
      include section-projects.html
      background="white"
@@ -56,7 +62,6 @@ next_project: logolepsy
      alt_img="Styles Blancc"
      content=""
 %}
-
 {%
      include section-mockups-desktop.html
      title="Desktop Screens"
@@ -71,19 +76,22 @@ next_project: logolepsy
      background="white"
      proto_desktop=false
      proto=true
-     link_proto=""
 %}
 {%
      include section-projects.html
-     background="white"
      title="Overview"
+     background="dark-gray"
      border=false
      2_col=false
      mockup_mobile=false
      style=false
      img=""
      alt_img=""
-     content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt  mollitia animi, id est laborum et dolorum fuga.
+     content="The Blancc festival website helps the user to find all the necessary information about the event and to buy a ticket online. Also, the use of bright and modern colors have been associated with energy and music during the Usability Testing.
 
-Tools: Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus"
+UX Tools: user research, interviews, persona, user journey, affinity diagram, card sorting, sitemap, user flow, concept definition, paper prototype, user testing and wireframing
+
+UI Tools: moodboard, style tile, atomic design, mock ups, micro interactions, user testing
+
+Softwares: Sketch, InVision, Principle"
 %}

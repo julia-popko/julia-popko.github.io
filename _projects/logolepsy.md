@@ -54,7 +54,7 @@ next_project: name_of_page (without .md)
      style=false
      img=""
      alt_img=""
-     content="Research showw that most digital magazine readers are educated, young and upper middle class, called Millennials. My challenge during this project was to design a responsive online platform for a cultural magazine to meet the needs and goals of the User Persona, the aspiring artist, who wants to read about the most influential authors from her timee and share everything on social media platforms."
+     content="Research shown that most digital magazine readers are educated, young and upper middle class, called Millennials. My challenge during this project was to design a responsive online platform for a cultural magazine to meet the needs and goals of the User Persona, the aspiring artist, who wants to read about the most influential authors from her time and share everything on social media platforms."
 %}
 {%
      include section-projects.html
@@ -66,7 +66,7 @@ next_project: name_of_page (without .md)
      style=false
      img=""
      alt_img=""
-     content="During the research part of this case study, I investigated the habits of digital magazine users. It turned out that the people who read the digital press, spend on the websites not more than 30 minutes per day. Then, the design should be tailored for the user who only browses headlines to find the most appealing and interesting information. Therefore, the page navigation has to be clear and the categories have to be easily accessible. Also, the survey and interviews I conducted shown that my target group is moslty interested in culture, fashion and literature."
+     content="During the research part of this case study, I investigated the habits of digital magazine users. It turned out that the people who read the digital press, spend on the websites not more than 30 minutes per day. Then, the design should be tailored for the user who only browses headlines to find the most appealing and interesting information. Therefore, the page navigation has to be clear and the categories have to be easily accessible. Also, the survey and interviews I conducted shown that my target group is mostly interested in culture, fashion and literature."
 %}
 {%
      include section-projects.html
@@ -78,7 +78,7 @@ next_project: name_of_page (without .md)
      style=false
      img="logolepsy-logo.png"
      alt_img=""
-     content="To meet the needs of the Persona, it was crucial to create a logo that is original and intellectual. The word \"Logolepsy\" comes from greek and means an obsession or fascination with words. Also, since the magazine's main categories are linked to cultural topics, I wanted to keep it simple but at the same time in an elegant style. Brand attributes that define the overall nature of the company are \"inspiring\" and \"expressive.\""
+     content="To meet the needs of the Persona, it was crucial to create a logo that is original and intellectual. The word \"Logolepsy\" comes from Greek and means an obsession or fascination with words. Also, since the magazine's main categories are linked to cultural topics, I wanted to keep it simple but at the same time in an elegant style. Brand attributes that define the overall nature of the company are \"inspiring\" and \"expressive.\""
 %}
 {%
      include section-projects.html
@@ -118,7 +118,11 @@ next_project: name_of_page (without .md)
      style=false
      img=""
      alt_img=""
-     content="Several iterations and user tests helped me to create a responsive platform for both desktop and mobile devices. In the chosen User Flow, the Persona is able to browse main categories of the platform and read the article from the Literature section. 
+     content="Several iterations and user testing helped me to create a responsive platform for both desktop and mobile devices. In the chosen User Flow, the Persona is able to browse main categories of the platform and read the article from the Literature section. In the mobile version, the traditional menu was replaced by a burger one in the top left corner of the screen.
 
-Tools: UX Research, Bussiness & Competitive Analysis, Information Architecture, Card Sorting, Wireframing, Usability Testing, Prototyping on InVision and Principle, Desirability Testing"
+UX Tools: User Research, Bussiness & Competitive Analysis, Persona, User Journey, Affinity Diagram, Card Sorting, Infomation Architecture, Sitemap, User Flow, Concept Definition, Paper Prototype, User Testing and Wireframing
+
+UI Tools: Moodboard, Style Tile, Atomic Design, Mock Ups, micro interactions, Usability Testing, Desirability Testing
+
+Softwares: Sketch, InVision, Principle"
 %}
