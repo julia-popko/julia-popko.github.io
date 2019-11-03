@@ -3,7 +3,7 @@ layout: projects
 title: Meetive
 desc: Meta desc
 order: 1
-cover: meetive-cover.png
+cover: meetive-cover-compressor.png
 typeds:
   - Mobile App
   - Ironhack, Berlin
@@ -15,7 +15,7 @@ screen_mobiles:
   - alt_image: Alt
     image: meetive-mobile-screen-3.png
 
-next_project: moondance-festival
+next_project: blancc-festival
 ---
 
 {%
