@@ -106,7 +106,6 @@ next_project: name_of_page (without .md)
      background="white"
      proto_desktop=false
      proto=true
-     link_proto="https://www.youtube.com/embed/Y77WiNTPDj0"
 %}
 {%
      include section-projects.html
