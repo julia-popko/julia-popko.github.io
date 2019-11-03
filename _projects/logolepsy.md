@@ -105,7 +105,6 @@ next_project: name_of_page (without .md)
      title="Mobile screens"
      background="white"
      proto_desktop=false
-     proto=true
 %}
 {%
      include section-projects.html

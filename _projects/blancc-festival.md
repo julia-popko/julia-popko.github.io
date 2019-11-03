@@ -75,7 +75,6 @@ next_project: logolepsy
      title="Mobile screens"
      background="white"
      proto_desktop=false
-     proto=true
 %}
 {%
      include section-projects.html
@@ -87,11 +86,11 @@ next_project: logolepsy
      style=false
      img=""
      alt_img=""
-     content="The Blancc festival website helps the user to find all the necessary information about the event and to buy a ticket online. Also, the use of bright and modern colors have been associated with energy and music during the Usability Testing.
+     content="The Blancc festival website helps the user to find all the necessary information about the event and to buy a ticket online. Also, the use of bright and modern colors have been associated with energy and music during the Usability Testing. In the mobile version of the website, the user can access the menu section in the top right corner, clicking on burger menu option.
 
-UX Tools: user research, interviews, persona, user journey, affinity diagram, card sorting, sitemap, user flow, concept definition, paper prototype, user testing and wireframing
+UX Tools: User Research, Interviews, Persona, User Journey, Affinity Diagram, open and closed Card Sorting, Sitemap, User Flow, Concept Definition, Paper Prototype, User Testing and Wireframing
 
-UI Tools: moodboard, style tile, atomic design, mock ups, micro interactions, user testing
+UI Tools: Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, User Testing
 
 Softwares: Sketch, InVision, Principle"
 %}
