@@ -5,7 +5,7 @@ $gray: #555555;
 $white: #fff;
 $purple: #18172d;
 $dark-blue: #3a405a;
-$dark-gray: #1D2226;
+$dark-gray: #1d2226;
 
 /*=============================================== Background colors ===============================================*/
 
@@ -66,27 +66,27 @@ $dark-gray: #1D2226;
 	color: $white;
 
 	.link-proto {
-          p {
-               color: $white;
+		p {
+			color: $white;
 
-               span {
-                    background: $white;
-               }
-          }
+			span {
+				background: $white;
+			}
+		}
 	}
+}
 
 .bg-dark-gray {
 	background-color: $dark-gray;
 	color: $white;
-		
+
 	.link-proto {
-		  p {
-				color: $white;
-		
-					span {
-			             background: $white;
-				 }
+		p {
+			color: $white;
+
+			span {
+				background: $white;
 			}
-		}		
+		}
 	}
 }
