@@ -40,7 +40,7 @@ experiences:
       as requested
     title: Internship Trainee
     skills: >-
-      Microsoft Office, InDesign, time management, analytical skills, time management, 
+      Microsoft Office, InDesign, analytical skills, time management, 
       teamwork
 
 educations:
