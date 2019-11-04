@@ -63,7 +63,7 @@ educations:
   - city : Warsaw University
     date: 2013 - 2017
     school: Teaching Foreign Languages - English and French
-    title: Bacherlor's Studies
+    title: Bachelor's Studies
 
 languages:
   - level: native
