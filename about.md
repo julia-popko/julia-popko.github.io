@@ -79,6 +79,7 @@ skills:
   - name: Figma
   - name: Principal
   - name: InDesign
+  - name: Illustrator
   - name: Zeplin
 cv_link: Julia-Popko-CV.pdf
 desc: Meta desc
