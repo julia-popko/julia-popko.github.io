@@ -78,10 +78,10 @@ skills:
   - name: Sketch
   - name: Figma
   - name: Principal
-  - name: InDesign
-  - name: Illustrator
+  - name: Adobe CC
+  - name: HTML & CSS
   - name: Zeplin
-cv_link: Julia-Popko-CV.pdf
+cv_link: cv.pdf
 desc: Meta desc
 ---
 
