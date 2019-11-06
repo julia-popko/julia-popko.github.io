@@ -1,6 +1,7 @@
 <header>
      <nav>
           <ul>
+               {% include social.html %}
                {% for item in site.data.nav %}
                <li><a href="{{item.link}}">{{item.title}}<span></span></a></li>
                {% endfor %}

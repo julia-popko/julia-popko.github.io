@@ -11,13 +11,12 @@ header {
     nav {
         width: 100%;
         float: left;
+        @include flexbox(center, flex-end, nowrap);
 
         ul {
-            width: 100%;
-            float: left;
-            @include flexbox(center, flex-end, nowrap);
             @extend %ulNone;
-
+            @include flexbox(center, flex-start, nowrap);
+            
             li {
                 margin-right: 20px;
                 position: relative;
@@ -49,6 +48,10 @@ header {
                         width: 100%;
                     }
                 }
+            }
+
+            &.social li a:hover {
+                color: $gray;
             }
         }
     }

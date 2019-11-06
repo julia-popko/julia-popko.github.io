@@ -16,9 +16,19 @@ layout: default
 	</div>
 </div>
 
-{{content}}
+{{ content }}
+
+{% if page.link_to_medium %}
+<p class="link-full-project">
+	<a href="{{ page.link_to_medium }}" target="_blank">See the full project on Medium<span></span></a>
+</p>
+{% endif %} {% if page.link_to_behance %}
+<p class="link-full-project">
+	<a href="{{ page.link_to_behance }}" class="link-full-project" target="_blank">See the full project on Behance<span></span></a>
+</p>
+{% endif %}
 
 <div class="button-next-project">
 	<a href="{{ page.next_project }}.html">Next project<span></span></a>
-	<img src="/assets/images/logo.svg" alt="Logo Julia Popko">
+	<img src="/assets/images/logo.svg" alt="Logo Julia Popko" />
 </div>
