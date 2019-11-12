@@ -25,6 +25,15 @@ layout: default
 <div class="container">
     {% assign projects = site.projects | sort: "order" %}
     {% for project in projects %}
+    {% if project.link_medium == true %}
+    <div class="project-list">
+        <a href="{{ project.link }}" target="_blank">
+            <div class="cover-project-home" style="background: url(/assets/images/{{project.cover}});"></div>
+            <div class="purple-bg"></div>
+            <p>{{ project.title }}</p>
+        </a>
+    </div>
+    {% else %}
     <div class="project-list">
         <a href="{{ project.url }}">
             <div class="cover-project-home" style="background: url(/assets/images/{{project.cover}});"></div>
@@ -32,5 +41,6 @@ layout: default
             <p>{{ project.title }}</p>
         </a>
     </div>
+    {% endif %}
     {% endfor %}
 </div>
