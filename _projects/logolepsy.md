@@ -2,7 +2,7 @@
 layout: projects
 title: Logolepsy
 desc: Meta desc
-order: 3
+order: 4
 cover: logolepsy-cover.png
 typeds:
    - Web Magazine
