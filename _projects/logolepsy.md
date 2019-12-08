@@ -94,7 +94,7 @@ next_project: linkedin
 %}
 {%
      include section-mockups-desktop.html
-     title="Desktop Screens"
+     title="Desktop screens"
      background="white"
      proto_desktop=true
      proto=false
