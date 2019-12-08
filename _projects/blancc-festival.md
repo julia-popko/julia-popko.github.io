@@ -2,7 +2,7 @@
 layout: projects
 title: Blancc Festival
 desc: Meta desc
-order: 2
+order: 3
 cover: blancc-cover-compressor.png
 typeds:
   - Curated Event Microsite

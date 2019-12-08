@@ -2,7 +2,7 @@
 layout: projects
 title: Meetive
 desc: Meta desc
-order: 1
+order: 2
 cover: meetive-cover-compressor.png
 typeds:
   - Mobile App
