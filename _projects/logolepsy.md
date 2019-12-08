@@ -26,11 +26,11 @@ img_process: name_of_picture.jpg
 alt_img_process: Alt text image
 img_styles: name_of_picture.jpg
 screen_desktops:
-  - image: logolepsy-desktop-1.png
+  - image: sotonweb-desktop-1.png
     alt_image: Alt Text for image
-  - image: logolepsy-desktop-2.png
+  - image: sotonweb-desktop-2.png
     alt_image: Alt Text for image
-  - image: logolepsy-desktop-3.png
+  - image: sotonweb-desktop-3.png
     alt_image: Alt Text for image
 link_proto_desktop: https://www.youtube.com/embed/E8c_E36t2nc
 screen_mobiles:
@@ -42,7 +42,7 @@ screen_mobiles:
     image: logolepsy-mobile-3.png
 content_overview: >-
   Content
-next_project: name_of_page (without .md)
+next_project: linkedin
 ---
 {%
      include section-projects.html
