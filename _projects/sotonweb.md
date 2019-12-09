@@ -107,7 +107,7 @@ next_project: meetive
      style=false
      img=""
      alt_img=""
-     content="The website let the user easily navigate among four main categories. Each of them can be selected both from the navigation bar or from the homepage. To highlight the most crucial category for the user, informing about the company's services, I drew the icons and desined the hover effects. The traditional menu in the mobile version has been replaced by the burger one.
+     content="The website lets the user easily navigate among four main categories. Each of them can be selected both from the navigation bar or from the homepage. To highlight the most crucial category for the user, informing about the company's services, I drew the icons and desined the hover effects. The traditional menu in the mobile version has been replaced by the burger one.
 
 UX Tools: UX Research, Competitors' Analysis, Site Map, Information Architecture, Wireframing, User Testing
 
