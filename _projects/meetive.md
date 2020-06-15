@@ -4,7 +4,7 @@ title: Meetive mobile app
 desc: 
 order: 3
 home_cover: meetive-cover.png
-cover: l-meetive-cover.png
+cover: meetive-cover.png
 alt_cover: Alt
 type: Ironhack
 desc_short: A case study of my final project of a mobile application that helps its user to organize and plan a group meeting
