@@ -29,102 +29,67 @@ To add a project add a file in `/_projects/` with `name-of-file.md`. In the fron
 ---
 layout: projects
 title: Title
-desc: Meta desc
-order: n (order on homepage)
-cover: name_of_image.png
-typeds:
-  - Content of typed
-screen_desktops:
-  - image: name_of_image.png
-    alt_image: Alt Text for image
-screen_mobiles:
-  - image: name_of_image.png
-    alt_image: Alt Text for image
-
-next_project: name_of_page (without.md)
+desc: Meta description
+order: n (order in homepage list)
+next_project: name_of_next_project
+home_cover: name_picture_on_home.png
+cover: name_of_cover.png
+type: Type of project
+desc_short: Short description displayed on homepage
 ---
 ```
 
 After the front matter you can include every sections of the page. To do so type:
 ```
 {%
-     include section-projects.html
-     background="color" (check in the page _sass/_colors.scss the names of colors)
-     title="Title of the section"
-     border=true|false (if you're in the Challenge section type true, else type false)
-     2_col=true|false (if you're in the Design Process section type true, else type false)
-     mockup_mobile=true|false (if the picture in Design process is a mobile mockup type true, else type false)
-     style=true|false (if you're in the Style Tile section type true, else type false)
-     img="name_of_image.png"
-     alt_img="Alt text for image"
-     content="Text of the section in markdown"
+     include section.html
+     title="Title"
+     content="Text"
 %}
 ```
 
-To include the sections showing mockups type:
+To include the sections showing with 2 columns:
 
 ```
 {%
-     include section-mockups.html
-     title="Title of section"
-     background="color"
-     proto_desktop=true|false (if you're showing desktop prototypes type true, else type false)
-     proto=true|false (if you want to show a video type true, else type false)
-     link_proto="http://www.link-to-embed-youtube.com"
+     include section-pictures.html
+     title="Title"
+     content="Text"
+     image="name_of_image.png"
+     alt_image="Alt text of image"
 %}
 ```
 
-If this is not working, include `section-mockups-desktop.html` or `section-mockups-mobile.html`, and delete the line `proto_desktop`
+To include the sections with one picture:
+
+```
+{%
+     include section-prototype.html
+     title="Title"
+     image="name_of_image.png"
+     alt_image="Alt text of image"
+%}
+```
+
+To include the sections with one picture and a video:
+Open your video in YouTube, click on `Share` then `Embed`, and copy the part in the src. Eg: `https://www.youtube.com/embed/CsGauHXioos`. Now add this in your file:
+
+```
+{%
+     include section-prototype.html
+     title="Title"
+     image="name_of_image.png"
+     alt_image="Alt text of image"
+     prototype="https://www.youtube.com/embed/uPaFUEg2ROY"
+%}
+```
 
 For help writing the `.md` file go here: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 To add a class to the generated element add `{:.class}` before the line. To add it in a `li` add this at the beginning of the line `* {:.class-name} `
 
-#### Video link
-
-Open your video in YouTube, click on `Share` then `Embed`, and copy the part in the src. Eg: `https://www.youtube.com/embed/CsGauHXioos`
-
-### Add experience
-
-To add an experience open the file `/about.md` and write in the list `experiences`:
-```
- - title: Title of experience
-   city: City
-   company: Name of company (not mandatory)
-   date: Start date - End date
-   description: "Small description"
-   skills: Skills
-```
-
-### Add an education item
-
-To add an experience open the file `/about.md` and write in the list `educations`:
-```
-- title: Title
-  city: Berlin
-  date: August - October 2019
-  description: >-
-     Description of education item
-school: School
-```
-
-### Add a skill
-
-Open the file `/about.md` and write in the list `skills`:
-```
-  - name: Name of skill
-```
-
-### Add a language
-
-To add a language open the file `/about.md` and write in the list `languages`:
-```
-- name: Name of language
-  level: Level of language
-```
-
 ### Social links
 
-Go to [Font Awesome website](https://fontawesome.com/icons?d=gallery) and select the logo of the social media you want to add. Copy the class of the `<i></i>`. Now open the file `/_data/social.yml` and write:
+Go to [Fajny website](https://fajny-css.github.io/icons.html) and select the logo of the social media you want to add. Copy the class of the `<i></i>`. Now open the file `/_data/social.yml` and write:
 ```
 - name: name of social media
   link: https://www.link.com/
@@ -133,10 +98,10 @@ Go to [Font Awesome website](https://fontawesome.com/icons?d=gallery) and select
 
 ### CV
 
-Put your new CV in the folder `/assets/images`. Then open the file `/about.md` and find the line `cv_link`. Change the link to the name of your new CV. Example:
+Put your new CV in the folder `/assets/images`. Then open the file `/about.md` and find the line `cv`. Change the link to the name of your new CV. Example:
 
 ```
-cv_link: resume-julia-popko.pdf
+cv: resume-julia-popko.pdf
 ```
 
 ### Add navigation item

@@ -1,4 +1,6 @@
-- title: Home
-  link: /
+- title: Portfolio
+  link: /#portfolio
 - title: About
-  link: /about.html
+  link: /about/
+- title: Contact
+  link: "mailto:juliettapop@gmail.com"

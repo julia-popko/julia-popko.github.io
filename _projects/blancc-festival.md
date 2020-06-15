@@ -1,96 +1,86 @@
 ---
 layout: projects
 title: Blancc Festival
-desc: Meta desc
-order: 3
-cover: blancc-cover-compressor.png
-typeds:
-  - Curated Event Microsite
-  - Ironhack, Berlin
-screen_desktops:
-  - image: blancc-desktop-1.png
-    alt_image: Alt Text for image
-  - image: blancc-desktop-2.png
-    alt_image: Alt Text for image
-  - image: blancc-desktop-3.png
-    alt_image: Alt Text for image
-link_proto_desktop: https://www.youtube.com/embed/m8-6G-Ff15I
-screen_mobiles:
-  - alt_image: Alt
-    image: blancc-mobile-1.png
-  - alt_image: Alt
-    image: blancc-mobile-2.png
-  - alt_image: Alt
-    image: blancc-mobile-3.png
-
-next_project: logolepsy
+desc: 
+order: 2
+next_project: meetive
+home_cover: s-blancc-cover.png
+cover: blancc-cover.png
+type: Ironhack
+desc_short: Design of a ready-to-build microsite of a popular music festival
 ---
 
 {%
-     include section-projects.html
-     background="dark-gray"
+     include section.html 
      title="Introduction"
-     border=false
-     2_col=false
-     mockup_mobile=false
-     style=false
-     img=""
-     alt_img=""
-     content="Success of an event or a festival depends on two main factors: planning and promotion. The most effective way of connecting participants with their favorite festivals and artists is through a website. Nowadays an event’s digital presence is as important as the event itself — people can feel the vibe of it before it happens, learn what they will experience, and, most imporantingly, buy a ticket. For this project, I designed a responisive website for a pop music festival."
+     content="Success of an event or a festival depends on two main factors: planning and promotion. The most effective way of connecting participants with their favorite festivals and artists is through a website. Nowadays an event’s digital presence is as important as the event itself — people can feel the vibe of it before it happens, learn what they will experience, and, most imporantingly, buy a ticket. For this project, I designed a responisive website for a music festival called **Blancc**."
 %}
+
 {%
-     include section-projects.html
-     background="white"
+     include section-pictures.html
      title="UX Research"
-     border=false
-     2_col=true
-     mockup_mobile=false
-     style=false
-     img="blancc-desktop-tickets.png"
-     alt_img="Process"
-     content="During the UX research I found out that many music festival websites are lacking a clear information architecture and they are flooded with content and not consistent, which made it very hard for the users to navigate. Usually, the user visits the website of an event to check the line up and infromation about it. The primary goal is usually buying a festival ticket. During the design process and testing, the User Flow has been limited to a few easy steps that helps the user to achieve his goal."
+     content="During the UX research I found out that many music festival websites are lacking a clear information architecture and they are flooded with content and are also not consistent, which made it very hard for the users to navigate. Usually, the user visits the website of an event to check the line up and infromation about it. The primary goal is usually buying a festival ticket. During the design process and testing, the User Flow has been limited to a few easy steps that helps the user to achieve his goal."
+     image="blancc-news-desktop.png"
+     alt_image="News"
 %}
+
 {%
-     include section-projects.html
-     background="white"
+     include section-pictures.html
+     title="Logo & brand attributes"
+     content="Logo for a festival does not need a symbol alongside a wordmark. The brand name on its own is enough, particularly with a distinctive one, such as Blancc Music Festival. It unites different genres celebrating cultural and musical diversity. I created an elastic graphic identity that can adapt to various circumstances and represent different elements of the festival such as musical genres, location or year."
+     image="blancc-logo.png"
+     alt_image="Logo Blancc"
+%}
+
+{%
+     include section-prototype.html
      title="Style tile"
-     border=false
-     2_col=false
-     mockup_mobile=false
-     style=true
-     img="blancc-style-tile.png"
-     alt_img="Styles Blancc"
-     content=""
+     image="blancc-style-tile.png"
+     alt_image="Style tile"
 %}
+
 {%
-     include section-mockups-desktop.html
-     title="Desktop Screens"
-     background="white"
-     proto_desktop=true
-     proto=true
-     link_proto="https://www.youtube.com/embed/m8-6G-Ff15I"
+     include section-prototype.html
+     title="Desktop screens"
+     image="blancc-homepage.png"
+     alt_image="Desktop screens"
+     prototype="https://www.youtube.com/embed/m8-6G-Ff15I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 %}
+
 {%
-     include section-mockups-mobile.html
+     include section-prototype.html
      title="Mobile screens"
-     background="white"
-     proto_desktop=false
+     image="blancc-mobile-screens.png"
+     alt_image="Desktop screens"
 %}
+
 {%
-     include section-projects.html
+     include section.html
      title="Overview"
-     background="dark-gray"
-     border=false
-     2_col=false
-     mockup_mobile=false
-     style=false
-     img=""
-     alt_img=""
-     content="The Blancc festival website helps the user to find all the necessary information about the event and to buy a ticket online. Also, the use of bright and modern colors have been associated with energy and music during the Usability Testing. In the mobile version of the website, the user can access the menu section in the top right corner, clicking on burger menu option.
+     content="
+The Blancc festival website helps the user to find all the necessary information about the event and to buy a ticket online. Also, the use of bright and modern colors have been associated with energy and music during the Usability Testing. In the mobile version of the website, the user can access the menu section in the top right corner, clicking on burger menu option.
 
-UX Tools: User Research, Interviews, Persona, User Journey, Affinity Diagram, open and closed Card Sorting, Sitemap, User Flow, Concept Definition, Paper Prototype, User Testing and Wireframing
+&nbsp;
 
-UI Tools: Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, User Testing
 
-Softwares: Sketch, InVision, Principle"
+UX Tools
+
+
+User Research, Interviews, Persona, User Journey, Affinity Diagram, open and closed Card Sorting, Sitemap, User Flow, Concept Definition, Paper Prototype, User Testing and Wireframing
+
+&nbsp; 
+
+
+UI Tools
+
+
+Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, User Testing
+
+&nbsp;
+
+
+Softwares
+
+
+Sketch, InVision, Principle"
 %}

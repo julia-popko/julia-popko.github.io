@@ -2,106 +2,34 @@
 layout: default
 ---
 
-<main>
-	<div class="cover-about">
-		<div class="picture">
-			<img src="/assets/images/{{page.picture}}" alt="{{page.alt_picture}}" />
-		</div>
+<div class="wrapper">
+     <div class="container container-about">
+          <section class="about-page">
+               <div class="row">
+                    <div class="col profile-pic">
+                         <img src="/assets/images/gray-pattern1.svg" alt="Pattern" id="pattern1">
+                         <img src="/assets/images/gray-pattern2.svg" alt="Pattern" id="pattern2">
+                         <img src="/assets/images/gray-pattern3.svg" alt="Pattern" id="pattern3">
+                         <img src="/assets/images/{{ page.picture }}" alt="{{ page.alt_picture }}" id="profile-pic">
+                    </div>
 
-		<div class="title">
-			<h1>{{ site.title }}</h1>
-			<p>{{ page.text_about }}</p>
-		</div>
-	</div>
+                    <div class="col">
+                         <h4>{{ page.title }}<span></span></h4>
 
-	<div class="row">
-		<div class="col-6-12 col-padding-left col-desktop">
-			<h3>Education</h3>
-			<ul class="list-education">
-				{% for education in page.educations %}
-				<li>
-					<p class="date">{{ education.date }}</p>
-					<p class="title">{{ education.title }}</p>
-					<p class="school">{{ education.school }}, {{ education.city }}</p>
-					<p class="description">{{ education.description }}</p>
-				</li>
-				{% endfor %}
-			</ul>
+                         <div class="content">
+                              {{ content }}
+                         </div>
 
-			<div class="row">
-				<div class="col-6-12">
-					<h3>Languages</h3>
-					<ul class="list-languages">
-						{% for language in page.languages %}
-						<li>{{ language.name }}: {{ language.level }}</li>
-						{% endfor %}
-					</ul>
-				</div>
+                         <a href="mailto:{{ site.email }}" class="btn-arrow">Let’s chat</a>
+                    </div>
+               </div>
 
-				<div class="col-6-12">
-					<h3>Skills</h3>
-					<ul class="list-skills">
-						{% for skill in page.skills %}
-						<li>{{skill.name}}</li>
-						{% endfor %}
-					</ul>
-				</div>
-			</div>
+               <div class="row row-cv">
+                    <a href="/assets/images/{{ page.cv_eng }}" class="btn-primary" target="_blank">Grab my CV (EN)</a>
+                    <a href="/assets/images/{{ page.cv_pl }}" class="btn-primary" target="_blank">Grab my CV (PL)</a>
+               </div>
+          </section>
 
-			<a href="/assets/images/{{page.cv_link}}" class="cv_link" target="_blank">PDF
-				Version<span></span></a>
-		</div>
-
-		<div class="col-6-12 col-padding-right">
-			<h3>Experience</h3>
-			<ul class="list-experience">
-				{% for experience in page.experiences %}
-				<li>
-					<p class="title">{{experience.title}}</p>
-					<p class="subtitle">{% if experience.company %}{{experience.company}},
-						{% endif %}{{experience.city}} | {{experience.date}}</p>
-					<p class="description">{{experience.description}}</p>
-					<p class="skills">Skills: {{experience.skills}}</p>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
-
-		<div class="col-6-12 col-padding-left col-mobile">
-			<h3>Education</h3>
-			<ul class="list-education">
-				{% for education in page.educations %}
-				<li>
-					<p class="date">{{ education.date }}</p>
-					<p class="title">{{ education.title }}</p>
-					<p class="school">{{ education.school }}, {{ education.city }}</p>
-					<p class="description">{{ education.description }}</p>
-				</li>
-				{% endfor %}
-			</ul>
-
-			<div class="row">
-				<div class="col-6-12">
-					<h3>Languages</h3>
-					<ul class="list-languages">
-						{% for language in page.languages %}
-						<li>{{ language.name }}: {{ language.level }}</li>
-						{% endfor %}
-					</ul>
-				</div>
-
-				<div class="col-6-12">
-					<h3>Skills</h3>
-					<ul class="list-skills">
-						{% for skill in page.skills %}
-						<li>{{skill.name}}</li>
-						{% endfor %}
-					</ul>
-				</div>
-			</div>
-
-			<a href="/assets/images/{{page.cv_link}}" class="cv_link" target="_blank">PDF
-				Version<span></span></a>
-		</div>
-	</div>
-</main>
+          {% include footer.html %}
+     </div>
+</div>

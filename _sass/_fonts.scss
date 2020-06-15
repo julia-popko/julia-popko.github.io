@@ -1,37 +1,80 @@
-/*=============================================== Fonts ===============================================*/
+/*=============================================== Imports ===============================================*/
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700|Quicksand:400,500,600&display=swap');
 
-%montserrat {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
+/*=============================================== Mixins ===============================================*/
+
+%titles {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 }
 
-%montserrat-italic {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-}
-
-%montserrat-medium {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-}
-
-%montserrat-bold {
-	font-family: "Montserrat", sans-serif;
+%titles-bold {
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 }
 
-$font-titles-big: 50px;
-$font-titles: 24px;
-$font-titles-small: 21px;
-$font-body: 16px;
-$font-list-projects: 48px;
-$font-footer: 32px;
-$font-intro: 18px;
+%body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
 
-/*=============================================== Text styles ===============================================*/
+%body-semi {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+}
+
+%body-bold {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+}
+
+$line: 1.8;
+
+/*=============================================== Fonts ===============================================*/
+
+h1 {
+    $size: 50px;
+    @extend %titles-bold;
+    font-size: $size;
+    line-height: $size*$line;
+    
+    .break {
+        display: none;
+
+        @media only screen and (max-width: 600px) {
+            display: inherit;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        $size: 30px;
+        font-size: $size;
+        line-height: $size*$line;
+    }
+}
+
+h2 {
+    $size: 20px;
+    @extend %body;
+    font-size: $size;
+    font-size: $size;
+    line-height: $size*$line;
+
+    &.subtitle {
+        text-transform: uppercase;
+        color: $gray;
+    }
+}
+
+h3 {
+    $size: 30px;
+    @extend %titles;
+    font-size: $size;
+    font-size: $size;
+    line-height: $size*$line;
+}
+
 
 h1,
 h2,
@@ -43,57 +86,46 @@ p {
 	@extend %paMar;
 }
 
-h1 {
-	@extend %montserrat-medium;
-	font-size: $font-titles-big;
-	color: $black;
-}
+nav ul {
+    $size: 50px;
+    @extend %titles-bold;
+    font-size: $size;
+    text-transform: uppercase;
+    font-size: $size;
+    line-height: $size*$line;
 
-h2,
-#typed-strings, #typed, .typed-cursor {
-    @extend %montserrat;
-    color: $gray;
-    font-size: $font-titles;
-}
-
-h3 {
-	@extend %montserrat-bold;
-	font-size: $font-titles;
+    @media only screen and (max-width: 600px) {
+        font-size: 30px;
+    }
 }
 
 p {
-	@extend %montserrat;
-	font-size: $font-body;
+    $size: 16px;
+    @extend %body;
+    font-size: $size;
+    line-height: $size*$line;
 }
 
-.intro, .intro p {
-    font-size: $font-titles;
+p a {
+    @extend %body-bold;
+    color: $black;
+    text-decoration: none;
 }
 
-.list-projects li a, .list-projects li a p {
-	color: $white;
-	text-decoration: none;
-	@extend %montserrat-medium;
-	font-size: $font-list-projects;
-}
+h4 {
+    color: $gray;
+    text-transform: uppercase;
+    @extend %body-semi;
+    @include flexbox(flex-start, flex-start, nowrap);
+    flex-direction: column;
+    font-size: 22px;
 
-.cover-about p {
-	@extend %montserrat;
-	font-size: $font-titles;
-}
-
-.list-education .date, .list-experience .subtitle {
-	@extend %montserrat;
-	font-size: $font-body;
-	color: $gray;
-}
-
-.list-education .title, .list-education .school, .list-skills, .list-languages, .list-experience .description {
-	@extend %montserrat;
-	font-size: $font-body;
-}
-
-.list-experience .title {
-	@extend %montserrat-medium;
-	font-size: $font-titles-small;		
+    &:after {
+        content: "";
+        width: 50px;
+        height: 2px;
+        float: left;
+        background-color: $black;
+        margin-top: 10px;
+    }
 }

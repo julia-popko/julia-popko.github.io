@@ -1,121 +1,96 @@
 ---
 layout: projects
-title: Meetive
-desc: Meta desc
-order: 2
-cover: meetive-cover-compressor.png
-typeds:
-  - Mobile App
-  - Ironhack, Berlin
-screen_mobiles:
-  - alt_image: Alt
-    image: meetive-mobile-screen-1.png
-  - alt_image: Alt
-    image: meetive-mobile-screen-2.png
-  - alt_image: Alt
-    image: meetive-mobile-screen-3.png
-link_to_behance: "https://www.behance.net/juliapopko"
-next_project: blancc-festival
+title: Meetive mobile app
+desc: 
+order: 3
+home_cover: meetive-cover.png
+cover: l-meetive-cover.png
+alt_cover: Alt
+type: Ironhack
+desc_short: A case study of my final project of a mobile application that helps its user to organize and plan a group meeting
+cover_black: true
+next_project: logolepsy
 ---
-
 {%
-     include section-projects.html
-     background="dark-blue"
+     include section.html 
      title="Introduction"
-     border=false
-     2_col=false
-     mockup_mobile=false
-     style=false
-     img=""
-     alt_img=""
      content="The inspiration for this project came from people around me. A lot of them experienced major difficulties while trying to organize a group meeting. I got curious about this topic and conducted a major UX research to find out more about the problems. My challenge for this project was designing a responsive mobile application that help the user to plan and organize a meeting for a selected group of people."
 %}
+
 {%
-     include section-projects.html
-     background="white"
+     include section-pictures.html
      title="UX Research"
-     border=false
-     2_col=false
-     mockup_mobile=false
-     style=false
-     img=""
-     alt_img=""
-     content="Research showed that the biggest problem during organizing a group event is deciding and agreeing on a specific meeting venue that would suit all the participants and their needs. I conducted several interviews, in which people were complaining that the main reason of not coming for the meeting is the place - usually they don't like it or it's too far from the place where they live."
-%}
-{%
-     include section-projects.html
-     background="white"
-     title="Logo & Brand Attributes"
-     border=false
-     2_col=true
-     mockup_mobile=false
-     style=false
-     img="meetive-logo.png"
-     alt_img=""
-     content="The goal was to create a brand that is functional and connects people but in the informal way. The descriptive name, \"Meetive,\" is a variation of the the verb \"meet\" and indicates that the service focuses on the theme of gathering people together."
-%}
-{%
-     include section-projects.html
-     background="dark-blue"
-     title=""
-     border=false
-     2_col=false
-     mockup_mobile=false
-     style=true
-     img="meetive-5-advantages2.png"
-     alt_img=""
-     content=""
-%}
-{%
-     include section-projects.html
-     background="white"
-     title="Design Process"
-     border=false
-     2_col=true
-     mockup_mobile=true
-     style=false
-     img="meetive-profile.png"
-     alt_img="Meetive app"
-     content="Based on my research and competitors' analysis, I designed the project from the scratch to the hi-fidelity prototype. During the process, I tested my product to prioritize the features to fill the Persona's needs, such a possiblity of adding a list of favorites places and a system of categories that will help to create a poll based on the suggested places. I focused on finding a simple solution with a friendly, not overwhelmed with the content interface with some playful elements."
+     content="Research showed that the biggest problem during organizing a group event is deciding and agreeing on a specific meeting venue that would suit all the participants and their needs. I conducted several interviews, in which people were complaining that the main reason of not coming for the meeting is the place - usually they don’t like it or it’s too far from the place where they live."
+     image="meetive-research.png"
+     alt_image="Research"
 %}
 
 {%
-     include section-projects.html
-     background="white"
+     include section-pictures.html
+     title="Logo design & brand attributes"
+     content="The goal was to create a brand that is functional and connects people but in the informal way. The descriptive name, “Meetive,” is a variation of the the verb “meet” and indicates that the service focuses on the theme of gathering people together."
+     image="meetive-logo.png"
+     alt_image="Logo Meetive"
+%}
+
+{%
+     include section.html
+     title="Design process"
+     content="
+Based on my research and competitors’ analysis, I designed the project from the scratch to the hi-fidelity prototype. During the process, I tested my product to prioritize the features to fill the Persona’s needs, such a possiblity of adding a list of favorites places and a system of categories that will help to create a poll based on the suggested places. I focused on finding a simple solution with a friendly, not overwhelmed with the content interface with some playful elements."
+     image=""
+     alt_image=""
+%}
+
+{%
+     include section-prototype.html
+     title="Mid-fi screens"
+     image="meetive-mid-fi-screens.png"
+     alt_image="Desktop screens"
+%}
+
+{%
+     include section-prototype.html
      title="Style tile"
-     border=false
-     2_col=false
-     mockup_mobile=false
-     style=true
-     img="meetive-style-tile.png"
-     alt_img="Styles Meetive"
-     content=""
+     image="meetive-style-tile.png"
+     alt_image="Style tile"
 %}
 
 {%
-     include section-mockups-mobile.html
-     title="Mobile screens"
-     background="white"
-     proto_desktop=false
-     proto=true
-     link_proto="https://www.youtube.com/embed/Y77WiNTPDj0"
+     include section-prototype.html
+     title="Mobile design"
+     image="meetive-dribbble.png"
+     alt_image="Mobile screens"
+     prototype="https://www.youtube.com/embed/Y77WiNTPDj0"
 %}
 
 {%
-     include section-projects.html
-     background="dark-blue"
+     include section.html
      title="Overview"
-     border=false
-     2_col=false
-     mockup_mobile=false
-     style=false
-     img=""
-     alt_img=""
-     content="My final product helps the user to organise meeting in four simple steps and to decide easily about the meeting venue thanks to the integrated system of categories and suggested places in the form of the poll. After voting, the meeting venue is set automatically and visible for all the guests. The final product also includes playful elements, such as the animation with the baloons.
+     content="
+My final product helps the user to organise meeting in four simple steps and to decide easily about the meeting venue thanks to the integrated system of categories and suggested places in the form of the poll. After voting, the meeting venue is set automatically and visible for all the guests. The final product also includes playful elements, such as the animation with the baloons.
 
-UX Tools: UX Research, Interviews, Survey, Competitors' Analysis, Persona, Site Map, Information Architecture, User Flow, Lean Canvas, Wireframing, Usability Testing
+&nbsp;
 
-UI Tools: Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, Usability Testing, Desirability Testing
 
-Softwares: Sketch, Adobe Illustrator, Marvel, Principle"
+UX Tools
+
+
+UX Research, Interviews, Survey, Competitors’ Analysis, Persona, Site Map, Information Architecture, User Flow, Lean Canvas, Wireframing, Usability Testing
+
+&nbsp; 
+
+
+UI Tools
+
+
+Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, Usability Testing, Desirability Testing
+
+&nbsp;
+
+
+Softwares
+
+
+Sketch, Adobe Illustrator, Marvel, Principle"
 %}

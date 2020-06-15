@@ -2,33 +2,35 @@
 <html>
      <head>
           <meta charset="UTF-8">
-          <title>{{page.title}} | Julia Popko</title>
+          <title>{{ page.title }} | {{ site.title }}</title>
           <meta content="IE=edge" http-equiv="X-UA-Compatible">
           <meta content="width=device-width, initial-scale=1" name="viewport">
-          <meta name="description" content="{{page.desc}}">
+          <meta name="description" content="{{ page.desc }}">
           <meta name="author" content="Julia Popko">
-          <meta property="og:title" content="{{page.title}} | Julia Popko" />
+          <meta property="og:title" content="{{ page.title }}" />
           <meta property="og:type" content="designer_portfolio" />
-          <meta property="og:url" content="{{site.url}}{{page.url}}" />
-          <meta property="og:image" content="/assets/images/cover_og.png" />
-          <meta property="og:site_name" content="Julia Popko Portfolio" />
+          <meta property="og:url" content="http://julia-popko.github.io{{ page.url }}" />
+          <meta property="og:image" content="/assets/images/{{site.cover_og}}" />
+          <meta property="og:site_name" content="{{ site.title }}" />
           <meta property="og:locale" content="en_GB" />
-          <link href="/assets/images/favicon.png" rel="shortcut icon">
+          <link href="/assets/images/{{ site.favicon }}" rel="shortcut icon">
 
           <!-- CSS -->
           <link rel="stylesheet" href="/assets/css/style.css">
+
+          <!-- Fonts -->
           <link rel="stylesheet" href="/assets/css/font-awesome-all.min.css">
 
           <!-- JS -->
-          <script src="/assets/js/typed.min.js"></script>
-          <script src="/assets/js/js-head.js"></script>
+          <script src="/assets/js/typed.js"></script>
+          <script src="/assets/js/script-head.js"></script>
      </head>
 
-     <body {% if page.title =="About" %}id="about" {% elsif page.layout == "projects" %}id="projects" {% endif %}>
+     <body {% if page.layout == "projects" %}class="projects-page"{% endif %}>
           {% include header.html %}
-          {{content}}
-          {% include footer.html %}
-
+          
+          {{ content }}
+          
           <script src="/assets/js/script.js"></script>
      </body>
 </html>

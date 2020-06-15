@@ -1,4 +1,4 @@
-/*=============================================== Mixins ===============================================*/
+/*============================================================= Mixins =============================================================*/
 
 @mixin flexbox($align, $justify, $wrap) {
 	display: -webkit-box;
@@ -17,14 +17,6 @@
 	flex-wrap: $wrap;
 }
 
-@mixin transform($method) {
-	-moz-transform: $method;
-	-webkit-transform: $method;
-	-o-transform: $method;
-	-ms-transform: $method;
-	transform: $method;
-}
-
 @mixin transition($property, $duration, $function) {
 	-webkit-transition: $property $duration $function;
 	-moz-transition: $property $duration $function;
@@ -33,18 +25,41 @@
 	transition: $property $duration $function;
 }
 
-/*
-=============
-Use the icons one only if you use Font Awesome in your project
-=============
-*/
+@mixin transform($method) {
+	-moz-transform: $method;
+	-webkit-transform: $method;
+	-o-transform: $method;
+	-ms-transform: $method;
+	transform: $method;
+}
+
+@mixin transform-origin($method) {
+	-moz-transform-origin: $method;
+	-webkit-transform-origin: $method;
+	-o-transform-origin: $method;
+	-ms-transform-origin: $method;
+	transform-origin: $method;
+}
+
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin box-sizing($property) {
+	-moz-box-sizing: $property;
+	-webkit-box-sizing: $property;
+	box-sizing: $property;
+}
 
 @mixin icon($unicode) {
 	font-family: "FontAwesome";
 	content: $unicode;
 }
 
-/*====================================== Animation mixins ======================================*/
+/*============================================================= Animations =============================================================*/
+
+/*====================================== Mixins ======================================*/
 
 @mixin keyframes($animation-name) {
 	@-webkit-keyframes #{$animation-name} {
@@ -72,23 +87,37 @@ Use the icons one only if you use Font Awesome in your project
 	animation: #{$keyframe};
 }
 
+/*====================================== Opacity ======================================*/
+
+@include keyframes(cover_home) {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 /*=============================================== Constants ===============================================*/
 
 %paMar{
-    padding: 0;
-    margin: 0;
-}
-
-%ulNone{
-    list-style: none;
-    @extend %paMar;
-}
-
-%flexCenter{
-    @include flexbox(center, center, nowrap);
-}
-
-%bgCenter{
-    background-position: center !important;
-    background-size: cover !important;
-}
+     padding: 0;
+     margin: 0;
+ }
+ 
+ %ulNone{
+     list-style: none;
+     @extend %paMar;
+ }
+ 
+ %flexCenter{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ %bgCenter{
+     background-position: center !important;
+     background-size: cover !important;
+ }

@@ -1,274 +1,266 @@
 /*=============================================== Projects ===============================================*/
 
-#projects {
-	.cover-project {
-		width: 100%;
-		float: left;
-		text-align: center;
-		height: 80vh;
-		min-height: 400px;
-		@include flexbox(center, center, wrap);
-		padding: {
-			left: 5%;
-			right: 5%;
-		}
+.projects-page {
+    header {
+        .link-site {
+            color: $white;
+        }
 
-		.container-cover {
-			width: 100%;
-			float: left;
-			text-align: center;
+        .burger span {
+            background-color: $white;
+        }
+    }
 
-			h1 {
-				width: 100%;
-				float: left;
-				margin-bottom: 20px;
-			}
-		}
-	}
+    .cover-projects {
+        height: 100vh;
+        position: relative;
+        @include flexbox(center, flex-start, nowrap);
+        padding: 0 10%;
 
-	section {
-		@include flexbox(center, center, wrap);
-		min-height: 50vh;
-		width: 100%;
-		float: left;
-		text-align: center;
+        // .title {
+        //      width: 60%;
+        //      position: relative;
+        //      z-index: 1;
+        // }
 
-		img {
-			width: 100%;
-		}
+        // .cover-container {
+        //      width: 60%;
+        //      position: absolute;
+        //      top: 0;
+        //      right: 0;
+        //      height: 100%;
+        //      padding: 100px 0;
+        //      z-index: 0;
 
-		.container {
-			min-height: auto !important;
+        //      img {
+        //           width: 100%;
+        //           height: 100%;
+        //           object-fit: contain;
+        //      }
+        // }
 
-			h3 {
-				width: 100%;
-				float: left;
-				margin-bottom: 30px;
-				text-align: center;
-			}
-		}
+        .cover-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            @extend %bgCenter;
 
-		p {
-			line-height: 25px;
-			text-align: left;
-		}
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
 
-		.link-proto {
-			width: 100%;
-			float: left;
-			@include flexbox(center, center, nowrap);
+        .title {
+            position: relative;
+            z-index: 2;
+            color: $white;
 
-			p {
-				width: auto;
-				float: none;
-				position: relative;
-				font-size: 16px;
-				cursor: pointer;
+            h4 {
+                color: $white;
+                margin-bottom: 50px;
 
-				span {
-					position: absolute;
-					width: 0;
-					float: left;
-					height: 2px;
-					bottom: -2px;
-					left: 50%;
-					right: 50%;
-					@include transition(all, 0.2s, ease);
-				}
+                &:after {
+                    background-color: $white;
+                }
+            }
 
-				&:hover span {
-					left: 0;
-					right: 0;
-					width: 100%;
-				}
-			}
+            h1 {
+                margin-bottom: 50px;
+            }
 
-			.modal {
-				position: fixed;
-				top: -100%;
-				left: 0;
-				z-index: 999;
-				background: rgba($color: $black, $alpha: 0.8);
-				width: 100%;
-				height: 100vh;
-				@include transition(all, 0.5s, ease);
-				@extend %flexCenter;
+            p {
+                max-width: 400px;
+            }
+        }
 
-				i {
-					position: absolute;
-					right: 5%;
-					top: 32px;
-					font-size: $font-body;
-					color: $white;
-					cursor: pointer;
-				}
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black, 0.5);
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
 
-				iframe {
-					width: 90%;
-					height: 90vh;
-				}
-			}
+    .section-projects {
+        width: 100%;
+        float: left;
+        padding-top: 100px;
 
-			&.modal-open {
-				.modal {
-					top: 0;
-				}
-			}
-		}
+        h4 {
+            margin-bottom: 50px;
+        }
 
-		.challenge-container {
-			border: 1px solid $black;
-			padding: 10px;
-			width: 50%;
-			float: left;
-			clear: both;
-			margin: {
-				left: 25%;
-				right: 25%;
-			}
+        img {
+            width: 100%;
+        }
 
-			@media only screen and (max-width: 600px) {
-				width: 100%;
-				margin: {
-					left: 0;
-					right: 0;
-				}
-			}
+        p strong {
+            color: $red;
+        }
 
-			p {
-				text-align: center !important;
-			}
-		}
+        &.section-col {
+            @include flexbox(center, space-between, nowrap);
+            flex-direction: row;
 
-		.row {
-			@include flexbox(center, center, nowrap);
+            .col {
+                width: 50%;
 
-			@media only screen and (max-width: 600px) {
-				flex-wrap: wrap;
-			}
-		}
+                &:first-child {
+                    padding-right: 50px;
+                }
 
-		.col-mobile {
-			@include flexbox(center, center, nowrap);
+                &:last-child {
+                    padding-left: 50px;
+                }
 
-			img {
-				width: auto;
-				height: 500px;
-			}
-		}
-	}
+                &.col-img {
+                    @extend %flexCenter;
 
-	.projects-container {
-		ul {
-			@extend %ulNone;
-			@include flexbox(center, space-around, nowrap);
-			margin-bottom: 25px;
-			width: 100%;
-			float: left;
+                    img {
+                        max-width: 400px;
+                    }
+                }
+            }
 
-			@media only screen and (max-width: 600px) {
-				flex-wrap: wrap;
-			}
+            &:nth-child(even) {
+                flex-direction: row-reverse;
 
-			li {
-				width: 30%;
+                .col {
+                    &:first-child {
+                        padding-right: 0;
+                        padding-left: 50px;
+                    }
 
-				@media only screen and (max-width: 600px) {
-					width: 100%;
-					margin-bottom: 20px;
+                    &:last-child {
+                        padding-left: 0;
+                        padding-right: 50px;
+                    }
+                }
+            }
 
-					&:last-child {
-						margin-bottom: 0;
-					}
-				}
-			}
+            @media only screen and (max-width: 600px) {
+                flex-wrap: wrap-reverse;
 
-			&.screens-mobile {
-				li {
-					width: auto;
+                .col {
+                    width: 100%;
 
-					img {
-						width: auto;
-						max-height: 500px;
-					}
-				}
-			}
-		}
-	}
+                    &:first-child {
+                        padding-right: 0;
+                    }
 
-	.link-full-project {
-		width: 100%;
-		float: left;
-		@include flexbox(center, center, nowrap);
-		margin-top: 30px;
-		font-size: $font-titles-small;
+                    &:last-child {
+                        padding-left: 0;
+                        margin-bottom: 20px;
+                    }
+                }
 
-		a {
-			color: $black;
-			text-decoration: none;
-			position: relative;
-			width: auto;
+                &:nth-child(even) {
+                    .col {
+                        &:first-child {
+                            padding-left: 0;
+                        }
 
-			span {
-				position: absolute;
-				width: 0;
-				float: left;
-				height: 2px;
-				background: $black;
-				bottom: -2px;
-				left: 50%;
-				right: 50%;
-				@include transition(all, 0.2s, ease);
-			}
+                        &:last-child {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
 
-			&:hover span {
-				left: 0;
-				right: 0;
-				width: 100%;
-			}
-		}
-	}
+        .modal {
+            width: 100%;
+            @include flexbox(center, center, nowrap);
 
-	.button-next-project {
-		width: 100%;
-		float: left;
-		text-align: center;
-		@include flexbox(center, center, nowrap);
-		font-size: $font-titles-small;
+            .btn-primary {
+                margin-top: 100px;
+            }
 
-		margin: {
-			top: 50px;
-			bottom: 50px;
-		}
+            .modal-content {
+                position: fixed;
+                background-color: rgba($color: $black, $alpha: 0.7);
+                top: 50vh;
+                left: 50vw;
+                width: 0;
+                height: 0;
+                z-index: 999;
+                @include flexbox(center, center, nowrap);
+                overflow: hidden;
+                @include transition(all, 0.5s, ease);
 
-		a {
-			color: $black;
-			text-decoration: none;
-			position: relative;
-			margin-right: 15px;
+                iframe {
+                    width: 80%;
+                    height: 80vh;
+                    opacity: 0;
+                    @include transition(all, 0.5s, ease);
+                    transition-delay: 0.5s;
+                }
 
-			span {
-				position: absolute;
-				width: 0;
-				float: left;
-				height: 2px;
-				background: $black;
-				bottom: -2px;
-				left: 50%;
-				right: 50%;
-				@include transition(all, 0.2s, ease);
-			}
+                i {
+                    position: absolute;
+                    right: 5%;
+                    top: 5vh;
+                    color: $white;
+                    cursor: pointer;
+                    opacity: 0;
+                    z-index: 9999;
+                    @include transition(all, 0.5s, ease);
+                    transition-delay: 0.5s;
+                }
+            }
 
-			&:hover span {
-				left: 0;
-				right: 0;
-				width: 100%;
-			}
-		}
+            &.modal-open {
+                .modal-content {
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
 
-		img {
-			@include transform(rotate(90deg));
-			height: 25px;
-		}
-	}
+                    iframe {
+                        opacity: 1;
+                    }
+
+                    i {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .link-next {
+        width: 100%;
+        float: left;
+        margin-top: 100px;
+        text-align: right;
+
+        .btn-arrow {
+            @include flexbox(center, flex-end, nowrap);
+        }
+    }
+}
+
+.cover-black {
+    #nav {
+        .link-site {
+            color: $black;
+        }
+
+        .burger span {
+            background-color: $black;
+        }
+    }
+
+    .cover-projects .title {
+        color: $black !important;
+    }
 }

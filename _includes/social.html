@@ -1,7 +1,5 @@
-{% for item in site.data.social %}
-<li>
-	<a href="{{ item.link }}" {% if item.name !="email" %}target="_blank" {% endif %}>
-		<i class="{{ item.icon }}"></i>
-	</a>
-</li>
-{% endfor %}
+<ul class="social">
+     {% for item in site.data.social %}
+     <li><a href="{{item.link}}" target="_blank"><i class="{{ item.icon }}" id="icon-{{ item.name}}"></i></a></li>
+     {% endfor %}
+</ul>

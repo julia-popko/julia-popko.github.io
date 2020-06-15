@@ -2,33 +2,28 @@
 layout: default
 ---
 
-<div class="cover-project">
-	<div class="container-cover">
-		<h1>{{ page.title }}</h1>
-		<div class="type-wrap">
-			<div id="typed-strings">
-				{% for typed in page.typeds %}
-				<h2>{{ typed }}</h2>
-				{% endfor %}
-			</div>
-			<span id="typed" style="white-space:pre;"></span>
-		</div>
-	</div>
+<div class="cover-projects" id="cover-projects">
+     <div class="title">
+          <h4>{{ page.type }} <span></span></h4>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.desc_short }}</p>
+     </div>
+     
+     <picture class="cover-container">
+          <source media="(max-width: 600px)" srcset="/assets/images/s-{{ page.cover }}" />
+          <source media="(max-width: 1024px)" srcset="/assets/images/m-{{ page.cover }}">
+          <img src="/assets/images/l-{{ page.cover }}" alt="{{ page.alt_cover }}">
+     </picture>
 </div>
 
-{{ content }}
+<div class="wrapper">
+     <div class="container">
+          {{ content }}
 
-{% if page.link_to_medium %}
-<p class="link-full-project">
-	<a href="{{ page.link_to_medium }}" target="_blank">See the full project on Medium<span></span></a>
-</p>
-{% endif %} {% if page.link_to_behance %}
-<p class="link-full-project">
-	<a href="{{ page.link_to_behance }}" class="link-full-project" target="_blank">See the full project on Behance<span></span></a>
-</p>
-{% endif %}
-
-<div class="button-next-project">
-	<a href="{{ page.next_project }}.html">Next project<span></span></a>
-	<img src="/assets/images/logo.svg" alt="Logo Julia Popko" />
+          <div class="link-next">
+               <a href="/{{ page.next_project }}/" class="btn-arrow">Next project</a>
+          </div>
+          
+          {% include footer.html %}
+     </div>
 </div>

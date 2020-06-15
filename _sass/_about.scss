@@ -1,194 +1,126 @@
 /*=============================================== About ===============================================*/
 
-#about {
-	.cover-about {
-		width: 100%;
-		float: left;
-		padding-top: 10vh;
-		margin-bottom: 100px;
+.container-about {
+    .row {
+        width: 100%;
+        @include flexbox(center, center, nowrap);
+        float: left;
+        margin-top: 100px;
 
-		.picture {
-			width: 30%;
-			float: left;
-			margin-right: 5%;
+        &:first-child {
+            margin-top: 150px;
+            min-height: 70vh;
+        }
 
-			img {
-				width: 100%;
-			}
-		}
+        .col {
+            width: 50%;
+            padding: 0 50px;
+            min-height: 30vw;
+            @include flexbox(flex-start, space-between, nowrap);
+            flex-direction: column;
 
-		.title {
-			width: 65%;
-			float: left;
+            &:first-child {
+                @include flexbox(center, center, nowrap);
+                padding: 0 0;
+            }
 
-			h1 {
-				width: 100%;
-				float: left;
-				margin-bottom: 50px;
-               }
-               
-               p {
-                    font-size: $font-intro;
-               }
-          }
-          
-          @media only screen and (max-width: 600px) {
-               .picture {
-                    width: 100%;
-                    margin-right: 0;
-                    @include flexbox(center, center, nowrap);
+            &.profile-pic {
+                position: relative;
 
-                    img {
-                         width: 30%;
-                         margin-bottom: 50px;
+                img#profile-pic {
+					width: 25vw;
+					position: relative;
+					z-index: 1;
+
+                    @media only screen and (max-width: 600px) {
+                        width: 100%;
                     }
-               }
+				}
+				
+				img#pattern1 {
+					$height: 7.5vw;
+					height: $height;
+					position: absolute;
+					top: -($height/2);
+					left: 0;
+					z-index: 0;
 
-               .title {
-                    width: 100%;
-               }
-          } 
-     }
+					@media only screen and (max-width: 600px) {
+						left: -2vw;
+						$height: 12vw;
+						height: $height;
+						top: -($height/2);
+					}
+				}
 
-	.list-education,
-	.list-languages,
-	.list-skills,
-	.list-experience {
-          @extend %ulNone;
-     }
-     
-     h3 {
-          width: 100%;
-          float: left;
-          margin-bottom: 15px;
-     }
+				img#pattern2 {
+					$height: 28vw;
+					height: $height;
+					position: absolute;
+					right: 3vw;
+					top: calc(50% - #{$height} / 2);
+					z-index: 0;
 
-     .list-education,
-     .list-experience {
-          li {
-               width: 100%;
-               float: left;
-               margin-bottom: 15px;
-               
-               p {
-                    width: 100%;
-                    float: left;
-                    margin-bottom: 10px;
-               }
-          }
-     }
+					@media only screen and (max-width: 600px) {
+						right: -5vw;
+						$height: 40vw;
+						height: $height;
+						top: calc(50% - #{$height} / 2);
+					}
+				}
 
-     .list-education {
-          .description {
-               @extend %montserrat-italic;
-          }
-     }
+				img#pattern3 {
+					$height: 5vw;
+					height: $height;
+					position: absolute;
+					bottom: -($height / 2);
+					left: 0;
+					z-index: 0;
 
-     .list-experience {
-          .skills {
-               @extend %montserrat-italic;
-          }
-     }
+					@media only screen and (max-width: 600px) {
+						left: -1.5vw;
+						$height: 7.5vw;
+						height: $height;
+					}
+				}
+            }
 
-     .list-languages, .list-skills {
-          margin-bottom: 200px;
+            .content {
+                margin: 20px 0;
+            }
 
-          @media only screen and (max-width: 600px) {
-               margin-bottom: 15px;
-          }
+            .btn-arrow {
+                align-self: flex-end;
+            }
+        }
 
-          li {
-               width: 100%;
-               float: left;
-               margin-bottom: 5px;
-          }
-     }
+        @media only screen and (max-width: 600px) {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
 
-     .list-skills li {
-          width: 50%;
+            .col {
+                width: 100%;
+                padding: 0;
 
-          &:nth-child(odd) {
-               padding-right: 5%;
-          }
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
 
-          &:nth-child(even){
-               padding-left: 5%;
-          }
-     }
+.row-cv {
+    a:first-child {
+        margin-right: 20px;
+    }
 
-     @media only screen and (max-width: 600px) {
-          .list-skills {
-               margin-bottom: 200px;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column !important;
 
-               li {
-                    width: 100%;
-
-                    &:nth-child(odd) {
-                         padding-right: 0;
-                    }
-          
-                    &:nth-child(even){
-                         padding-left: 0;
-                    }
-               }
-          }
-     }
-
-     .cv_link {
-          float: left;
-          color: $black;
-          text-decoration: none;
-          @extend %montserrat-bold;
-          font-size: $font-titles;
-          position: relative;
-
-          span {
-               position: absolute;
-               width: 0;
-               float: left;
-               height: 2px;
-               background: $black;
-               bottom: -2px;
-               left: 50%;
-               right: 50%;
-               @include transition(all, .2s, ease);
-           }
-
-           &:hover span {
-               left: 0;
-               right: 0;
-               width: 100%;
-           }
-     }
-
-     .col-mobile {
-          display: none;
-     }
-
-     @media only screen and (max-width: 600px) {
-          .col-desktop {
-               display: none;
-          }
-
-          .col-mobile {
-               display: inherit;
-          }
-     }
-
-     .col-padding-left {
-          padding-right: 5%;
-
-          @media only screen and (max-width: 600px) {
-               padding-right: 0;
-          }
-     }
-
-     .col-padding-right {
-          padding-left: 5%;
-          margin-right: 0 !important;
-
-          @media only screen and (max-width: 600px) {
-               padding-left: 0;
-          }
-     }
+        a:first-child {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
 }

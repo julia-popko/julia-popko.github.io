@@ -1,57 +1,30 @@
 /*=============================================== Footer ===============================================*/
 
 footer {
-    width: 100%;
-    float: left;
-    font-size: $font-footer;
-    padding: 0 {
-        top: 50px;
-        bottom: 50px;
-    };
+     @include flexbox(center, center, wrap);
+     flex-direction: column;
+     padding: 50px 5%;
+     width: 100%;
+     float: left;
+     clear: both !important;
 
-    ul {
-        width: 100%;
-        float: left;
-        @extend %ulNone;
-        @extend %flexCenter;
+     .line {
+          width: 200px;
+          height: 2px;
+          background-color: $black;
+          float: left;
+          margin-bottom: 20px;
+     }
 
-        li {
-            margin-right: 20px;
+     .social, p {
+          margin-bottom: 20px;
+     }
 
-            &:last-child {
-                margin-right: 0;
-            }
+     .social {
+          font-size: 20px;
+     }
 
-            a {
-                color: $black;
-                @include transition(all, .2s, ease);
-
-                &:hover {
-                    color: $gray;
-                }
-            }
-        }
-    }
-
-    p {
-        width: 100%;
-        float: left;
-        font-size: 14px;
-        text-align: center;
-        padding: {
-            right: 5%;
-            left: 5%;
-            top: 20px;
-        }
-
-        a {
-            color: $black;
-            @extend %montserrat-medium;
-            text-decoration: none;
-
-            &:hover {
-                color: $gray;
-            }
-        }
-    }
+     p:last-of-type {
+          margin-bottom: 0;
+     }
 }

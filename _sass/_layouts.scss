@@ -1,0 +1,16 @@
+/*=============================================== Layouts ===============================================*/
+
+.wrapper {
+     width: 100%;
+     background-color: $white;
+     padding: 0 10%;
+     position: relative;
+     z-index: 50;
+     float: left;
+
+     .container {
+          width: 100%;
+          max-width: 1400px;
+          margin: 0 auto;
+     }
+}
