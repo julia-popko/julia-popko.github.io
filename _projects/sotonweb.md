@@ -46,7 +46,7 @@ next_project: blancc-festival
      title="Desktop design"
      image="sotonweb-home-full.png"
      alt_image="Desktop screens"
-     prototype="https://www.youtube.com/embed/m8-6G-Ff15I"
+     prototype="https://www.youtube.com/embed/q5O80zHXxRE"
 %}
 
 {%
