@@ -31,3 +31,12 @@ window.onscroll = function () {
         nav.classList.remove("nav-scroll");
     }
 };
+
+
+// On load animation
+
+var picture = document.getElementsByClassName("profile-pic")[0];
+
+function loadPic() {
+    picture.classList.add("loaded")
+}

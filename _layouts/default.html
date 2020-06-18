@@ -35,8 +35,8 @@
           <script src="/assets/js/typed.js"></script>
           <script src="/assets/js/script-head.js"></script>
      </head>
-
-     <body {% if page.layout == "projects" %}class="projects-page"{% endif %}>
+     
+     <body {% if page.layout == "projects" %}class="projects-page"{% endif %} {% if page.layout =="about" %}onload="loadPic()"{% endif %}>
           {% include header.html %}
           
           {{ content }}

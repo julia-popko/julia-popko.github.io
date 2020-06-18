@@ -28,61 +28,87 @@
                 position: relative;
 
                 img#profile-pic {
-					width: 25vw;
-					position: relative;
-					z-index: 1;
+                    width: 25vw;
+                    position: relative;
+                    z-index: 1;
+                    opacity: 0;
+                    @include transition(all, 0.3s, ease);
+                    @include transition-delay(0.1s);
+                    @include transform(translateX(-10px));
 
                     @media only screen and (max-width: 600px) {
                         width: 100%;
                     }
-				}
-				
-				img#pattern1 {
-					$height: 7.5vw;
-					height: $height;
-					position: absolute;
-					top: -($height/2);
-					left: 0;
-					z-index: 0;
+                }
 
-					@media only screen and (max-width: 600px) {
-						left: -2vw;
-						$height: 12vw;
-						height: $height;
-						top: -($height/2);
-					}
-				}
+                img#pattern1 {
+                    $height: 7.5vw;
+                    height: $height;
+                    position: absolute;
+                    top: -($height/2);
+                    left: 0;
+                    z-index: 0;
+                    opacity: 0;
+                    @include transition(all, 0.5s, ease);
+                    @include transition-delay(0.3s);
+                    @include transform(translateX(-10px));
 
-				img#pattern2 {
-					$height: 28vw;
-					height: $height;
-					position: absolute;
-					right: 3vw;
-					top: calc(50% - #{$height} / 2);
-					z-index: 0;
+                    @media only screen and (max-width: 600px) {
+                        left: -2vw;
+                        $height: 12vw;
+                        height: $height;
+                        top: -($height/2);
+                    }
+                }
 
-					@media only screen and (max-width: 600px) {
-						right: -5vw;
-						$height: 40vw;
-						height: $height;
-						top: calc(50% - #{$height} / 2);
-					}
-				}
+                img#pattern2 {
+                    $height: 28vw;
+                    height: $height;
+                    position: absolute;
+                    right: 3vw;
+                    top: calc(50% - #{$height} / 2);
+                    z-index: 0;
+                    opacity: 0;
+                    @include transition(all, 0.5s, ease);
+                    @include transition-delay(0.5s);
+                    @include transform(translateX(-10px));
 
-				img#pattern3 {
-					$height: 5vw;
-					height: $height;
-					position: absolute;
-					bottom: -($height / 2);
-					left: 0;
-					z-index: 0;
+                    @media only screen and (max-width: 600px) {
+                        right: -5vw;
+                        $height: 40vw;
+                        height: $height;
+                        top: calc(50% - #{$height} / 2);
+                    }
+                }
 
-					@media only screen and (max-width: 600px) {
-						left: -1.5vw;
-						$height: 7.5vw;
-						height: $height;
-					}
-				}
+                img#pattern3 {
+                    $height: 5vw;
+                    height: $height;
+                    position: absolute;
+                    bottom: -($height / 2);
+                    left: 0;
+                    z-index: 0;
+                    opacity: 0;
+                    @include transition(all, 0.5s, ease);
+                    @include transition-delay(.7s);
+                    @include transform(translateX(-10px));
+
+                    @media only screen and (max-width: 600px) {
+                        left: -1.5vw;
+                        $height: 7.5vw;
+                        height: $height;
+                    }
+                }
+
+                &.loaded {
+                    img#profile-pic,
+                    img#pattern1,
+                    img#pattern2,
+                    img#pattern3 {
+                        opacity: 1;
+                        @include transform(translateX(0));
+                    }
+                }
             }
 
             .content {
