@@ -1,0 +1,32 @@
+title: Julia Popko
+email: 
+description: 
+baseurl: "/"
+url: ""
+cover_og: porfolio-ogi.png
+favicon: portfolio-favicon.png
+
+markdown: kramdown
+
+collections:
+  projects:
+    output: true
+    permalink: /:name/
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  - 
+    scope:
+      path: "/_projects/"
+    values:
+      link_exter: "false"
+
+permalink: /:name/

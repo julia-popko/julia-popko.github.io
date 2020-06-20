@@ -1,0 +1,16 @@
+<section class="section-projects">
+     <h4>{{ include.title }}</h4>
+     
+     <img src="/assets/images/{{ include.image }}" alt="{{ include.alt_image }}">
+
+     {% if include.prototype %}
+     <div class="modal">
+          <button class="btn-primary" onclick="openModal(this)">See prototype</button>
+
+          <div class="modal-content" onclick="closeModal(this)">
+               <i class="fas fa-times"></i>
+               <iframe src="{{ include.prototype }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+     </div>
+     {% endif %}
+</section>
