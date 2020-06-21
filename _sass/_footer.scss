@@ -1,0 +1,30 @@
+/*=============================================== Footer ===============================================*/
+
+footer {
+     @include flexbox(center, center, wrap);
+     flex-direction: column;
+     padding: 50px 5%;
+     width: 100%;
+     float: left;
+     clear: both !important;
+
+     .line {
+          width: 200px;
+          height: 2px;
+          background-color: $black;
+          float: left;
+          margin-bottom: 20px;
+     }
+
+     .social, p {
+          margin-bottom: 20px;
+     }
+
+     .social {
+          font-size: 20px;
+     }
+
+     p:last-of-type {
+          margin-bottom: 0;
+     }
+}

@@ -1,0 +1,152 @@
+/*=============================================== About ===============================================*/
+
+.container-about {
+    .row {
+        width: 100%;
+        @include flexbox(center, center, nowrap);
+        float: left;
+        margin-top: 100px;
+
+        &:first-child {
+            margin-top: 150px;
+            min-height: 70vh;
+        }
+
+        .col {
+            width: 50%;
+            padding: 0 50px;
+            min-height: 30vw;
+            @include flexbox(flex-start, space-between, nowrap);
+            flex-direction: column;
+
+            &:first-child {
+                @include flexbox(center, center, nowrap);
+                padding: 0 0;
+            }
+
+            &.profile-pic {
+                position: relative;
+
+                img#profile-pic {
+                    width: 25vw;
+                    position: relative;
+                    z-index: 1;
+                    opacity: 0;
+                    @include transition(all, 0.3s, ease);
+                    @include transition-delay(0.1s);
+                    @include transform(translateX(-10px));
+
+                    @media only screen and (max-width: 600px) {
+                        width: 100%;
+                    }
+                }
+
+                img#pattern1 {
+                    $height: 7.5vw;
+                    height: $height;
+                    position: absolute;
+                    top: -($height/2);
+                    left: 0;
+                    z-index: 0;
+                    opacity: 0;
+                    @include transition(all, 0.5s, ease);
+                    @include transition-delay(0.3s);
+                    @include transform(translateX(-10px));
+
+                    @media only screen and (max-width: 600px) {
+                        left: -2vw;
+                        $height: 12vw;
+                        height: $height;
+                        top: -($height/2);
+                    }
+                }
+
+                img#pattern2 {
+                    $height: 28vw;
+                    height: $height;
+                    position: absolute;
+                    right: 3vw;
+                    top: calc(50% - #{$height} / 2);
+                    z-index: 0;
+                    opacity: 0;
+                    @include transition(all, 0.5s, ease);
+                    @include transition-delay(0.5s);
+                    @include transform(translateX(-10px));
+
+                    @media only screen and (max-width: 600px) {
+                        right: -5vw;
+                        $height: 40vw;
+                        height: $height;
+                        top: calc(50% - #{$height} / 2);
+                    }
+                }
+
+                img#pattern3 {
+                    $height: 5vw;
+                    height: $height;
+                    position: absolute;
+                    bottom: -($height / 2);
+                    left: 0;
+                    z-index: 0;
+                    opacity: 0;
+                    @include transition(all, 0.5s, ease);
+                    @include transition-delay(.7s);
+                    @include transform(translateX(-10px));
+
+                    @media only screen and (max-width: 600px) {
+                        left: -1.5vw;
+                        $height: 7.5vw;
+                        height: $height;
+                    }
+                }
+
+                &.loaded {
+                    img#profile-pic,
+                    img#pattern1,
+                    img#pattern2,
+                    img#pattern3 {
+                        opacity: 1;
+                        @include transform(translateX(0));
+                    }
+                }
+            }
+
+            .content {
+                margin: 20px 0;
+            }
+
+            .btn-arrow {
+                align-self: flex-end;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+
+            .col {
+                width: 100%;
+                padding: 0;
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.row-cv {
+    a:first-child {
+        margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column !important;
+
+        a:first-child {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
