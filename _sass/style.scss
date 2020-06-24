@@ -20,6 +20,7 @@ body {
 	@extend %paMar;
 	@extend %body;
 	scroll-behavior: smooth;
+	color: $gray;
 }
 
 img {

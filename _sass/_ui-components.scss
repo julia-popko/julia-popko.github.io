@@ -1,7 +1,7 @@
 /*=============================================== UI Components ===============================================*/
 
 .btn-primary {
-    background-color: $black;
+    background-color: $gray;
     padding: 15px 30px;
     color: $white;
     text-decoration: none;
@@ -43,19 +43,33 @@
 .btn-arrow {
     color: $gray;
     text-decoration: none;
-    @include flexbox(center, center, nowrap);
+    @include flexbox(center, flex-start, nowrap);
     font-size: 20px;
+    @include transition(all, .2s, ease);
 
-    &:after {
-        content: url(/assets/images/arrow.svg);
-        padding-top: 6px;
-        margin-left: 10px;
-        @include transition(all, 0.3s, ease);
+    .arrow-container {
+        height: 15px;
+        margin-left: 5px;
+        @include flexbox(center, center, nowrap);
+        @include transition(all, .2s, ease);
+
+        .arrow {
+            fill: $gray;
+            width: 20px;
+            height: auto;
+            @include transition(all, .2s, ease);
+        }
     }
 
     &:hover {
-        &:after {
+        color: $light-gray;
+
+        .arrow-container {
             @include transform(rotate(-45deg));
+
+            .arrow {
+                fill: $light-gray;
+            }
         }
     }
 }
