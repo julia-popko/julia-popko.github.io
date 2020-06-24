@@ -1,0 +1,268 @@
+/*=============================================== Header ===============================================*/
+
+header {
+	width: 100%;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px 5%;
+	@include flexbox(center, space-between, nowrap);
+	z-index: 996;
+
+	.link-site {
+		color: $gray;
+		text-decoration: none;
+		@extend %titles;
+		font-size: 30px;
+	}
+
+	.burger {
+		width: 32px;
+		height: 21px;
+		position: fixed;
+		cursor: pointer;
+		z-index: 999;
+		right: 5%;
+
+		span {
+			background-color: $gray;
+			width: 100%;
+			height: 3px;
+			float: left;
+			position: absolute;
+			left: 0;
+			@include transition(all, .5s, ease);
+
+			&:first-child {
+				top: 0;
+			}
+
+			&:nth-child(2) {
+				top: 45%;
+			}
+
+			&:last-child {
+				bottom: 0;
+			}
+		}
+	}
+
+	nav {
+		position: fixed;
+		z-index: 998;
+		top: -120%;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: $white;
+		@include flexbox(center, center, nowrap);
+		@include transition(all, .7s, ease);
+		overflow: hidden;
+
+		.nav-container {
+			ul {
+				@extend %ulNone;
+				position: relative;
+				text-align: center;
+				@include transition(all, .5s, ease);
+
+				a {
+					color: $gray;
+					text-decoration: none;
+				}
+
+				&.menu {
+					position: relative;
+					padding: 50px 100px;
+					margin-bottom: 50px;
+
+					&:before {
+						content: "";
+						width: 2px;
+						height: 0;
+						background-color: $gray;
+						position: absolute;
+						left: 0;
+						top: 0;
+						@include transition(all, .8s, ease);
+						transition-delay: .7s;
+					}
+
+					&:after {
+						content: "";
+						width: 2px;
+						height: 0;
+						background-color: $gray;
+						position: absolute;
+						right: 0;
+						bottom: 0;
+						@include transition(all, .8s, ease);
+						transition-delay: .7s;
+					}
+
+					li {
+						position: relative;
+						margin-bottom: 30px;
+						width: auto !important;
+						@include transform(translateX(-10px));
+						opacity: 0;
+						@include transition(all, .3s, ease);
+						transition-delay: 1.5s;
+
+						&:nth-child(2) {
+							transition-delay: 1.7s;
+						}
+						
+						&:last-of-type {
+							margin-bottom: 0;
+							transition-delay: 1.9s;
+						}
+
+						a {
+							position: relative;
+
+							span {
+								width: 0;
+								height: 2px;
+								background-color: $gray;
+								float: left;
+								position: absolute;
+								right: 50%;
+								left: 50%;
+								top: 49%;
+								@include transition(all, .5s, ease);
+							}
+							
+							&:hover span {
+								width: 100%;
+								left: 0;
+								right: 0;
+							}
+						}
+					}
+
+					.border {
+						height: 2px;
+						position: absolute;
+						float: left;
+						background-color: $gray;
+						width: 0;
+						@include transition(all, .2s, ease);
+
+						&.top-left {
+							top: 0;
+							left: 0;
+							transition-delay: .5s;
+						}
+
+						&.top-right {
+							top: 0;
+							right: 0;
+							transition-delay: 1.3s;
+						}
+
+						&.bottom-left {
+							bottom: 0;
+							left: 0;
+							transition-delay: 1.3s;
+						}
+
+						&.bottom-right {
+							bottom: 0;
+							right: 0;
+							transition-delay: .5s;
+						}
+					}
+				}
+
+				&.social {
+					font-size: 20px;
+					font-weight: normal;
+
+					li {
+						opacity: 0;
+						@include transform(translateX(-10px));
+						@include transition(all, .2s, ease);
+
+						&:first-child {
+							transition-delay: .7s;
+						}
+
+						&:nth-child(2) {
+							transition-delay: .9s;
+						}
+
+						&:nth-child(3) {
+							transition-delay: 1.1s;
+						}
+
+						&:nth-child(4) {
+							transition-delay: 1.3s;
+						}
+
+						&:nth-child(5) {
+							transition-delay: 1.5s;
+						}
+
+						&:nth-child(6) {
+							transition-delay: 1.7s;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.nav-open {
+		.burger span {
+			background-color: $gray !important;
+
+			&:first-child {
+				@include transform(rotate(45deg));
+				top: 45%;
+			}
+
+			&:nth-child(2) {
+				width: 0;
+			}
+
+			&:last-child {
+				@include transform(rotate(-45deg));
+				bottom: 45%;
+			}
+		}
+
+		nav {
+			top: 0;
+			.nav-container ul {
+				opacity: 1;
+				transition-delay: .6s;
+
+				&.menu {
+					.border {
+						width: 80px;	
+					}
+
+					&:before, &:after {
+						height: 100%;
+					}
+
+					li {
+						@include transform(translateX(0));
+						opacity: 1;
+					}
+				}
+
+				&.social li {
+					opacity: 1;
+					@include transform(translateX(0));
+				}
+			}
+		}
+	}
+
+	&.nav-scroll .burger span {
+		background-color: $gray !important;
+	}
+}
