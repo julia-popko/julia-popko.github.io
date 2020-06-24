@@ -3,8 +3,14 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 Gemfile.lock
-assets/images/.DS_Store
 .DS_Store
-*/DS_Store
 assets/.DS_Store
+assets/css/.DS_Store
 assets/images/.DS_Store
+assets/js/.DS_Store
+assets/webfonts/.DS_Store
+_sass/.DS_Store
+_projects/.DS_Store
+_layouts/.DS_Store
+_includes/.DS_Store
+_data/.DS_Store
