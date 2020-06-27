@@ -5,11 +5,12 @@ desc:
 order: 4
 home_cover: logolepsy-cover.png
 cover: logolepsy-cover.png
-alt_cover: Alt
 type: Ironhack
 desc_short: A design of a responsive website of a cultural magazine
 cover_black: true
 next_project: sotonweb
+keywords: 
+     - Keyword
 ---
 
 {%

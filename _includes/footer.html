@@ -1,6 +1,7 @@
 <footer>
-     <span class="line"></span>
-     {% include social.html %}
-     <p>Hand-crafted by Julia, coded by <a href="https://www.julien-sebag.design/" target="_blank">Julien</a></p>
-     <p>Julia Popko &copy;2020</p>
+    {% include social.html %}
+
+    {{ site.footer | markdownify }}
+
+    <p>{{ site.author }} &copy;{{ site.year }}</p>
 </footer>

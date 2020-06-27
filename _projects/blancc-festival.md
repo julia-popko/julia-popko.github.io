@@ -4,10 +4,12 @@ title: Blancc Festival
 desc: 
 order: 2
 next_project: meetive
-home_cover: s-blancc-cover.png
+home_cover: blancc-cover.png
 cover: blancc-cover.png
 type: Ironhack
 desc_short: Design of a ready-to-build microsite of a popular music festival
+keywords: 
+     - Keyword
 ---
 
 {%

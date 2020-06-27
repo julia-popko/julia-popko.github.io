@@ -1,161 +1,147 @@
 /*=============================================== Home ===============================================*/
 
-.cover {
-     width: 100%;
-     height: 100vh;
-     float: left;
-     position: relative;
-     padding: 5%;
+.cover-home {
+    padding: 50px 5vw;
 
-     &.cover-fixed {
-          .cover-bg {
-               position: fixed;
-               top: 0;
-               left: 0;
-               width: 100%;
-               height: 100vh;
-               float: left;
-               @extend %bgCenter;
-               z-index: 0;
-               opacity: 1;
-               
-               img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-               }
-          }
+    .content {
+        @include flexbox(center, center, nowrap);
+        @include flex-direction(column);
 
-          .cover-content {
-               z-index: 1;
-               position: relative;
-               @include flexbox(center, center, nowrap);
-               flex-direction: column;
-               height: 100%;
-               text-align: center;
-               opacity: 1;
+        .subtitle {
+            position: relative;
+            width: auto;
+            margin-bottom: 50px;
 
-               .subtitle {
-                    margin-bottom: 50px;
-                    position: relative;
-                    @include flexbox(center, center, nowrap);
-                    flex-direction: column;
+            &:after {
+                content: "";
+                width: 100px;
+                height: 2px;
+                position: absolute;
+                bottom: -2px;
+                left: calc(50% - 25px);
+                background-color: $gray;
+            }
+        }
 
-                    span {
-                         width: 100px;
-                         background-color: $gray;
-                         height: 2px;
-                         float: left;
-                         margin-top: 15px;
-                    }
-               }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            line-height: inherit;
 
-               h1 {
-                    margin-bottom: 40px;
+            #typed,
+            .typed-cursor {
+                color: $red;
+            }
+        }
+    }
 
-                    span {
-                         color: $red;
-                    }
-               }
+    .social {
+        position: absolute;
+        left: 5vw;
+        top: 0;
+        height: 100vh;
+        @include flex-direction(column);
+        font-size: 20px;
+        line-height: normal;
+        z-index: 10;
 
-               .social {
-                    position: absolute;
-                    left: 0;
-                    flex-direction: column;
-                    font-size: 20px;
+        li {
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
 
-                    li {
-                         margin-right: 0;
-                         margin-bottom: 10px;
-
-                         &:last-child {
-                              margin-bottom: 0;
-                         }
-                    }
-               }
-          }
-     }
-
-     @media only screen and (max-width: 600px) {
-          .social {
-               display: none;
-          }
-     }
+        @media(max-width: $breakpoint-tablet) {
+            display: none;
+        }
+    }
 }
 
-.portfolio {
-     @extend %ulNone;
-     width: 100%;
-     float: left;
+#portfolio {
+    @include grid(1fr, 0, 100px);
 
-     li {
-          width: 100%;
-          @include flexbox(center, center, nowrap);
-          flex-direction: row;
-          min-height: 50vh;
-          margin-top: 100px;
+    .project-card {
+        @include flexbox(stretch, flex-start, nowrap);
+        min-height: 50vh;
+        $padding: 25px;
 
-          @media only screen and (max-width: 600px) {
-               flex-wrap: wrap-reverse;
-          }
+        .col {
+            width: 50%;
 
-          $padding-content: 20px;
+            &:first-child {
+                padding-right: $padding;
+            }
 
-          &:nth-child(even) {
-               flex-direction: row-reverse;
+            &:last-child {
+                padding-left: $padding;
+            }
 
-               .content {
-                    padding-left: 0;
-                    padding-right: $padding-content;
-               }
-          }
+            img {
+                width: 100%;
+                height: 50vh;
+                object-fit: contain;
+                @include transition(all, 0.2s, ease);
 
-          .cover-project, .content {
-               width: 50%;
-               min-height: 50vh;
-               float: left;
-
-               @media only screen and (max-width: 600px) {
-                    width: 100%;
-               }
-          }
-
-          .cover-project {
-               background-position: center !important;
-               background-size: contain !important;
-               background-repeat: no-repeat !important;
-               height: 50vh;
-               position: relative;
-               @include transition(all, .5s, ease);
-
-               a {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-               }
-
-               &:hover {
+                &:hover {
                     @include transform(scale(1.1));
-               }
-          }
+                }
+            }
 
-          .content {
-               padding-left: $padding-content;
-               @include flexbox(flex-start, space-between, nowrap);
-               flex-direction: column;
+            &.col-content {
+                @include flexbox(flex-start, space-between, nowrap);
+                @include flex-direction(column);
 
-               .desc-project {
-                    @include flexbox(flex-start, flex-start, nowrap);
-                    flex-direction: column;
+                .desc-project h3 {
+                    margin-bottom: 30px;
+                }
+            }
+        }
 
-                    h3 {
-                         margin-bottom: 40px;
-                    }
-               }
+        &:nth-child(even) {
+            @include flex-direction(row-reverse);
 
-               .btn-arrow {
-                    align-self: flex-end;
-               }
-          }
-     }
+            .col {
+                &:first-child {
+                    padding-right: 0;
+                    padding-left: $padding;
+                }
+
+                &:last-child {
+                    padding-left: 0;
+                    padding-right: $padding;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $breakpoint-mobile) {
+            @include flexbox(flex-start, flex-start, nowrap);
+            @include flex-direction(column-reverse);
+
+            .col {
+                width: 100%;
+
+                &:first-child, &:last-child {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    height: auto;
+                }
+
+                &.col-content h4 {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &:nth-child(even) {
+                @include flex-direction(column-reverse);
+            }
+        }
+    }
 }

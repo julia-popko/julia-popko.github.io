@@ -1,42 +1,45 @@
+// Open menu
+
 let body = document.body;
+let header = document.querySelector("header");
 let burger = document.querySelector(".burger");
 
-function openNav(e) {
-    var element = e.parentNode;
-    element.classList.toggle("nav-open");
+function openMenu() {
+    header.classList.toggle("nav-open");
     body.classList.toggle("stop-scrolling");
 }
 
+// Open modal
+
 function openModal(e) {
-    var element = e.parentNode;
-    element.classList.add("modal-open");
-    body.classList.add("stop-scrolling");
+    e.parentNode.parentNode.classList.add("modal-open");
     burger.style.display = "none";
 }
 
 function closeModal(e) {
-    var element = e.parentNode;
-    element.classList.remove("modal-open");
-    body.classList.remove("stop-scrolling");
+    e.parentNode.classList.remove("modal-open");
     burger.style.display = "block";
 }
 
-// Change class on scroll
-
-window.onscroll = function () {
-    var nav = document.getElementById("nav");
-    if (window.pageYOffset > window.innerHeight - 50) {
-        nav.classList.add("nav-scroll");
-    } else {
-        nav.classList.remove("nav-scroll");
-    }
-};
-
-
 // On load animation
-
 var picture = document.getElementsByClassName("profile-pic")[0];
-
 function loadPic() {
     picture.classList.add("loaded")
 }
+
+// Scroll events
+
+var scrollPosition = window.scrollY;
+var cover = document.getElementsByClassName("cover")[0];
+let logo = document.querySelector(".logo");
+var hasBlocked = false;
+
+window.addEventListener("scroll", function () {
+    scrollPosition = window.scrollY;
+
+    if (scrollPosition >= window.innerHeight - 50) {
+        header.classList.add("header-scroll");
+    } else {
+        header.classList.remove("header-scroll");
+    }
+});

@@ -5,11 +5,12 @@ desc:
 order: 1
 home_cover: sotonweb-dribbble.png
 cover: sotonweb-cover.png
-alt_cover: Alt
 type: Freelance project
 desc_short: A complete design of a responsive website, playing the role of online porfolio & logo redesign
 cover_black: true
 next_project: blancc-festival
+keywords: 
+     - Keyword
 ---
 {%
      include section.html 
@@ -52,7 +53,7 @@ next_project: blancc-festival
 {%
      include section-prototype.html
      title="Mobile design"
-     image="sotonweb-dribbble.png"
+     image="m-sotonweb-dribbble.png"
      alt_image="Desktop screens"
      prototype="https://www.youtube.com/embed/I6fkrzamMto"
 %}
@@ -61,7 +62,7 @@ next_project: blancc-festival
      include section.html
      title="Overview"
      content="
-The website lets the user easily navigate among four main categories. Each of them can be selected both from the navigation bar or from the homepage. To highlight the most crucial category for the user, informing about the company’s services, I drew the icons and desined the hover effects. The traditional menu in the mobile version has been replaced by the burger one.
+The Blancc festival website helps the user to find all the necessary information about the event and to buy a ticket online. Also, the use of bright and modern colors have been associated with energy and music during the Usability Testing. In the mobile version of the website, the user can access the menu section in the top right corner, clicking on burger menu option.
 
 &nbsp;
 
