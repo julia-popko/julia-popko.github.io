@@ -58,6 +58,15 @@ typeds:
                     <img src="/assets/images/m-{{ project.home_cover }}" alt="Cover {{ project.title }}">
                     {% endif %}
                 </a>
+
+                <div class="right">
+                    {% if project.link %}
+                    <a href="{{ project.link }}" target="_blank" class="btn-arrow">View project on
+                        {{ project.website }}</a>
+                    {% else %}
+                    <a href="{{ project.url }}" class="btn-arrow">View project</a>
+                    {% endif %}
+                </div>
             </div>
 
             <div class="col col-content">

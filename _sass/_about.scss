@@ -37,7 +37,7 @@
                 @include transform(translateX(-10px));
 
                 @media only screen and (max-width: 600px) {
-                    width: 100%;
+                    width: 90%;
                 }
             }
 
@@ -49,7 +49,7 @@
             }
 
             #pattern1 {
-                $height: 7.5vw;
+                $height: 8vw;
                 height: $height;
                 top: -($height/2);
                 left: 0;
@@ -67,7 +67,7 @@
             }
 
             #pattern2 {
-                $height: 28vw;
+                $height: 28.5vw;
                 height: $height;
                 right: 3vw;
                 top: calc(50% - #{$height} / 2);
@@ -81,15 +81,15 @@
                 }
 
                 @media only screen and (max-width: $breakpoint-mobile) {
-                    right: -5vw;
-                    $height: 40vw;
+                    right: -3vw;
+                    $height: 50vw;
                     height: $height;
                     top: calc(50% - #{$height} / 2);
                 }
             }
 
             #pattern3 {
-                $height: 5vw;
+                $height: 5.5vw;
                 height: $height;
                 position: absolute;
                 bottom: -($height / 2);
@@ -100,7 +100,7 @@
                 @include transition-delay(.7s);
                 @include transform(translateX(-10px));
 
-                @media only screen and (max-width: 600px) {
+                @media only screen and (max-width: $breakpoint-mobile) {
                     left: -1.5vw;
                     $height: 7.5vw;
                     height: $height;
