@@ -156,8 +156,12 @@
                     }
                 }
 
-                &:last-child .right {
-                    display: none;
+                &:last-child {
+                    margin-bottom: 20px;
+                    
+                    .right {
+                        display: none;
+                    }
                 }
 
                 img {
