@@ -2,6 +2,8 @@
 
 .cover-home {
     padding: 50px 5vw;
+    width: 100%;
+    height: 100vh;
 
     .content {
         @include flexbox(center, center, nowrap);
@@ -136,6 +138,10 @@
 
                 &.col-content h4 {
                     margin-bottom: 30px;
+                }
+
+                &.col-content .btn-arrow {
+                    margin-top: 50px;
                 }
             }
 
