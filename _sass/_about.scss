@@ -60,7 +60,7 @@
 
                 @media only screen and (max-width: 600px) {
                     left: -2vw;
-                    $height: 12vw;
+                    $height: 17vw;
                     height: $height;
                     top: -($height/2);
                 }
@@ -102,7 +102,7 @@
 
                 @media only screen and (max-width: $breakpoint-mobile) {
                     left: -1.5vw;
-                    $height: 7.5vw;
+                    $height: 9vw;
                     height: $height;
                 }
             }
