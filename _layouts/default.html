@@ -35,7 +35,11 @@
           <script src="/assets/js/script-head.js"></script>
      </head>
      
-     <body {% if page.layout == "projects" %}class="projects-page"{% endif %} {% if page.layout =="about" %}onload="loadPic()"{% endif %}>
+     <body
+          {% if page.layout == "projects" %}class="projects-page"{% endif %}
+          {% if page.layout =="about" %}onload="loadPic()"{% endif %}
+          {% if page.url == "/" %}id="home"{% endif %}
+     >
           {% include header.html %}
           
           {{ content }}

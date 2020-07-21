@@ -46,6 +46,7 @@
                     height: $height;
                     position: absolute;
                     top: -($height/2);
+                    // top: 0;
                     left: 0;
                     z-index: 0;
                     opacity: 0;
@@ -62,7 +63,7 @@
                 }
 
                 img#pattern2 {
-                    $height: 28vw;
+                    $height: 24vw;
                     height: $height;
                     position: absolute;
                     right: 3vw;
@@ -86,7 +87,8 @@
                     height: $height;
                     position: absolute;
                     bottom: -($height / 2);
-                    left: 0;
+                    // bottom: 0;
+                    left: 2vw;
                     z-index: 0;
                     opacity: 0;
                     @include transition(all, 0.5s, ease);
