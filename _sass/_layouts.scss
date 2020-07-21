@@ -1,12 +1,12 @@
 /*=============================================== Layouts ===============================================*/
 
-.wrapper {
-     width: 100%;
-     background-color: $white;
-     padding: 0 10%;
-     position: relative;
-     z-index: 50;
-     float: left;
+.cover {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding: 50px 5vw;
+    @include transition(all, .5s, ease);
 
      .container {
           width: 100%;

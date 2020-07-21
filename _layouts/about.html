@@ -2,34 +2,28 @@
 layout: default
 ---
 
-<div class="wrapper">
-     <div class="container container-about">
-          <section class="about-page">
-               <div class="row">
-                    <div class="col profile-pic">
-                         <img src="/assets/images/gray-pattern1.svg" alt="Pattern" id="pattern1">
-                         <img src="/assets/images/gray-pattern2.svg" alt="Pattern" id="pattern2">
-                         <img src="/assets/images/gray-pattern3.svg" alt="Pattern" id="pattern3">
-                         <img src="/assets/images/{{ page.picture }}" alt="{{ page.alt_picture }}" id="profile-pic">
-                    </div>
+<div class="wrap">
+    <div class="container">
+        <div class="content-about">
+            <div class="col profile-pic">
+                <img src="/assets/images/gray-pattern1.svg" alt="Pattern" id="pattern1">
+                <img src="/assets/images/gray-pattern2.svg" alt="Pattern" id="pattern2">
+                <img src="/assets/images/gray-pattern3.svg" alt="Pattern" id="pattern3">
+                <img src="/assets/images/{{ page.picture }}" alt="Picture {{ site.title }}" id="profile-pic">
+            </div>
 
-                    <div class="col">
-                         <h4>{{ page.title }}<span></span></h4>
+            <div class="col col-content">
+                <h4>{{ page.title }}</h4>
+                {{ content }}
+                <div class="right">
+                    <a href="mailto:{{ site.email }}" class="btn-arrow">Let's chat</a>
+                </div>
+            </div>
+        </div>
 
-                         <div class="content">
-                              {{ content }}
-                         </div>
-
-                         <a href="mailto:{{ site.email }}" class="btn-arrow">Let’s chat {% include arrow.svg %}</a>
-                    </div>
-               </div>
-
-               <div class="row row-cv">
-                    <a href="/assets/images/{{ page.cv_eng }}" class="btn-primary" target="_blank">Grab my CV (EN)</a>
-                    <a href="/assets/images/{{ page.cv_pl }}" class="btn-primary" target="_blank">Grab my CV (PL)</a>
-               </div>
-          </section>
-
-          {% include footer.html %}
-     </div>
+        <div class="center btn-container">
+            <a href="/assets/images/{{ site.cv_en }}" class="btn-primary" target="_blank">Grab my CV (EN)</a>
+            <a href="/assets/images/{{ site.cv_pl }}" class="btn-primary" target="_blank">Grab my CV (PL)</a>
+        </div>
+    </div>
 </div>

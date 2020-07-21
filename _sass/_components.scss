@@ -6,7 +6,7 @@
     color: $white;
     text-decoration: none;
     text-transform: uppercase;
-    @extend %titles-bold;
+    @include titles-bold();
     z-index: 1;
     position: relative;
     outline: none;
@@ -15,6 +15,7 @@
     transition: color 0.4s ease-in-out;
     @include transition(color, 0.4s, ease-in-out);
     font-size: 16px;
+    text-align: center;
 
     &::before {
         content: "";
@@ -40,36 +41,27 @@
     }
 }
 
+
 .btn-arrow {
     color: $gray;
     text-decoration: none;
+    @include font-size(20px);
     @include flexbox(center, flex-start, nowrap);
-    font-size: 20px;
     @include transition(all, .2s, ease);
 
-    .arrow-container {
-        height: 15px;
-        margin-left: 5px;
-        @include flexbox(center, center, nowrap);
+    &:after {
+        @include arrow();
+        font-size: 12px;
+        margin-left: 4px;
         @include transition(all, .2s, ease);
-
-        .arrow {
-            fill: $gray;
-            width: 20px;
-            height: auto;
-            @include transition(all, .2s, ease);
-        }
     }
 
     &:hover {
         color: $light-gray;
 
-        .arrow-container {
+        &:after {
             @include transform(rotate(-45deg));
-
-            .arrow {
-                fill: $light-gray;
-            }
+            color: $light-gray;
         }
     }
 }

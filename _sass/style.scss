@@ -1,47 +1,52 @@
 @charset "UTF-8";
-/* SCSS Document */
+/* SASS Document */
 
 /*=============================================== Imports ===============================================*/
+
 @import "mixins";
+@import "arrow";
 @import "colors";
 @import "fonts";
 @import "layouts";
 
-
 /*=============================================== General ===============================================*/
 
 * {
-	@include box-sizing(border-box);
-	outline: none;
+    @include box-sizing(border-box);
+    outline: none;
 }
 
 html,
 body {
-	@extend %paMar;
-	@extend %body;
-	scroll-behavior: smooth;
-	color: $gray;
+    @extend %paMar;
+    color: $gray;
+    @include body();
+    position: relative;
+    scroll-behavior: smooth;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .stop-scrolling {
-	height: 100vh;
-	overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /*=============================================== Components ===============================================*/
 
-@import "ui-components";
-@import "social";
 @import "header";
+@import "components";
 @import "footer";
+@import "social";
 
 /*=============================================== Pages ===============================================*/
 
 @import "home";
 @import "projects";
 @import "about";
-@import "contact";
+
+/*=============================================== Helpers ===============================================*/
+
+@import "helpers";

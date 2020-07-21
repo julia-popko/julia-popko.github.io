@@ -4,17 +4,53 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
     -webkit-box-align: $align;
     -ms-flex-align: $align;
     align-items: $align;
-
     -webkit-box-pack: $justify;
     -ms-flex-pack: $justify;
     justify-content: $justify;
-
     -ms-flex-wrap: $wrap;
     flex-wrap: $wrap;
+}
+
+@mixin flex-direction($direction) {
+    @if $direction == column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+
+    @if $direction == column-reverse {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    } @else {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+    }
+
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin grid($size, $column-gap, $row-gap) {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: $size;
+    grid-template-columns: $size;
+    -webkit-column-gap: $column-gap;
+    -moz-column-gap: $column-gap;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+}
+
+@mixin grid-start($start) {
+    -ms-grid-column: $start;
+    grid-column-start: $start;
+}
+
+@mixin grid-end($end) {
+    -ms-grid-column-span: $end;
+    grid-column-end: $end;
 }
 
 @mixin transition($property, $duration, $function) {
@@ -25,11 +61,11 @@
     transition: $property $duration $function;
 }
 
-@mixin transition-delay($delay) {
-    -webkit-transition-delay: $delay;
-    -moz-transition-delay: $delay;
-    -o-transition-delay: $delay;
-    transition-delay: $delay;
+@mixin transition-timing($method) {
+    -webkit-transition-timing-function: $method;
+    -moz-transition-timing-function: $method;
+    -o-transition-timing-function: $method;
+    transition-timing-function: $method;
 }
 
 @mixin transform($method) {
@@ -59,64 +95,81 @@
     box-sizing: $property;
 }
 
-@mixin icon($unicode) {
-    font-family: "FontAwesome";
+@mixin icon($weight, $unicode) {
+    font-family: "Font Awesome 5 Free";
+    font-weight: $weight;
     content: $unicode;
+}
+
+@mixin transition-delay($delay) {
+    -webkit-transition-delay: $delay;
+    -moz-transition-delay: $delay;
+    -o-transition-delay: $delay;
+    transition-delay: $delay;
+}
+
+@mixin font-size($font-size) {
+    font-size: $font-size;
+    line-height: $font-size * 1.8;
+}
+
+@mixin links($color, $hover) {
+    color: $color;
+    text-decoration: none;
+    @include transition(all, 0.2s, ease);
+    @include body-bold();
+
+    &:hover {
+        color: $hover;
+    }
 }
 
 /*============================================================= Animations =============================================================*/
 
 /*====================================== Mixins ======================================*/
 
-@mixin keyframes($animation-name) {
-    @-webkit-keyframes #{$animation-name} {
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
         @content;
     }
-    @-moz-keyframes #{$animation-name} {
+
+    @-moz-keyframes #{$name} {
         @content;
     }
-    @-ms-keyframes #{$animation-name} {
+
+    @-ms-keyframes #{$name} {
         @content;
     }
-    @-o-keyframes #{$animation-name} {
-        @content;
-    }
-    @keyframes #{$animation-name} {
+
+    @keyframes #{$name} {
         @content;
     }
 }
 
-@mixin animation($keyframe) {
-    -webkit-animation: #{$keyframe};
-    -moz-animation: #{$keyframe};
-    -ms-animation: #{$keyframe};
-    -o-animation: #{$keyframe};
-    animation: #{$keyframe};
-}
+/*====================================== Animation loader ======================================*/
 
-/*====================================== Opacity ======================================*/
-
-@include keyframes(cover_home) {
+@include keyframes(loader) {
     0% {
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    80% {
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    99% {
         opacity: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     100% {
-        opacity: 1;
-    }
-}
-
-/*====================================== Picture about ======================================*/
-
-@include keyframes(about) {
-    0% {
-        opacity: 0;
-        @include transform(translateX(-10px));
-    }
-
-    100% {
-        opacity: 1;
-        @include transform(translateX(0));
+        width: 0;
+        height: 0;
     }
 }
 
@@ -142,3 +195,8 @@
     background-position: center !important;
     background-size: cover !important;
 }
+
+/*=============================================== Queries ===============================================*/
+
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 600px;

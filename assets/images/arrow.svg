@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="29px" height="17px" viewBox="0 0 29 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>Icon / Arrow</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="About" transform="translate(-1196.000000, -551.000000)" fill="#000000">
-            <g id="Cover-info-/-Right" transform="translate(720.000000, 77.000000)">
-                <path d="M495.7042,474.3215 L504.5002,482.5015 L495.7042,490.6785 L494.3402,489.2135 L500.489,483.4985 L476.5,483.4993 L476.5,481.4993 L500.485,481.4985 L494.3402,475.7865 L495.7042,474.3215 Z" id="Icon-/-Arrow"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="29" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M19.704.322l8.796 8.18-8.796 8.176-1.364-1.464 6.149-5.716L.5 9.5v-2h23.985L18.34 1.785 19.704.322z" fill="#000" fill-rule="evenodd"/></svg>

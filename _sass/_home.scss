@@ -1,161 +1,184 @@
 /*=============================================== Home ===============================================*/
 
-.cover {
-     width: 100%;
-     height: 100vh;
-     float: left;
-     position: relative;
-     padding: 5%;
+.cover-home {
+    padding: 50px 5vw;
+    width: 100%;
+    height: 100vh;
 
-     &.cover-fixed {
-          .cover-bg {
-               position: fixed;
-               top: 0;
-               left: 0;
-               width: 100%;
-               height: 100vh;
-               float: left;
-               @extend %bgCenter;
-               z-index: 0;
-               opacity: 1;
-               
-               img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-               }
-          }
+    .content {
+        @include flexbox(center, center, nowrap);
+        @include flex-direction(column);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
 
-          .cover-content {
-               z-index: 1;
-               position: relative;
-               @include flexbox(center, center, nowrap);
-               flex-direction: column;
-               height: 100%;
-               text-align: center;
-               opacity: 1;
+        .subtitle {
+            position: relative;
+            width: auto;
+            margin-bottom: 50px;
 
-               .subtitle {
-                    margin-bottom: 50px;
-                    position: relative;
-                    @include flexbox(center, center, nowrap);
-                    flex-direction: column;
+            &:after {
+                content: "";
+                $width: 100px;
+                width: $width;
+                height: 2px;
+                position: absolute;
+                bottom: -2px;
+                left: calc(50% - #{$width} / 2);
+                background-color: $gray;
+            }
+        }
 
-                    span {
-                         width: 100px;
-                         background-color: $gray;
-                         height: 2px;
-                         float: left;
-                         margin-top: 15px;
-                    }
-               }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            line-height: inherit;
 
-               h1 {
-                    margin-bottom: 40px;
+            #typed,
+            .typed-cursor {
+                color: $red;
+            }
+        }
+    }
 
-                    span {
-                         color: $red;
-                    }
-               }
+    .social {
+        position: absolute;
+        left: 5vw;
+        top: 0;
+        height: 100vh;
+        @include flex-direction(column);
+        font-size: 20px;
+        line-height: normal;
+        z-index: 10;
 
-               .social {
-                    position: absolute;
-                    left: 0;
-                    flex-direction: column;
-                    font-size: 20px;
+        li {
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
 
-                    li {
-                         margin-right: 0;
-                         margin-bottom: 10px;
-
-                         &:last-child {
-                              margin-bottom: 0;
-                         }
-                    }
-               }
-          }
-     }
-
-     @media only screen and (max-width: 600px) {
-          .social {
-               display: none;
-          }
-     }
+        @media(max-width: $breakpoint-tablet) {
+            display: none;
+        }
+    }
 }
 
-.portfolio {
-     @extend %ulNone;
-     width: 100%;
-     float: left;
+#portfolio {
+    @include grid(1fr, 0, 100px);
+    // margin-top: 100vh;
 
-     li {
-          width: 100%;
-          @include flexbox(center, center, nowrap);
-          flex-direction: row;
-          min-height: 50vh;
-          margin-top: 100px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        @include grid(1fr, 0, 50px);
+    }
 
-          @media only screen and (max-width: 600px) {
-               flex-wrap: wrap-reverse;
-          }
+    .project-card {
+        @include flexbox(stretch, flex-start, nowrap);
+        min-height: 50vh;
+        $padding: 25px;
+
+        .col {
+            width: 50%;
+
+            &:first-child {
+                padding-right: $padding;
+
+                .right {
+                    display: none;
+                }
+            }
+
+            &:last-child {
+                padding-left: $padding;
+            }
+
+            img {
+                width: 100%;
+                height: 50vh;
+                object-fit: contain;
+                @include transition(all, 0.2s, ease);
+
+                &:hover {
+                    @include transform(scale(1.1));
+                }
+            }
+
+            &.col-content {
+                @include flexbox(flex-start, space-between, nowrap);
+                @include flex-direction(column);
+
+                .desc-project h3 {
+                    margin-bottom: 30px;
+                }
+            }
+        }
 
           $padding-content: 50px;
 
-          &:nth-child(even) {
-               flex-direction: row-reverse;
+            .col {
+                &:first-child {
+                    padding-right: 0;
+                    padding-left: $padding;
+                }
 
-               .content {
+                &:last-child {
                     padding-left: 0;
-                    padding-right: $padding-content;
-               }
-          }
+                    padding-right: $padding;
+                }
+            }
+        }
 
-          .cover-project, .content {
-               width: 50%;
-               min-height: 50vh;
-               float: left;
+        @media only screen and (max-width: $breakpoint-mobile) {
+            @include flexbox(flex-start, flex-start, nowrap);
+            @include flex-direction(column-reverse);
 
-               @media only screen and (max-width: 600px) {
-                    width: 100%;
-               }
-          }
+            .col {
+                width: 100%;
 
-          .cover-project {
-               background-position: center !important;
-               background-size: contain !important;
-               background-repeat: no-repeat !important;
-               height: 50vh;
-               position: relative;
-               @include transition(all, .5s, ease);
+                &:first-child, &:last-child {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
 
-               a {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-               }
+                &:first-child {
+                    margin-bottom: 20px;
 
-               &:hover {
-                    @include transform(scale(1.1));
-               }
-          }
-
-          .content {
-               padding-left: $padding-content;
-               @include flexbox(flex-start, space-between, nowrap);
-               flex-direction: column;
-
-               .desc-project {
-                    @include flexbox(flex-start, flex-start, nowrap);
-                    flex-direction: column;
-
-                    h3 {
-                         margin-bottom: 40px;
+                    img {
+                        margin-bottom: 20px;
                     }
-               }
 
-               .btn-arrow {
-                    align-self: flex-end;
-               }
-          }
-     }
+                    .right {
+                        @include flexbox(center, flex-end, nowrap);
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 20px;
+                    
+                    .right {
+                        display: none;
+                    }
+                }
+
+                img {
+                    height: auto;
+                }
+
+                &.col-content h4 {
+                    margin-bottom: 30px;
+                }
+
+                &.col-content .btn-arrow {
+                    margin-top: 40px;
+                }
+            }
+
+            &:nth-child(even) {
+                @include flex-direction(column-reverse);
+            }
+        }
+    }
 }

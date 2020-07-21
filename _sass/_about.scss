@@ -1,50 +1,67 @@
 /*=============================================== About ===============================================*/
 
-.container-about {
-    .row {
-        width: 100%;
-        @include flexbox(center, center, nowrap);
-        float: left;
-        margin-top: 100px;
+.content-about {
+    margin-top: 100px;
+    @include flexbox(center, center, nowrap);
+    height: 70vh;
+    // justify-items: center;
+    margin-bottom: 100px;
 
-        &:first-child {
-            margin-top: 150px;
-            min-height: 70vh;
+    @media only screen and (max-width: $breakpoint-tablet) {
+        height: auto;
+    }
+
+    @media only screen and (max-width: $breakpoint-mobile) {
+        @include flex-direction(column-reverse);
+    }
+
+    .col {
+        width: 50%;
+
+        @media only screen and (max-width: $breakpoint-mobile) {
+            width: 100%;
         }
 
-        .col {
-            width: 50%;
-            padding: 0 50px;
-            min-height: 30vw;
-            @include flexbox(flex-start, space-between, nowrap);
-            flex-direction: column;
+        &.profile-pic {
+            position: relative;
+            @include flexbox(center, center, nowrap);
 
-            &:first-child {
-                @include flexbox(center, center, nowrap);
-                padding: 0 0;
+            #profile-pic {
+                width: 25vw;
+                margin: 0 auto;
+                position: relative;
+                z-index: 1;
+                opacity: 0;
+                @include transition(all, 0.3s, ease);
+                @include transition-delay(0.1s);
+                @include transform(translateX(-10px));
+
+                @media only screen and (max-width: 600px) {
+                    width: 90%;
+                }
             }
 
-            &.profile-pic {
-                position: relative;
+            #pattern1,
+            #pattern2,
+            #pattern3 {
+                position: absolute;
+                z-index: 0;
+            }
 
-                img#profile-pic {
-                    width: 25vw;
-                    position: relative;
-                    z-index: 1;
-                    opacity: 0;
-                    @include transition(all, 0.3s, ease);
-                    @include transition-delay(0.1s);
-                    @include transform(translateX(-10px));
+            #pattern1 {
+                $height: 8vw;
+                height: $height;
+                top: -($height/2);
+                left: 0;
+                opacity: 0;
+                @include transition(all, 0.5s, ease);
+                @include transition-delay(0.3s);
+                @include transform(translateX(-10px));
 
-                    @media only screen and (max-width: 600px) {
-                        width: 100%;
-                    }
-                }
-
-                img#pattern1 {
-                    $height: 7.5vw;
+                @media only screen and (max-width: 600px) {
+                    left: -2vw;
+                    $height: 17vw;
                     height: $height;
-                    position: absolute;
                     top: -($height/2);
                     // top: 0;
                     left: 0;
@@ -61,6 +78,7 @@
                         top: -($height/2);
                     }
                 }
+            }
 
                 img#pattern2 {
                     $height: 24vw;
@@ -82,8 +100,9 @@
                     }
                 }
 
-                img#pattern3 {
-                    $height: 5vw;
+                @media only screen and (max-width: $breakpoint-mobile) {
+                    right: -3vw;
+                    $height: 50vw;
                     height: $height;
                     position: absolute;
                     bottom: -($height / 2);
@@ -113,42 +132,64 @@
                 }
             }
 
-            .content {
-                margin: 20px 0;
+            #pattern3 {
+                $height: 5.5vw;
+                height: $height;
+                position: absolute;
+                bottom: -($height / 2);
+                left: 3vw;
+                z-index: 0;
+                opacity: 0;
+                @include transition(all, 0.5s, ease);
+                @include transition-delay(.7s);
+                @include transform(translateX(-10px));
+
+                @media only screen and (max-width: $breakpoint-mobile) {
+                    left: -1.5vw;
+                    $height: 9vw;
+                    height: $height;
+                }
             }
 
-            .btn-arrow {
-                align-self: flex-end;
+            &.loaded {
+                #profile-pic, #pattern1, #pattern2, #pattern3 {
+                    opacity: 1;
+                    @include transform(translateX(0))
+                }
             }
         }
 
-        @media only screen and (max-width: 600px) {
-            flex-direction: column-reverse;
-            flex-wrap: wrap;
+        &.col-content {
+            height: 100%;
+            @include flexbox(flex-start, space-between, nowrap);
+            @include flex-direction(column);
 
-            .col {
-                width: 100%;
-                padding: 0;
-
-                &:last-child {
-                    margin-bottom: 20px;
+            @media only screen and (max-width: $breakpoint-tablet) {
+                h4, p {
+                    margin-bottom: 50px;
                 }
+            }
+
+            @media only screen and (max-width: $breakpoint-mobile) {
+                margin-bottom: 50px;
             }
         }
     }
 }
 
-.row-cv {
-    a:first-child {
+.btn-container {
+    .btn-primary:first-child {
         margin-right: 20px;
     }
 
-    @media only screen and (max-width: 600px) {
-        flex-direction: column !important;
+    @media only screen and (max-width: $breakpoint-mobile) {
+        @include flex-direction(column);
 
-        a:first-child {
+        .btn-primary:first-child {
             margin-right: 0;
             margin-bottom: 20px;
         }
     }
 }
+
+

@@ -1,30 +1,29 @@
 /*=============================================== Footer ===============================================*/
 
 footer {
-     @include flexbox(center, center, wrap);
-     flex-direction: column;
-     padding: 50px 5%;
-     width: 100%;
-     float: left;
-     clear: both !important;
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+    width: 100%;
+    @include flexbox(center, center, nowrap);
+    @include flex-direction(column);
+    padding: 50px 5vw;
 
-     .line {
-          width: 200px;
-          height: 2px;
-          background-color: $gray;
-          float: left;
-          margin-bottom: 20px;
-     }
+    &:before {
+        content: "";
+        width: 200px;
+        height: 2px;
+        background-color: $gray;
+        position: absolute;
+        top: 0;
+        left: calc(50% - 100px);
+    }
 
-     .social, p {
-          margin-bottom: 20px;
-     }
+    .social, p:first-of-type {
+        margin-bottom: 20px;
+    }
 
-     .social {
-          font-size: 20px;
-     }
-
-     p:last-of-type {
-          margin-bottom: 0;
-     }
+    .social {
+        @include font-size(20px);
+    }
 }
