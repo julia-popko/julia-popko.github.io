@@ -1,0 +1,111 @@
+/*=============================================== Fonts ===============================================*/
+
+/*====================================== Mixins ======================================*/
+
+@mixin titles() {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+@mixin titles-bold() {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+@mixin body() {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+@mixin body-semi() {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+@mixin body-bold() {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+/*====================================== Font styles ======================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    @extend %paMar;
+}
+
+h1 {
+    @include titles-bold();
+    @include font-size(50px);
+
+    @media (max-width: $breakpoint-mobile) {
+        @include font-size(30px);
+    }
+
+    .break {
+        display: none;
+
+        @media (max-width: $breakpoint-tablet) {
+            display: inherit;
+        }
+    }
+}
+
+h2 {
+    @include body();
+    @include font-size(20px);
+
+    &.subtitle {
+        text-transform: uppercase;
+        color: $gray;
+    }
+}
+
+h3 {
+    @include font-size(30px);
+    @include titles();
+}
+
+h4 {
+    @include body-semi();
+    text-transform: uppercase;
+    @include flexbox(flex-start, flex-start, nowrap);
+    @include flex-direction(column);
+    @include font-size(22px);
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 50px;
+        height: 2px;
+        float: left;
+        background-color: $light-gray;
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+    }
+}
+
+.menu {
+    @include font-size(50px);
+    text-transform: uppercase;
+    @include titles-bold();
+
+    @media (max-width: $breakpoint-mobile) {
+        @include font-size(30px);
+    }
+}
+
+p {
+    @include font-size(16px);
+    @include body();
+
+    a {
+        @include links($gray, $gray);
+    }
+}

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="cover cover-projects">
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/s-{{ page.cover }}">
+        <source media="(max-width: 1024px)" srcset="/assets/images/m-{{ page.cover }}">
+        <img src="/assets/images/l-{{ page.cover }}" alt="Cover {{ page.title }}">
+    </picture>
+
+    <div class="content">
+        <h4>{{ page.type }}</h4>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.desc_short }}</p>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="container">
+        {{ content }}
+
+        <div class="right">
+            <a href="/{{ page.next_project }}/" class="btn-arrow">Next project</a>
+        </div>
+    </div>
+</div>

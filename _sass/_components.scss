@@ -1,0 +1,67 @@
+/*=============================================== UI Components ===============================================*/
+
+.btn-primary {
+    background-color: $gray;
+    padding: 15px 30px;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include titles-bold();
+    z-index: 1;
+    position: relative;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    @include transition(color, 0.4s, ease-in-out);
+    font-size: 16px;
+    text-align: center;
+
+    &::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: $red;
+        transform-origin: center;
+        @include transform(translate3d(-50%, -50%, 0) scale3d(0, 0, 0));
+        @include transition(transform, 0.45s, ease-in-out);
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        &::before {
+            transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+        }
+    }
+}
+
+
+.btn-arrow {
+    color: $gray;
+    text-decoration: none;
+    @include font-size(20px);
+    @include flexbox(center, flex-start, nowrap);
+    @include transition(all, .2s, ease);
+
+    &:after {
+        @include arrow();
+        font-size: 12px;
+        margin-left: 4px;
+        @include transition(all, .2s, ease);
+    }
+
+    &:hover {
+        color: $light-gray;
+
+        &:after {
+            @include transform(rotate(-45deg));
+            color: $light-gray;
+        }
+    }
+}

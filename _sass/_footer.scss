@@ -1,0 +1,29 @@
+/*=============================================== Footer ===============================================*/
+
+footer {
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+    width: 100%;
+    @include flexbox(center, center, nowrap);
+    @include flex-direction(column);
+    padding: 50px 5vw;
+
+    &:before {
+        content: "";
+        width: 200px;
+        height: 2px;
+        background-color: $gray;
+        position: absolute;
+        top: 0;
+        left: calc(50% - 100px);
+    }
+
+    .social, p:first-of-type {
+        margin-bottom: 20px;
+    }
+
+    .social {
+        @include font-size(20px);
+    }
+}

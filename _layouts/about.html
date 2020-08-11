@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="wrap">
+    <div class="container">
+        <div class="content-about">
+            <div class="col profile-pic">
+                <img src="/assets/images/gray-pattern1.svg" alt="Pattern" id="pattern1">
+                <img src="/assets/images/gray-pattern2.svg" alt="Pattern" id="pattern2">
+                <img src="/assets/images/gray-pattern3.svg" alt="Pattern" id="pattern3">
+                <img src="/assets/images/{{ page.picture }}" alt="Picture {{ site.title }}" id="profile-pic">
+            </div>
+
+            <div class="col col-content">
+                <h4>{{ page.title }}</h4>
+                {{ content }}
+                <div class="right">
+                    <a href="mailto:{{ site.email }}" class="btn-arrow">Let's chat</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center btn-container">
+            <a href="/assets/images/{{ site.cv_en }}" class="btn-primary" target="_blank">Grab my CV (EN)</a>
+            <a href="/assets/images/{{ site.cv_pl }}" class="btn-primary" target="_blank">Grab my CV (PL)</a>
+        </div>
+    </div>
+</div>
