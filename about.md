@@ -6,5 +6,9 @@ picture: julia-portfolio.jpg
 keywords: 
 ---
 
-I’m a Polish UX/UI designer with background in foreign languages. After graduating from the design bootcamp in Berlin, I moved back to Warsaw, where I currently work in the Design Team at PKO BP. I also do freelance projects.
-I'm especially interested in user-centered and visual design. **Currently, I'm open for new challenging opportunities and collaborations, both stationary and remote.** I would feel great as a part of international environment and enjoy working with motivated and creative people.
+Currently working as a UI designer as a part of the Design Team at **[PKO BP](https://www.pkobp.pl/)** in Warsaw.
+
+I graduated from **[Ironhack](https://ironhack.com/)** in Berlin, which I did to develop my career in tech field.
+I also have a university degree in French and English.
+
+I'm especially interested in user-centered and visual design. Currently, I'm open for new challenging opportunities and collaborations, both stationary and remote. I would feel great as a part of international environment and would enjoy working with motivated and creative people.
