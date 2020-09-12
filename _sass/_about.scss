@@ -16,6 +16,7 @@
 
     .col {
         width: 50%;
+        min-height: 50vh;
 
         @media only screen and (max-width: $breakpoint-mobile) {
             width: 100%;
@@ -24,9 +25,18 @@
         &.profile-pic {
             position: relative;
             @include flexbox(center, center, nowrap);
+            padding-right: 50px;
+
+            @media only screen and (max-width: 600px) {
+                padding-right: 0;
+            }
 
             #profile-pic {
-                width: 25vw;
+                // width: 25vw;
+                $width: 80%;
+                width: $width;
+                height: $width;
+                object-fit: contain;
                 margin: 0 auto;
                 position: relative;
                 z-index: 1;
@@ -50,7 +60,8 @@
             #pattern1 {
                 $height: 8vw;
                 height: $height;
-                top: -($height/2);
+                // top: -($height/2);
+                top: -20px;
                 left: 0;
                 opacity: 0;
                 @include transition(all, 0.5s, ease);
@@ -68,8 +79,10 @@
             #pattern2 {
                 $height: 25vw;
                 height: $height;
-                right: 3vw;
+                // right: 3vw;
+                right: 30px;
                 top: calc(50% - #{$height} / 2);
+                // top: 0;
                 opacity: 0;
                 @include transition(all, 0.5s, ease);
                 @include transition-delay(0.5s);
@@ -91,12 +104,14 @@
                 $height: 4.8vw;
                 height: $height;
                 position: absolute;
-                bottom: -($height / 2);
-                left: 3vw;
+                // bottom: -($height / 2);
+                // left: 3vw;
+                left: 0;
+                bottom: -10px;
                 z-index: 0;
                 opacity: 0;
                 @include transition(all, 0.5s, ease);
-                @include transition-delay(.7s);
+                @include transition-delay(0.7s);
                 @include transform(translateX(-10px));
 
                 @media only screen and (max-width: $breakpoint-mobile) {
@@ -107,9 +122,12 @@
             }
 
             &.loaded {
-                #profile-pic, #pattern1, #pattern2, #pattern3 {
+                #profile-pic,
+                #pattern1,
+                #pattern2,
+                #pattern3 {
                     opacity: 1;
-                    @include transform(translateX(0))
+                    @include transform(translateX(0));
                 }
             }
         }
@@ -120,7 +138,8 @@
             @include flex-direction(column);
 
             @media only screen and (max-width: $breakpoint-tablet) {
-                h4, p {
+                h4,
+                p {
                     margin-bottom: 50px;
                 }
             }
@@ -146,5 +165,3 @@
         }
     }
 }
-
-

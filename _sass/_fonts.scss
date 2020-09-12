@@ -106,6 +106,6 @@ p {
     @include body();
 
     a {
-        @include links($gray, $gray);
+        @include links($red, $blue);
     }
 }

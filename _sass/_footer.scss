@@ -26,4 +26,8 @@ footer {
     .social {
         @include font-size(20px);
     }
+
+    p a {
+        @include links($gray, $gray)
+    }
 }
