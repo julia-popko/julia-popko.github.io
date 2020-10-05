@@ -47,6 +47,7 @@ keywords:
      image="blancc-homepage.png"
      alt_image="Desktop screens"
      prototype="https://www.youtube.com/embed/m8-6G-Ff15I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+     shadow=true
 %}
 
 {%

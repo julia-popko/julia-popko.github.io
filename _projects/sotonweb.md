@@ -48,6 +48,7 @@ keywords:
      image="sotonweb-home-full.png"
      alt_image="Desktop screens"
      prototype="https://www.youtube.com/embed/q5O80zHXxRE"
+     shadow=true
 %}
 
 {%

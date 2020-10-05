@@ -1,7 +1,7 @@
 <section class="section-projects">
     <h4>{{ include.title }}</h4>
 
-    <img src="/assets/images/{{ include.image }}" alt="{{ include.alt_image }}">
+    <img src="/assets/images/{{ include.image }}" alt="{{ include.alt_image }}" {% if include.shadow == true %}class="img-shadow"{% endif %}>
 
     {% if include.prototype %}
     <div class="modal">
