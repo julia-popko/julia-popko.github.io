@@ -62,8 +62,7 @@ keywords:
 {%
      include section.html
      title="Overview"
-     content="
-The Blancc festival website helps the user to find all the necessary information about the event and to buy a ticket online. Also, the use of bright and modern colors have been associated with energy and music during the Usability Testing. In the mobile version of the website, the user can access the menu section in the top right corner, clicking on burger menu option.
+     content="The website lets the user easily navigate among four main categories. Each of them can be selected both from the navigation bar or from the homepage. To highlight the most crucial category for the user, informing about the company's services, I drew the icons and desined the hover effects. The traditional menu in the mobile version has been replaced by the burger one.
 
 &nbsp;
 
@@ -71,15 +70,14 @@ The Blancc festival website helps the user to find all the necessary information
 UX Tools
 
 
-User Research, Interviews, Persona, User Journey, Affinity Diagram, open and closed Card Sorting, Sitemap, User Flow, Concept Definition, Paper Prototype, User Testing and Wireframing
+UX Research, Competitors' Analysis, Site Map, Information Architecture, Wireframing, User Testing
 
 &nbsp; 
 
 
 UI Tools
 
-
-Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, User Testing
+Moodboard, Style Tile, Mock Ups, Micro Interactions
 
 &nbsp;
 
@@ -87,5 +85,5 @@ Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, User Testing
 Softwares
 
 
-Sketch, InVision, Principle"
+Softwares: Sketch, Adobe Illustrator, InVision, Principle"
 %}
