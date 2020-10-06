@@ -1,9 +1,9 @@
 ---
 title: About me
-desc: About Julia Popko, UX / UI Designer based in Warsaw PL.
+desc: Julia Popko, UX / UI Designer based in Warsaw, Poland.
 layout: about
 picture: julia-portfolio.jpg
-keywords: 
+keywords: design, designer, UX/UI designer, visual designer, portfolio, graphic designer
 ---
 
 Currently working as a UI designer as a part of the Design Team at [PKO BP](https://www.pkobp.pl/){:target="_blank"} in Warsaw.
