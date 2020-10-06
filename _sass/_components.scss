@@ -48,6 +48,7 @@
     @include font-size(20px);
     @include flexbox(center, flex-start, nowrap);
     @include transition(all, .2s, ease);
+    margin-top: 20px;
 
     &:after {
         @include arrow();
