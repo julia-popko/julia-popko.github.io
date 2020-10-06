@@ -3,7 +3,7 @@ layout: projects
 title: iPKO banking service
 desc: 
 order: 1
-next_project: Sotonweb
+next_project: sotonweb
 home_cover: pko-cover.png
 cover: pko-cover.png
 type: PKO BP
