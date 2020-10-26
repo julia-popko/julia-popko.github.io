@@ -7,7 +7,7 @@ next_project: sotonweb
 home_cover: pko-cover.png
 cover: pko-cover.png
 type: PKO BP
-desc_short: Projects I worked on together with my team as a UI Designer for the biggerst Polish bank
+desc_short: Projects I worked on together with my team as a UI Designer for the biggest Polish bank
 keywords: 
      - Keyword
 ---
