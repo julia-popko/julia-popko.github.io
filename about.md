@@ -2,7 +2,7 @@
 title: About me
 desc: Julia Popko, UX / UI Designer based in Warsaw, Poland.
 layout: about
-picture: julia-portfolio.jpg
+picture: profile-pic.jpg
 keywords: design, designer, UX/UI designer, visual designer, portfolio, graphic designer
 ---
 

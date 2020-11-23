@@ -2,7 +2,7 @@
 layout: projects
 title: Logolepsy magazine
 desc: 
-order: 4
+order: 5
 home_cover: logolepsy-cover.png
 cover: logolepsy-cover.png
 type: Ironhack

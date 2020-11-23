@@ -2,7 +2,7 @@
 layout: projects
 title: Sotonweb website
 desc: 
-order: 1
+order: 2
 home_cover: sotonweb-dribbble.png
 cover: sotonweb-cover.png
 type: Freelance project

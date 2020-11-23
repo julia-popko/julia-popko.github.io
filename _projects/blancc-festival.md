@@ -2,7 +2,7 @@
 layout: projects
 title: Blancc Festival
 desc: 
-order: 2
+order: 3
 next_project: meetive
 home_cover: blancc-cover.png
 cover: blancc-cover.png
