@@ -51,11 +51,20 @@
             }
 
             &.section-col {
-                @include flexbox(center, center, nowrap);
-                @include flex-direction(row);
+                // @include flexbox(center, center, nowrap);
+                // @include flex-direction(row);
+                @include grid(1fr 1fr, 24px, 0);
+
+                @media(max-width: $breakpoint-mobile) {
+                    @include grid(1fr, 0, 0);
+                }
+
+                h4 {
+                    @include grid-column-span(2);
+                }
                 
                 .col {
-                    width: 50%;
+                    width: 100%;
                     @include flexbox(flex-start, center, nowrap);
                     @include flex-direction(column);
 

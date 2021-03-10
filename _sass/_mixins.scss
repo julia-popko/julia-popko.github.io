@@ -53,6 +53,16 @@
     grid-column-end: $end;
 }
 
+@mixin grid-column($number) {
+    -ms-grid-column: $number;
+    grid-column: $number;
+}
+
+@mixin grid-column-span($number) {
+    -ms-grid-column-span: $number;
+    grid-column: span $number;
+}
+
 @mixin transition($property, $duration, $function) {
     -webkit-transition: $property $duration $function;
     -moz-transition: $property $duration $function;
