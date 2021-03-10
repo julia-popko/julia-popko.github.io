@@ -1,11 +1,12 @@
 <section class="section-projects section-col">
     <h4>{{ include.title }}</h4>
-    
-    <div class="col">
-        {{ include.content | markdownify }}
-    </div>
 
-    <div class="col col-img">
-        <img src="/assets/images/{{ include.image }}" alt="{{ include.alt_image }}">
+    <div class="grid">
+        <div class="content">
+            {{ include.content | markdownify }}
+        </div>
+        <div class="content">
+            <img src="/assets/images/{{ include.image }}" alt="{{ include.alt_image }}">
+        </div>
     </div>
 </section>

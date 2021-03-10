@@ -67,7 +67,7 @@ keywords:
 &nbsp;
 
 
-UX Tools
+<b>UX Tools</b>
 
 
 UX Research, Competitors' Analysis, Site Map, Information Architecture, Wireframing, User Testing
@@ -75,14 +75,14 @@ UX Research, Competitors' Analysis, Site Map, Information Architecture, Wirefram
 &nbsp; 
 
 
-UI Tools
+<b>UI Tools</b>
 
 Moodboard, Style Tile, Mock Ups, Micro Interactions
 
 &nbsp;
 
 
-Softwares
+<b>Softwares</b>
 
 
 Softwares: Sketch, Adobe Illustrator, InVision, Principle"

@@ -74,7 +74,7 @@ My final product helps the user to organise meeting in four simple steps and to 
 &nbsp;
 
 
-UX Tools
+<b>UX Tools</b>
 
 
 UX Research, Interviews, Survey, Competitors’ Analysis, Persona, Site Map, Information Architecture, User Flow, Lean Canvas, Wireframing, Usability Testing
@@ -82,7 +82,7 @@ UX Research, Interviews, Survey, Competitors’ Analysis, Persona, Site Map, Inf
 &nbsp; 
 
 
-UI Tools
+<b>UI Tools</b>
 
 
 Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, Usability Testing, Desirability Testing
@@ -90,7 +90,7 @@ Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, Usability Te
 &nbsp;
 
 
-Softwares
+<b>Softwares</b>
 
 
 Sketch, Adobe Illustrator, Marvel, Principle"

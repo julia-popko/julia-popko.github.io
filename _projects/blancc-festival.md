@@ -66,7 +66,7 @@ The Blancc festival website helps the user to find all the necessary information
 &nbsp;
 
 
-UX Tools
+<b>UX Tools</b>
 
 
 User Research, Interviews, Persona, User Journey, Affinity Diagram, open and closed Card Sorting, Sitemap, User Flow, Concept Definition, Paper Prototype, User Testing and Wireframing
@@ -74,7 +74,7 @@ User Research, Interviews, Persona, User Journey, Affinity Diagram, open and clo
 &nbsp; 
 
 
-UI Tools
+<b>UI Tools</b>
 
 
 Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, User Testing
@@ -82,7 +82,7 @@ Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, User Testing
 &nbsp;
 
 
-Softwares
+<b>Softwares</b>
 
 
 Sketch, InVision, Principle"
