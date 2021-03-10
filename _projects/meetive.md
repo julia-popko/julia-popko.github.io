@@ -8,7 +8,7 @@ cover: meetive-cover.png
 type: Ironhack
 desc_short: A case study of my final project of a mobile application that helps its user to organize and plan a group meeting
 cover_black: true
-next_project: linkedin
+next_project: pkobp
 keywords: 
      - Keyword
 ---
