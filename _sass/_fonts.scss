@@ -109,3 +109,14 @@ p {
         @include links($red, $blue);
     }
 }
+
+blockquote {
+    background-color: $black;
+    color: $white;
+    margin: 0 -24px;
+    padding: 24px;
+
+    p {
+        @include font-size(20px);
+    }
+}
