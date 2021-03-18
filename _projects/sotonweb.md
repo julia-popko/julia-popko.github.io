@@ -22,7 +22,7 @@ keywords:
 {%
      include section.html
      title="Problem statement"
-     content="The company goal was to satisfy needs and requirements of its present and future customers - introducting a website which provides them with clear information about services and the possibility to check already completed projects. Both the agency and the clients benefits that solution beacuse they would reduce time spent on sending e-mails with requests and discussing an offer. Unfortunately, the agency was lacking the website that could meet those expecations -  Growing number of inquires reaching the existing facebook page was not a sufficient solution. The company was aware of the fact that they urgently need a user-friendly and clear website, that would play also a role of an online portfolio. The client was prepared for a new challenge and approached me with a draft concept with content of the website that I could have start off with."
+     content="The company goal was to satisfy needs and requirements of its present and future customers - introducting a website which provides them with clear information about services and the possibility to check already completed projects. Both the agency and the clients benefit that solution beacuse they would reduce time spent on sending e-mails with requests and discussing an offer. Unfortunately, the agency was lacking the website that could meet those expecations -  Growing number of inquires reaching the existing facebook page was not a sufficient solution. The company was aware of the fact that they urgently need a user-friendly and clear website, that would play also a role of an online portfolio. The client was prepared for a new challenge and approached me with a draft concept with content of the website that I could have start off with."
 %}
 
 {%
@@ -66,7 +66,7 @@ keywords:
      include section.html
      title="Overview"
      content="The problem of the client has been solved - together we created a website that feels fresh. modern, and a bit playful, but it's also accessible for people who are not tech-heavy and help them learn about what Sotonweb does and offers. The design lets the user easily navigate among four main categories in the menu with anchor points. Design helps the company to work faster and have better contact with its clients.
-     
+
 &nbsp;
 
 
