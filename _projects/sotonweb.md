@@ -28,6 +28,19 @@ keywords:
 
 > Lorem Ipsum is simply *dummy* text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
+
+{%
+     include steps.html
+     title_1="Title 1"
+     content_1="Lorem Ipsum is simply *dummy* text of the printing and typesetting industry."
+     title_2="Title 2"
+     content_2="Lorem Ipsum is simply *dummy* text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+     title_3="Title 3"
+     content_3="Lorem Ipsum is simply *dummy* text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+Lorem Ipsum is simply *dummy* text of the printing and typesetting industry."
+%}
+
 {%
      include section.html 
      title="UX Research"
