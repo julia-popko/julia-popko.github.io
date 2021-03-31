@@ -25,25 +25,17 @@ keywords:
      content="The company goal was to satisfy needs and requirements of its present and future customers - introducting a website which provides them with clear information about services and the possibility to check already completed projects. Both the agency and the clients benefit that solution beacuse they would reduce time spent on sending e-mails with requests and discussing an offer. Unfortunately, the agency was lacking the website that could meet those expecations -  growing number of inquires reaching the existing facebook page was not a sufficient solution. The company was aware of the fact that they urgently need a user-friendly and clear website, that would play also a role of an online portfolio. The client was prepared for a new challenge and approached me with a draft concept with content of the website that I could have start off with."
 %}
 
-<<<<<<< Updated upstream
-
-> Lorem Ipsum is simply *dummy* text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
-
 {%
      include steps.html
-     title_1="Title 1"
-     content_1="Lorem Ipsum is simply *dummy* text of the printing and typesetting industry."
-     title_2="Title 2"
-     content_2="Lorem Ipsum is simply *dummy* text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-     title_3="Title 3"
-     content_3="Lorem Ipsum is simply *dummy* text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
-Lorem Ipsum is simply *dummy* text of the printing and typesetting industry."
+     title_1="Challenge"
+     content_1=""
+     title_2="Limitations"
+     content_2="Site should load fast hence any large images any interactions must be kept with moderation."
+     title_3="Result"
+     content_3="A responsive, complete design a responsive website & portfolio"
 %}
 
-=======
->>>>>>> Stashed changes
+
 {%
      include section.html 
      title="UX Research"
