@@ -31,15 +31,15 @@ keywords:
      title_1="Challenge"
      content_1="To design not just the digital product itself, but the best possible customers experiences."
      title_2="Limitations"
-     content_2="Site should load fast hence any large images any interactions must be kept with moderation."
+     content_2="Site should load fast hence any large images or interactions must be kept with moderation."
      title_3="Result"
-     content_3="A responsive, complete design a responsive website & portfolio"
+     content_3="A responsive, complete design of a website & portfolio."
 %}
 
 {%
      include section.html 
      title="UX Research"
-     content="In the first place, I've done some research about the traget group to learn more about it. Building an online porflio might seem a relatively simple task but we must remember that Sotonweb's clients differ when it comes to the level of digital skills and come from different environements so it was decided website should be as accessible, readible and easy to navigate as possible. I did also a competitive analysis of other creative agencies to compare and collect the data about all the companies and be able to discuss my research and design decisions together with the client."
+     content="In the first place, I've done some research about the traget group to learn more about it. Building an online porflio might seem a relatively simple task but we must remember that Sotonweb's clients differ when it comes to the level of digital skills and come from different environements so it was decided website should be as accessible, readible and as easy to navigate as possible. I did also a competitive analysis of other creative agencies to compare and collect the data about all the companies and be able to discuss my research and design decisions together with the client."
 %}
 
 > Reviewing and preparing Information Architecture was crucial for this project - to optimize search process and to give the site competitve advanatage by avoiding overhelming it with content and unnecessary infromation.
@@ -47,8 +47,7 @@ keywords:
 {%
      include section.html
      title="Project"
-     content="After completing the UX research part, I prepared the first verion of the interactive mock ups, based on the client's brief. We decided that from the visual point of view, the aim of this design was to to bring the fresh feeling of a technology and creative ideas. Selected vibrant color accents, aligned with WCAG standards, helps the user to notice the crucial elements on the website, at the same time making the design clear and simple to ready and comprehend. Also, accoring to various research, bight color combinations can be easily noticed and memorized by the users. After a few iteration rounds, the final design was chosen together with the client.
-     According to the client’s request, I also redesigned the old logo, that looked very old-fashioned and not visually appealing. I decided to use lowercase wordmarks, which increase perceptions of brand friendliness. The aim was to make it look clean and modern to maintain cohesion with visual identification of the brand."
+     content="After completing the UX research part, I prepared the first version of the interactive mock ups, based on the client's brief. We decided that from the visual point of view, the aim of this design was to to bring a fresh feeling of a technology and creative ideas. Selected vibrant color accents, aligned with WCAG standards, helps the user to notice the crucial elements on the website, at the same time making the design clear and simple to ready and comprehend. Also, according to various research, bright color combinations can be easily noticed and memorized by the users. After a few iteration rounds, the final design was chosen together with the client."
 %}
 
 {%
@@ -78,7 +77,7 @@ keywords:
 {%
      include section.html
      title="Overview"
-     content="The problem of the client has been solved - together we created a website that feels fresh. modern, and a bit playful, but it's also accessible for people who are not tech-heavy and help them learn about what Sotonweb does and offers. The design lets the user easily navigate among four main categories in the menu with anchor points. Design helps the company to work faster and have better contact with its clients.
+     content="The problem of the client has been solved - together we created a website that feels fresh, modern, and a bit playful, but it's also accessible for people who are not tech-heavy and help them learn about what Sotonweb does and offers. Creating an ownable and unique style brings life and personality to the website. The design lets the user easily navigate among four main categories in the menu with anchor points. Design helps the company to work faster and have better relationship with its clients.
 
 &nbsp;
 
