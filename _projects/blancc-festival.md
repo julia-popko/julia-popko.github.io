@@ -15,7 +15,7 @@ keywords:
 {%
      include section.html 
      title="Introduction"
-     content="Blancc is a one-day music festival music festival that takes place anually in Texas, US. The event attract people listening many different genres, but Blancc festival specialize in pop and rock music. The festival has been existing since 90s. "
+     content="Blancc is a one-day music festival that takes place anually in September in Texas, US. The event attract people listening many different genres, but Blancc festival specialize in pop and rock music. The festival has been existing since 90s. "
 %}
 
 {%
