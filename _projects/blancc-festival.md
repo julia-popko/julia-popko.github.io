@@ -15,7 +15,7 @@ keywords:
 {%
      include section.html 
      title="Introduction"
-     content="Blancc is a one-day music festival that takes place anually in September in Texas, US. The event attract people listening many different genres, but Blancc festival specialize in pop and rock music. The festival has been existing since 90s. "
+     content="Blancc is a one-day music festival that takes place anually in September in Texas, US. The event attracts people listening many different genres, but Blancc festival specialize in pop and rock music. The festival has been existing since 90s. "
 %}
 
 {%
@@ -30,6 +30,16 @@ keywords:
      content="During the UX research I found out that many music festival websites are lacking a clear information architecture and they are flooded with content and are also not consistent, which made it very hard for the users to navigate. Usually, the user visits the website of an event to check the line up and infromation about it. The primary goal is usually buying a festival ticket. During the design process and testing, the User Flow has been limited to a few easy steps that helps the user to achieve his goal."
      image="blancc-news-desktop.png"
      alt_image="News"
+%}
+
+{%
+     include steps.html
+     title_1="Challenge"
+     content_1="To design not just the digital product itself, but the best possible customers experiences."
+     title_2="Limitations"
+     content_2="Site should load fast hence any large images or interactions must be kept with moderation."
+     title_3="Result"
+     content_3="A responsive, complete design of a website & portfolio."
 %}
 
 {%
