@@ -6,7 +6,7 @@ order: 2
 home_cover: sotonweb-dribbble.png
 cover: sotonweb-cover.png
 type: Freelance project
-desc_short: A complete design of a responsive website, playing the role of online porfolio & logo redesign
+desc_short: A complete design of a modern, responsive website, playing the role of online porfolio
 cover_black: true
 next_project: blancc-festival
 keywords: 

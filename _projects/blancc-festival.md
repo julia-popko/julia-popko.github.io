@@ -15,7 +15,13 @@ keywords:
 {%
      include section.html 
      title="Introduction"
-     content="Success of an event or a festival depends on two main factors: planning and promotion. The most effective way of connecting participants with their favorite festivals and artists is through a website. Nowadays an event’s digital presence is as important as the event itself — people can feel the vibe of it before it happens, learn what they will experience, and, most imporantingly, buy a ticket. For this project, I designed a responisive website for a music festival called **Blancc**."
+     content="Blancc is a one-day music festival music festival that takes place anually in Texas, US. The event attract people listening many different genres, but Blancc festival specialize in pop and rock music. The festival has been existing since 90s. "
+%}
+
+{%
+     include section.html
+     title="Problem statement"
+     content="Success of an event or a festival depends on two main factors: planning and promotion. Event’s digital presence is as important as the event itself — people can feel the vibe of it before it happens, learn what they will experience, and, most importantgly, buy a ticket. The most effective way of connecting participants with their favorite festivals and artists is through a website. Previous website definitely was outdated and the user were confused by the navigation and the ticket process. It was also not possible to book a parking spot online."
 %}
 
 {%
