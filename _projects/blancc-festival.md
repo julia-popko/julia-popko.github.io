@@ -1,19 +1,19 @@
 ---
 layout: projects
 title: Blancc Festival
-desc: 
+desc:
 order: 3
 next_project: meetive
 home_cover: blancc-cover.png
 cover: blancc-cover.png
 type: Ironhack
 desc_short: Design of a ready-to-build microsite of a popular music festival
-keywords: 
-     - Keyword
+keywords:
+    - Keyword
 ---
 
 {%
-     include section.html 
+     include section.html
      title="Introduction"
      content="Blancc is a one-day music festival that takes place anually in September in Texas, US. The event attracts people listening many different genres, but Blancc festival specialize in pop and rock music. The festival has been existing since 90s. "
 %}
@@ -35,11 +35,11 @@ keywords:
 {%
      include steps.html
      title_1="Challenge"
-     content_1="To design not just the digital product itself, but the best possible customers experiences."
-     title_2="Limitations"
-     content_2="Site should load fast hence any large images or interactions must be kept with moderation."
-     title_3="Result"
-     content_3="A responsive, complete design of a website & portfolio."
+     content_1=": Design a ready-to-build microsite for a festival of your choice that will take place this year."
+     title_2="Features"
+     content_2="To provide website clarity and an online point of sale"
+     title_3="Success metrics"
+     content_3="The is successful if the users appreciate a seamless point-of-sale experience."
 %}
 
 {%
@@ -74,32 +74,26 @@ keywords:
 %}
 
 {%
-     include section.html
-     title="Overview"
-     content="
+include section.html
+title="Overview"
+content="
 The Blancc festival website helps the user to find all the necessary information about the event and to buy a ticket online. Also, the use of bright and modern colors have been associated with energy and music during the Usability Testing. In the mobile version of the website, the user can access the menu section in the top right corner, clicking on burger menu option.
 
 &nbsp;
 
-
 <b>UX Tools</b>
-
 
 User Research, Interviews, Persona, User Journey, Affinity Diagram, open and closed Card Sorting, Sitemap, User Flow, Concept Definition, Paper Prototype, User Testing and Wireframing
 
-&nbsp; 
-
+&nbsp;
 
 <b>UI Tools</b>
-
 
 Moodboard, Style Tile, Atomic Design, Mock Ups, Micro Interactions, User Testing
 
 &nbsp;
 
-
 <b>Softwares</b>
-
 
 Sketch, InVision, Principle"
 %}
