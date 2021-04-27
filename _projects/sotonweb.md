@@ -39,15 +39,15 @@ keywords:
 {%
      include section.html 
      title="UX Research"
-     content="In the first place, I've done some research about the traget group to learn more about it. Building an online porflio might seem a relatively simple task but we must remember that Sotonweb's clients differ when it comes to the level of digital skills and come from different environements so it was decided website should be as accessible, readible and as easy to navigate as possible. I did also a competitive analysis of other creative agencies to compare and collect the data about all the companies and be able to discuss my research and design decisions together with the client."
+     content="In the first place, I've done some research about the traget group to learn more about it. Building an online porflio might seem a relatively simple task but we must remember that Sotonweb's clients differ when it comes to the level of digital skills and come from different environements so it was decided website should be as accessible, readible and as easy to navigate as possible. I did also a competitive analysis of other creative agencies to compare and collect the data about all the companies to be able to discuss my research and design decisions together with the client."
 %}
 
-> Reviewing and preparing Information Architecture was crucial for this project - to optimize search process and to give the site competitve advanatage by avoiding overhelming it with content and unnecessary infromation.
+> Reviewing and preparing Information Architecture was crucial for this project - to optimize search process and to give the site competitve advanatage by avoiding overhelming it with content and unnecessary information.
 
 {%
      include section.html
      title="Project"
-     content="After completing the UX research part, I prepared the first version of the interactive mock ups, based on the client's brief. We decided that from the visual point of view, the aim of this design was to to bring a fresh feeling of a technology and creative ideas. Selected vibrant color accents, aligned with WCAG standards, helps the user to notice the crucial elements on the website, at the same time making the design clear and simple to ready and comprehend. Also, according to various research, bright color combinations can be easily noticed and memorized by the users. After a few iteration rounds, the final design was chosen together with the client."
+     content="After completing the UX research part, I prepared the first version of the interactive mock ups, based on the client's brief. We decided that from the visual point of view, the aim of this design was to to bring a fresh feeling of a technology and creative ideas. Selected vibrant color accents, aligned with WCAG standards, helps the user to notice the crucial elements on the website, at the same time making the design clear and simple to read and comprehend. Also, according to various research, bright color combinations can be easily noticed and memorized by the users. After a few iteration rounds, the final design was chosen together with the client."
 %}
 
 {%
