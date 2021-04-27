@@ -32,8 +32,6 @@ keywords:
      alt_image="News"
 %}
 
-> How Might We provide clarity during the navigation and checkout process on the webiste?
-
 {%
      include steps.html
      title_1="Challenge"
@@ -51,6 +49,8 @@ keywords:
      image="blancc-logo.png"
      alt_image="Logo Blancc"
 %}
+
+> How Might We provide clarity during the navigation and checkout process on the webiste?
 
 {%
      include section-prototype.html
