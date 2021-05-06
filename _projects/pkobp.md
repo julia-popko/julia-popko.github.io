@@ -15,5 +15,5 @@ keywords:
      include section.html 
      title="Introduction"
      content="
-Due to NDA regulations, this part of my portfolio can't be public. If you are intrested in my work here, please [contact me](mailto:contact@julia-popko.design) directly."
+Due to NDA regulations, this part of my portfolio can't be public. If you are intrested in my work here, please [contact me](mailto:julia.m.popko@gmail.com) directly."
 %}
