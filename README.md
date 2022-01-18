@@ -83,7 +83,6 @@ Open your video in YouTube, click on `Share` then `Embed`, and copy the part in 
      prototype="https://www.youtube.com/embed/uPaFUEg2ROY"
 %}
 ```
-
 For help writing the `.md` file go here: [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 To add a class to the generated element add `{:.class}` before the line. To add it in a `li` add this at the beginning of the line `* {:.class-name} `
 
