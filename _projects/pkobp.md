@@ -1,8 +1,8 @@
 ---
 layout: projects
-title: iPKO banking service
+title: iPKO banking service & Design System
 desc: 
-order: 1
+order: 2
 next_project: sotonweb
 home_cover: pko-cover.png
 cover: pko-cover.png
