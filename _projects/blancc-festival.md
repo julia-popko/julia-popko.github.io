@@ -2,8 +2,8 @@
 layout: projects
 title: Blancc Festival
 desc:
-order: 3
-next_project: meetive
+order: 4
+next_project: wolterskluwer
 home_cover: blancc-cover.png
 cover: blancc-cover.png
 type: Ironhack
