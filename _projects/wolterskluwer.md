@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: CT Transformation
+title: Projects for Digital Experience Group
 desc: 
 order: 1
 next_project: pkobp
