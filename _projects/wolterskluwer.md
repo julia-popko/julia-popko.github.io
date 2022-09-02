@@ -7,7 +7,7 @@ next_project: pkobp
 home_cover: wolterskluwer-cover.png
 cover: wolterskluwer-cover.png
 type: WOLTERS KLUWER
-desc_short: Projects I've been working on as UX/UI Designer for information services corporation
+desc_short: Projects I've been working on as UX/UI Designer for Wolters Kluwer, information services corporation
 keywords: 
      - Keyword
 ---
