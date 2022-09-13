@@ -47,7 +47,7 @@ keywords:
 {%
      include section.html
      title="Project"
-     content="After completing the UX research part, I prepared the first version of the interactive mock ups, based on the client's brief. We decided that from the visual point of view, the aim of this design was to to bring a fresh feeling of a technology and creative ideas. Selected vibrant color accents, aligned with WCAG standards, helps the user to notice the crucial elements on the website, at the same time making the design clear and simple to read and comprehend. Also, according to various research, bright color combinations can be easily noticed and memorized by the users. After a few iteration rounds, the final design was chosen together with the client."
+     content="After completing the UX research part, I prepared the first version of the interactive mock ups, based on the client's brief. We decided that from the visual point of view, the aim of this design was to bring a fresh feeling of a technology and creative ideas. Selected vibrant color accents, aligned with WCAG standards, helps the user to notice the crucial elements on the website, at the same time making the design clear and simple to read and comprehend. Also, according to various research, bright color combinations can be easily noticed and memorized by the users. After a few iteration rounds, the final design was chosen together with the client."
 %}
 
 {%
