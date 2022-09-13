@@ -5,6 +5,7 @@ baseurl: "/"
 url: "https://www.julia-popko.design"
 author: Julia Popko
 year: 2020
+footer: Hand-crafted by Julia {:target="_blank"}
 type: designer_portfolio
 lang: en
 cover_og: porfolio-ogi.png
