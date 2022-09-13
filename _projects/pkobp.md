@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: iPKO banking service & Design System
+title: iPKO banking service & Design Systems
 desc: 
 order: 2
 next_project: sotonweb
